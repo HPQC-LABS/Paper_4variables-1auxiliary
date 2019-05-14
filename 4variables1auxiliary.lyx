@@ -1,0 +1,780 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\begin_preamble
+\usepackage{amsfonts}
+\usepackage{palatino}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!100!black},
+    urlcolor={blue!100!black}
+}
+%\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
+\end_preamble
+\options showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage,prl,superscriptaddress,Hyperref
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.3cm
+\topmargin 1.3cm
+\rightmargin 1.3cm
+\bottommargin 1.3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+All 4-variable functions can be perfectly quadratized with only 1 auxiliary
+ variable
+\end_layout
+
+\begin_layout Author
+
+\lang british
+Nike Dattani
+\end_layout
+
+\begin_layout Affiliation
+
+\lang british
+Harvard-Smithsonian 
+\lang english
+Center
+\lang british
+ for Astrophysics, USA
+\end_layout
+
+\begin_layout Author
+
+\lang british
+Hou Tin Chau
+\end_layout
+
+\begin_layout Affiliation
+
+\lang british
+Cambridge University, Department of Mathematics, UK
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -2mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+
+\lang british
+We prove that any function whose input is 4 binary variables and whose output
+ is a real number, is perfectly equivalent to a function whose input is
+ 5 binary variables and is minimized over the new variable.
+ Our proof is constructive, so we provide quadratic functions that quadratize
+ any 4-variable function, but there exists 8 different classes of 4-variable
+ functions that each have their own 5-variable quadratization formula.
+ Since we provide `perfect' quadratizations, we can apply these formulas
+ to any 4-variable subset of an 
+\begin_inset Formula $n$
+\end_inset
+
+-variable function even if 
+\begin_inset Formula $n\gg4.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang british
+Introduction
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Many problems can be solved by minimizing a real-valued degree-
+\begin_inset Formula $k$
+\end_inset
+
+ function of binary variables with 
+\begin_inset Formula $k>2$
+\end_inset
+
+.
+ Some examples include image de-blurring (where typically 
+\begin_inset Formula $k=4$
+\end_inset
+
+ but in general we can have 
+\begin_inset Formula $k=m^{2}$
+\end_inset
+
+ with 
+\begin_inset Formula $m\ge2$
+\end_inset
+
+ being the length in pixels of the square-shaped mask
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+or filter?
+\end_layout
+
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ishikawa2011,Fix2011"
+literal "false"
+
+\end_inset
+
+, integer factoring (where typically 
+\begin_inset Formula $k=4$
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dattani2014j,Burges2002,Peng2008,Schaller2010,Xu2012,Tanburn2015a,Lunt2015,Li2017"
+literal "false"
+
+\end_inset
+
+, and determining whether or not a number 
+\begin_inset Formula $N$
+\end_inset
+
+ is an 
+\begin_inset Formula $m$
+\end_inset
+
+-color Ramsey number (where 
+\begin_inset Formula $k=\frac{mN\left(N-1\right)}{2}$
+\end_inset
+
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Gaitan2012,Bian2013,Okada2015s"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Solving such discrete optimization problems with 
+\begin_inset Formula $k>2$
+\end_inset
+
+ can be very difficult, and more algorithms have been developed for the
+ 
+\begin_inset Formula $k=2$
+\end_inset
+
+ case (such as the algorithm known as 
+\begin_inset Quotes eld
+\end_inset
+
+QPBO
+\begin_inset Quotes erd
+\end_inset
+
+ and extensions of it 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rother2007"
+literal "false"
+
+\end_inset
+
+) than for the 
+\begin_inset Formula $k>2$
+\end_inset
+
+ case.
+ Fortunately it is possible to turn any 
+\begin_inset Formula $k$
+\end_inset
+
+-degree binary optimization problem into a 2-degree binary optimization
+ problem, by a transformation called 
+\begin_inset Quotes eld
+\end_inset
+
+quadratization
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dattani2019"
+literal "false"
+
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Quadratization methods exist which can turn an 
+\begin_inset Formula $n$
+\end_inset
+
+-variable degree-
+\begin_inset Formula $k$
+\end_inset
+
+ problem into an 
+\begin_inset Formula $n$
+\end_inset
+
+-variable quadratic problem (i.e.
+ the number of variables does not change) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ishikawa2014,Tanburn2015a,Okada2015s,Dridi2017"
+literal "false"
+
+\end_inset
+
+, but not every case can be quadratized without adding some auxiliary variables
+ (so the number of variables in the quadratic problem is usually much more
+ than in the original degree-
+\begin_inset Formula $k$
+\end_inset
+
+ problem).
+ Coming up with better quadratizations (for example with fewer auxiliary
+ variables) has been a very active area of research recently: The first
+ quadratization method was published in 1975 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rosenberg1975"
+literal "false"
+
+\end_inset
+
+, and some subsequent quadratization methods were published in 2004 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kolmogorov2004"
+literal "false"
+
+\end_inset
+
+, 2005 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Freedman2005"
+literal "false"
+
+\end_inset
+
+, and 2011 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ishikawa2011,Fix2011,Gallagher2011"
+literal "false"
+
+\end_inset
+
+, but the rest of the methods were published in the last 5 years (from 2014-2018
+) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Anthony2014,Tanburn2015a,Okada2015s,Anthony2015,Anthony2016,Leib2016,Rocchetto2016,Anthony2017,Chancellor2017,Boros2018,Boros2018a"
+literal "false"
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+In the most recent of these papers 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Boros2018,Boros2018a"
+literal "false"
+
+\end_inset
+
+, a remarkable discovery was made, that some entire functions (no matter
+ how many terms and how many variables they contain) can be quadratized
+ with only 
+\begin_inset Formula $\log_{2}(k)-1$
+\end_inset
+
+ auxiliary variables.
+ Unfortunately those functions are either extremely obscure functions that
+ would rarely come up in a real-world problem, or they are just monomials
+ (meaning that for a real-world problem containing many terms, each of these
+ terms would be quadratized separately, with 
+\begin_inset Formula $\log_{2}(k)-1$
+\end_inset
+
+ new auxiliary variables being added each time, and adding up to a potentially
+ untractable number of total variables in the quadratic optimization problem).
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\lang english
+
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+This motivated us to look for quadratizations that are compact, but also
+ applicable to many real-world problems.
+ The result of this study is the theorem described in the title of this
+ paper, and explained in more detail in the section below.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang british
+Results
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\lang british
+Theorem I: All 4-variable functions can be quadratized perfectly with only
+ 1-auxiliary variable.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+\lang english
+
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+By 
+\begin_inset Quotes eld
+\end_inset
+
+perfect
+\begin_inset Quotes erd
+\end_inset
+
+ quadratization we mean all 
+\begin_inset Formula $2^{4}$
+\end_inset
+
+ outcomes of the 4-variable function are exactly preserved when minimizing
+ over the auxiliary variable in the 5-variable quadratic function.
+ Therefore any 4-variable subset of an 
+\begin_inset Formula $n$
+\end_inset
+
+-variable problem can be quadratized with only 1-auxiliary.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -2.5mm
+\end_inset
+
+We prove the theorem by providing an explicit quadratization for various
+ different cases, of the following function of binary variables 
+\begin_inset Formula $b_{i}\in\{0,1\}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{234}b_{2}b_{3}b_{4}+\alpha_{134}b_{1}b_{3}b_{4}+\alpha_{124}b_{1}b_{2}b_{4}.
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Case 1:
+\begin_inset Formula $\,\,\,\alpha_{i}\le0\,\,,\forall i$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+b_{a}\left(\alpha_{1234}\left(\sum_{i}b_{i}-3\right)+\sum_{i}\alpha_{i}\left(\sum_{j}b_{j}-2\right)\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Case 2:
+\begin_inset Formula $\,\,\,\alpha_{1234}\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.1:
+\begin_inset Formula $\,\,\,-\alpha_{1234}\ge\alpha_{123}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.1.1:
+\begin_inset Formula $\,\,\,-\nicefrac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le\alpha_{124}\le0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & b_{a}\left(\alpha_{123}\left(-b_{1}+b_{2}+b_{3}\right)+\alpha_{234}\left(b_{2}+b_{3}-b_{4}\right)+\alpha_{134}\left(b_{1}-b_{3}+b_{4}-1\right)+\alpha_{124}\left(b_{1}-b_{2}+b_{4}-1\right)+\alpha_{1234}\left(b_{1}+b_{4}-1\right)\right)\\
++ & \,\alpha_{123}\left(-b_{2}-b_{3}+b_{1}b_{2}+b_{1}b_{3}\right)+\alpha_{234}\left(-b_{2}-b_{3}+b_{2}b_{4}+b_{3}b_{4}\right)\\
++ & \,\alpha_{134}\left(1-b_{1}+b_{3}-b_{4}+b_{1}b_{4}\right)+\alpha_{124}\left(1-b_{1}+b_{2}-b_{4}+b_{1}b_{4}\right)+\alpha_{1234}\left(1-b_{1}-b_{4}+b_{1}b_{4}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.1.2:
+\begin_inset Formula $\,\,\,-\nicefrac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & b_{a}\left(\alpha_{123}\left(b_{1}-b_{2}-b_{3}\right)+\alpha_{234}\left(-b_{2}-b_{3}+b_{4}\right)+\alpha_{134}\left(1-b_{1}+b_{3}-b_{4}\right)+\alpha_{124}\left(1-b_{1}+b_{2}-b_{4}\right)+\alpha_{1234}\left(1-b_{1}-b_{4}\right)\right)\\
++ & \,\alpha_{123}\left(-b_{1}+b_{1}b_{2}+b_{1}b_{3}\right)+\alpha_{234}\left(-b_{4}+b_{2}b_{4}+b_{3}b_{4}\right)+\left(\alpha_{134}+\alpha_{124}+\alpha_{1234}\right)b_{1}b_{4}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.2:
+\begin_inset Formula $\,\,\,-\frac{\alpha_{1234}}{2}\ge\alpha_{123}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.2.1:
+\begin_inset Formula $\,\,\,\alpha_{1234}+\alpha_{123}+\alpha_{234}\le0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.2.1.1:
+\begin_inset Formula $\,\,\,-\alpha_{1234}\le\alpha_{123}\le\nicefrac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le\alpha_{124}\le0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & b_{a}\left(\alpha_{123}\left(-b_{1}+b_{2}+b_{3}\right)+\alpha_{234}\left(b_{2}+b_{3}-b_{4}\right)+\alpha_{134}\left(b_{1}-b_{3}+b_{4}-1\right)+\alpha_{124}\left(b_{1}-b_{2}+b_{4}-1\right)+\alpha_{1234}\left(b_{1}+b_{4}-1\right)\right)\\
++ & \,\alpha_{123}\left(-b_{2}-b_{3}+b_{1}b_{2}+b_{1}b_{3}\right)+\alpha_{234}\left(-b_{2}-b_{3}+b_{2}b_{4}+b_{3}b_{4}\right)\\
++ & \,\alpha_{134}\left(1-b_{1}+b_{3}-b_{4}+b_{1}b_{4}\right)+\alpha_{124}\left(1-b_{1}+b_{2}-b_{4}+b_{1}b_{4}\right)+\alpha_{1234}\left(1-b_{1}-b_{4}+b_{1}b_{4}\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.2.1.2:
+\begin_inset Formula $\,\,\,-\alpha_{1234}\le\alpha_{123}\le\nicefrac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.2.1.3:
+\begin_inset Formula $\,\,\,-\alpha_{1234}\le\alpha_{123}\le\nicefrac{\alpha_{1234}}{2}\le\alpha_{234}\le0\le\alpha_{134}\le\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.2.2:
+\begin_inset Formula $\,\,\,\alpha_{1234}+\alpha_{123}+\alpha_{234}\ge0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.2.2.1:
+\begin_inset Formula $\,\,\,-\alpha_{1234}\le\alpha_{123}\le\nicefrac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le\alpha_{124}\le0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.2.2.2:
+\begin_inset Formula $\,\,\,-\alpha_{1234}\le\alpha_{123}\le\nicefrac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.2.2.3:
+\begin_inset Formula $\,\,\,-\alpha_{1234}\le\alpha_{123}\le\nicefrac{\alpha_{1234}}{2}\le\alpha_{234}\le0\le\alpha_{134}\le\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.3:
+\begin_inset Formula $\,\,\,-\frac{\alpha_{1234}}{2}\le\alpha_{123}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.3.1:
+\begin_inset Formula $\,\,\,\nicefrac{-\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le\alpha_{124}\le0$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+
+\bar under
+Case 2.3.2:
+\begin_inset Formula $\,\,\,\nicefrac{-\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+
+\lang british
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "../pCloud Sync/library,/Users/leroy/Dropbox (Personal)/NSD/Papers/library,C:/Users/Nike/Desktop/Dropbox/NSD/Papers/library,C:/Users/Richard/Documents/Bibtex/library,apssamp"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
