@@ -473,7 +473,7 @@ Results
 
 \series bold
 \lang british
-Theorem I: All 4-variable functions can be quadratized perfectly with only
+Theorem 1: All 4-variable functions can be quadratized perfectly with only
  1-auxiliary variable.
  
 \begin_inset Newline newline
@@ -537,8 +537,1483 @@ We prove the theorem by providing an explicit quadratization for various
 
 \end_inset
 
- 
+
 \end_layout
+
+\begin_layout Subsection*
+\begin_inset Note Note
+status open
+
+\begin_layout Subsection*
+Lemma: the following cases covers everything
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Case 1:
+\series default
+\bar default
+ An even number (2 or 4) of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are 
+\begin_inset Formula $\le-\nicefrac{\alpha_{1234}}{2}$
+\end_inset
+
+ or 
+\begin_inset Note Note
+status open
+
+\begin_layout Subsection*
+An even number 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ge-\nicefrac{\alpha_{1234}}{2}$
+\end_inset
+
+: See Lemma 0.1.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\bar under
+Case 2:
+\series default
+\bar default
+ An odd number (1 or 3) of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are 
+\begin_inset Formula $\le-\nicefrac{\alpha_{1234}}{2}$
+\end_inset
+
+ or 
+\begin_inset Formula $\ge-\nicefrac{\alpha_{1234}}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+Case 2.1:
+\series default
+ 0 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.2
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+Case 2.2:
+\series default
+ 1 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ is in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.6
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+Case 2.3:
+\series default
+ 2 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, one is 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.10
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+Case 2.4:
+\series default
+ 2 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.11
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+Case 2.5:
+\series default
+ 2 or 3 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\le-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.12
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+Case 2.6:
+\series default
+ 3 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.13
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+Case 2.8:
+\series default
+ All 4 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ See Lemma 0.14 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space \enskip{}
+\end_inset
+
+
+\begin_inset space \enskip{}
+\end_inset
+
+Case 2.7:
+\series default
+ 3 or all 4 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\le-\alpha_{1234}:$
+\end_inset
+
+ See Lemma 0.15 
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Note Note
+status open
+
+\begin_layout Subsection*
+Case 1: An even number (2 or 4) of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are 
+\begin_inset Formula $\le-\nicefrac{\alpha_{1234}}{2}$
+\end_inset
+
+ or 
+\begin_inset Note Note
+status open
+
+\begin_layout Subsection*
+An even number 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\ge-\nicefrac{\alpha_{1234}}{2}$
+\end_inset
+
+: See Lemma 0.1.
+\end_layout
+
+\begin_layout Subsection*
+Case 2: An odd number (1 or 3) of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are 
+\begin_inset Formula $\le-\nicefrac{\alpha_{1234}}{2}$
+\end_inset
+
+ or 
+\begin_inset Formula $\ge-\nicefrac{\alpha_{1234}}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.1: None of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.2
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.2: One of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ is in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.6
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.3: Two of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, one is 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.10
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.4: Two or three of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\le-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.12
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.5: Two of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.11
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.6: Three of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.13
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.7: Two of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, one is 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+: see Lemma 0.10
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.8: Three or all four of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\le-\alpha_{1234}:$
+\end_inset
+
+ See Lemma 0.15 
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.9: All four of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ See Lemma 0.14 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+\begin_inset Note Note
+status open
+
+\begin_layout Subsubsection*
+Case 2.1: 0 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.2
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.2: 1 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ is in 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.6
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.3: 2 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, one is 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+See Lemma 0.10
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.4: 2 or 3 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\le-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.12
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.5: 2 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.11
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.6: 3 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, none are 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ see Lemma 0.13
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.7: 2 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, one is 
+\begin_inset Formula $\le-\alpha_{1234}$
+\end_inset
+
+: see Lemma 0.10
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.8: 3 or all 4 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\le-\alpha_{1234}:$
+\end_inset
+
+ See Lemma 0.15 
+\end_layout
+
+\begin_layout Subsubsection*
+Case 2.9: All 4 of 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ are in
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $[-\alpha_{1234},0]$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, the lowest two 
+\begin_inset Formula $\alpha_{ijk}$
+\end_inset
+
+ sum to 
+\begin_inset Formula $\ge-\alpha_{1234}:$
+\end_inset
+
+ See Lemma 0.14 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\lang british
+\begin_inset Note Note
+status open
 
 \begin_layout Subsection*
 Case 1:
@@ -548,7 +2023,7 @@ Case 1:
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 b_{a}\left(\alpha_{1234}\left(\sum_{i}b_{i}-3\right)+\sum_{i}\alpha_{i}\left(\sum_{j}b_{j}-2\right)\right)
@@ -585,7 +2060,7 @@ Case 2.1.1:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
  & b_{a}\left(\alpha_{123}\left(-b_{1}+b_{2}+b_{3}\right)+\alpha_{234}\left(b_{2}+b_{3}-b_{4}\right)+\alpha_{134}\left(b_{1}-b_{3}+b_{4}-1\right)+\alpha_{124}\left(b_{1}-b_{2}+b_{4}-1\right)+\alpha_{1234}\left(b_{1}+b_{4}-1\right)\right)\\
@@ -608,7 +2083,7 @@ Case 2.1.2:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
  & b_{a}\left(\alpha_{123}\left(b_{1}-b_{2}-b_{3}\right)+\alpha_{234}\left(-b_{2}-b_{3}+b_{4}\right)+\alpha_{134}\left(1-b_{1}+b_{3}-b_{4}\right)+\alpha_{124}\left(1-b_{1}+b_{2}-b_{4}\right)+\alpha_{1234}\left(1-b_{1}-b_{4}\right)\right)\\
@@ -652,7 +2127,7 @@ Case 2.2.1.1:
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{align}
  & b_{a}\left(\alpha_{123}\left(-b_{1}+b_{2}+b_{3}\right)+\alpha_{234}\left(b_{2}+b_{3}-b_{4}\right)+\alpha_{134}\left(b_{1}-b_{3}+b_{4}-1\right)+\alpha_{124}\left(b_{1}-b_{2}+b_{4}-1\right)+\alpha_{1234}\left(b_{1}+b_{4}-1\right)\right)\\
@@ -756,6 +2231,11 @@ Case 2.3.1:
 \bar under
 Case 2.3.2:
 \begin_inset Formula $\,\,\,\nicefrac{-\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
