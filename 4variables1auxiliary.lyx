@@ -142,7 +142,7 @@ We prove that any function whose input is 4 binary variables and whose output
  is a real number, is perfectly equivalent to a function whose input is
  5 binary variables and is minimized over the new variable.
  Our proof is constructive, so we provide quadratic functions that quadratize
- any 4-variable function, but there exists 8 different classes of 4-variable
+ any 4-variable function, but there exists 7 different classes of 4-variable
  functions that each have their own 5-variable quadratization formula.
  Since we provide `perfect' quadratizations, we can apply these formulas
  to any 4-variable subset of an 
