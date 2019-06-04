@@ -532,7 +532,7 @@ We prove the theorem by providing an explicit quadratization for various
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{234}b_{2}b_{3}b_{4}+\alpha_{134}b_{1}b_{3}b_{4}+\alpha_{124}b_{1}b_{2}b_{4}.
+\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{234}b_{2}b_{3}b_{4}+\alpha_{134}b_{1}b_{3}b_{4}+\alpha_{124}b_{1}b_{2}b_{4}.\label{eq:general4variable}
 \end{equation}
 
 \end_inset
@@ -582,7 +582,7 @@ An even number
 \begin_inset Formula $\ge-\nicefrac{\alpha_{1234}}{2}$
 \end_inset
 
-: See Lemma 0.1.
+.
 \end_layout
 
 \begin_layout Standard
@@ -640,20 +640,7 @@ Case 2.1:
 \begin_inset Formula $[-\alpha_{1234},0]$
 \end_inset
 
-: 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-See Lemma 0.2
+.
 \end_layout
 
 \begin_layout Standard
@@ -689,20 +676,7 @@ Case 2.2:
 \begin_inset Formula $[-\alpha_{1234},0]$
 \end_inset
 
-: 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-See Lemma 0.6
+.
 \end_layout
 
 \begin_layout Standard
@@ -768,20 +742,7 @@ Case 2.3:
 \uwave off
 \noun off
 \color none
-: 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-See Lemma 0.10
+.
 \end_layout
 
 \begin_layout Standard
@@ -839,10 +800,10 @@ Case 2.4:
 \end_inset
 
  sum to 
-\begin_inset Formula $\ge-\alpha_{1234}:$
+\begin_inset Formula $\ge-\alpha_{1234}$
 \end_inset
 
- see Lemma 0.11
+.
 \end_layout
 
 \begin_layout Standard
@@ -900,10 +861,10 @@ Case 2.5:
 \end_inset
 
  sum to 
-\begin_inset Formula $\le-\alpha_{1234}:$
+\begin_inset Formula $\le-\alpha_{1234}$
 \end_inset
 
- see Lemma 0.12
+.
 \end_layout
 
 \begin_layout Standard
@@ -961,10 +922,10 @@ Case 2.6:
 \end_inset
 
  sum to 
-\begin_inset Formula $\ge-\alpha_{1234}:$
+\begin_inset Formula $\ge-\alpha_{1234}$
 \end_inset
 
- see Lemma 0.13
+.
 \end_layout
 
 \begin_layout Standard
@@ -1018,10 +979,11 @@ Case 2.7:
 \end_inset
 
  sum to 
-\begin_inset Formula $\ge-\alpha_{1234}:$
+\begin_inset Formula $\ge-\alpha_{1234}$
 \end_inset
 
- See Lemma 0.14 
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1075,15 +1037,543 @@ Case 2.8:
 \end_inset
 
  sum to 
-\begin_inset Formula $\le-\alpha_{1234}:$
+\begin_inset Formula $\le-\alpha_{1234}$
 \end_inset
 
- See Lemma 0.15 
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 1): If 
+\begin_inset Formula $\alpha_{1234}\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha_{ijk}\ge-\frac{\alpha_{1234}}{2}$
+\end_inset
+
+ , then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+is exactly the same as the following function when minimized over the auxiliary
+ variable 
+\begin_inset Formula $b_{a}$
+\end_inset
+
+:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left(3\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{lmn}\alpha_{lmn}\sum_{ij\notin lmn}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum_{jkl\ne i}\alpha_{jkl}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 2.1): If 
+\begin_inset Formula $\alpha_{ijkl}\le0$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{ijk}\le0$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+b_{a}\left(\alpha_{1234}\left(\sum_{i}b_{i}-3\right)+\sum_{ijk}\alpha_{ijk}\left(\sum_{j\in ijk}b_{j}-2\right)\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 2.2): If 
+\begin_inset Formula $\alpha_{1234}\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{234},\alpha_{134},\alpha_{124}\ge0$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Case1Quadratization"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 2.3): If 
+\begin_inset Formula $\alpha_{123}\le-\alpha_{1234}$
+\end_inset
+
+ and 
+\begin_inset Formula $-\frac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & \alpha_{123}\left(-b_{1}+b_{1}b_{2}+b_{1}b_{3}\right)+\alpha_{234}\left(-b_{4}+b_{2}b_{4}+b_{3}b_{4}\right)+\left(\alpha_{134}+\alpha_{124}+\alpha_{1234}\right)b_{1}b_{4}\\
++ & b_{a}\left(\alpha_{123}\left(b_{1}-b_{2}-b_{3}\right)+\alpha_{234}\left(-b_{2}-b_{3}+b_{4}\right)+\alpha_{134}\left(1-b_{1}+b_{3}-b_{4}\right)+\alpha_{124}\left(1-b_{1}+b_{2}-b_{4}\right)+\alpha_{1234}\left(1-b_{1}-b_{4}\right)\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 2.4): If 
+\begin_inset Formula $\alpha_{123}\le-\alpha_{1234}$
+\end_inset
+
+ and 
+\begin_inset Formula $-\frac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by:
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset Formula 
+\begin{equation}
+\sum_{ijk}\alpha_{ijk}\left(1-\sum_{i\in ijk}b_{i}+\sum_{ij\in ijk}b_{i}b_{j}\right)+\alpha_{1234}\left(3-2\sum_{i}b_{i}+\sum_{ij}b_{i}b_{j}\right)+b_{a}\left(\sum_{ijk}\alpha_{ijk}\left(\sum_{l\in ijk}b_{l}-1\right)+\alpha_{1234}\left(2\sum_{i}b_{i}-3\right)\right).\label{eq:case2.4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 2.5): If 
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{234}\le0\le\alpha_{124}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{234}\le\alpha_{134}\le\alpha_{124}$
+\end_inset
+
+, and 
+\begin_inset Formula $\alpha_{123}+\alpha_{234}\le-\alpha_{1234}$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & \sum_{ijk=\substack{123,\\
+423
+}
+}\alpha_{ijk}\left(b_{i}b_{j}+b_{i}b_{k}-b_{i}\right)+\left(\alpha_{134}+\alpha_{124}+\alpha_{1234}\right)b_{1}b_{4}\\
+ & +b_{a}\left(\sum_{ijk=\substack{123,\\
+423
+}
+}\alpha_{ijk}\left(b_{i}-b_{j}-b_{k}\right)+\sum_{ijk=\substack{134,\\
+124
+}
+}\left(1-b_{i}+b_{j}-b_{k}\right)+\alpha_{ijkl}\left(1-b_{1}-b_{4}\right)\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 2.6): If 
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{123}+\alpha_{234}\le-\alpha_{1234}$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:case2.4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 2.7): If 
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le\alpha_{124}\le0$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{123}+\alpha_{234}\ge-\alpha_{1234}$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\sum_{ijk}\alpha_{ijk}\sum_{lm\in ijk}b_{l}b_{m}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+b_{a}\left(\sum_{ijk}\alpha_{ijk}\left(1-\sum_{l\in ijk}b_{l}\right)+\alpha_{1234}\left(3-2\sum_{i}b_{i}\right)\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Lemma (Case 2.8): If 
+\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le\alpha_{124}\le0$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{123}+\alpha_{234}\le-\alpha_{1234}$
+\end_inset
+
+, then Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ is perfectly quadratized by:
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Looks funny to write 
+\begin_inset Quotes eld
+\end_inset
+
+423
+\begin_inset Quotes erd
+\end_inset
+
+ instead of 
+\begin_inset Quotes eld
+\end_inset
+
+234
+\begin_inset Quotes erd
+\end_inset
+
+ but that's to get the sign right for 
+\begin_inset Formula $-b_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+ & \sum_{ijk=\substack{123,\\
+423
+}
+}\alpha_{ijk}\left(b_{j}+b_{k}+b_{i}b_{j}+b_{i}b_{k}\right)+\sum_{ijk=\substack{134,\\
+124
+}
+}\alpha_{ijk}\left(1-b_{i}+b_{j}-b_{k}+b_{i}b_{k}\right)+\alpha_{1234}\left(1-b_{1}-b_{4}+b_{1}b_{4}\right)\\
+ & +b_{a}\left(\sum_{ijk=\substack{123,\\
+423
+}
+}\alpha_{ijk}\left(b_{j}+b_{k}-b_{i}\right)+\sum_{ijk=\substack{134,\\
+124
+}
+}\left(b_{i}-b_{j}+b_{k}-1\right)+\alpha_{ijkl}\left(b_{1}+b_{4}-1\right)\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100col%"
+height "1pt"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Subsection*
 Case 1: An even number (2 or 4) of 
@@ -1574,7 +2064,7 @@ height "1pt"
 
 \begin_layout Subsubsection*
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Subsubsection*
 Case 2.1: 0 of 
