@@ -1101,7 +1101,7 @@ is exactly the same as the following function when minimized over the auxiliary
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left(3\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{lmn}\alpha_{lmn}\sum_{ij\notin lmn}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum_{jkl\ne i}\alpha_{jkl}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
+\left(3\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{lmn}\alpha_{lmn}\sum_{ij\subset lmn}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum_{jkl\ni i}\alpha_{jkl}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
 \end{equation}
 
 \end_inset
@@ -1149,7 +1149,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-b_{a}\left(\alpha_{1234}\left(\sum_{i}b_{i}-3\right)+\sum_{ijk}\alpha_{ijk}\left(\sum_{j\in ijk}b_{j}-2\right)\right).
+b_{a}\left(\alpha_{1234}\left(\sum_{i}b_{i}-3\right)+\sum_{ijk}\alpha_{ijk}\left(\sum_{l\in ijk}b_{l}-2\right)\right).
 \end{equation}
 
 \end_inset
@@ -1274,11 +1274,7 @@ height "1pt"
 
 \series bold
 Lemma (Case 2.4): If 
-\begin_inset Formula $\alpha_{123}\le-\alpha_{1234}$
-\end_inset
-
- and 
-\begin_inset Formula $-\frac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
+\begin_inset Formula $-\alpha_{1234}\le \alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{234}\le\alpha_{134}\le0\le\alpha_{124}$
 \end_inset
 
 , then Eq.
@@ -1300,7 +1296,7 @@ noprefix "false"
 \size small
 \begin_inset Formula 
 \begin{equation}
-\sum_{ijk}\alpha_{ijk}\left(1-\sum_{i\in ijk}b_{i}+\sum_{ij\in ijk}b_{i}b_{j}\right)+\alpha_{1234}\left(3-2\sum_{i}b_{i}+\sum_{ij}b_{i}b_{j}\right)+b_{a}\left(\sum_{ijk}\alpha_{ijk}\left(\sum_{l\in ijk}b_{l}-1\right)+\alpha_{1234}\left(2\sum_{i}b_{i}-3\right)\right).\label{eq:case2.4}
+\sum_{ijk}\alpha_{ijk}\left(1-\sum_{l\in ijk}b_{l}+\sum_{lm\subset ijk}b_{l}b_{m}\right)+\alpha_{1234}\left(3-2\sum_{i}b_{i}+\sum_{ij}b_{i}b_{j}\right)+b_{a}\left(\sum_{ijk}\alpha_{ijk}\left(\sum_{l\in ijk}b_{l}-1\right)+\alpha_{1234}\left(2\sum_{i}b_{i}-3\right)\right).\label{eq:case2.4}
 \end{equation}
 
 \end_inset
@@ -1362,7 +1358,7 @@ noprefix "false"
 }\alpha_{ijk}\left(b_{i}-b_{j}-b_{k}\right)+\sum_{ijk=\substack{134,\\
 124
 }
-}\left(1-b_{i}+b_{j}-b_{k}\right)+\alpha_{ijkl}\left(1-b_{1}-b_{4}\right)\right).
+}\alpha_{ijk} \left(1-b_{i}+b_{j}-b_{k}\right)+\alpha_{ijkl}\left(1-b_{1}-b_{4}\right)\right).
 \end{align}
 
 \end_inset
@@ -1458,7 +1454,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\sum_{ijk}\alpha_{ijk}\sum_{lm\in ijk}b_{l}b_{m}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+b_{a}\left(\sum_{ijk}\alpha_{ijk}\left(1-\sum_{l\in ijk}b_{l}\right)+\alpha_{1234}\left(3-2\sum_{i}b_{i}\right)\right).
+\sum_{ijk}\alpha_{ijk}\sum_{lm\subset ijk}b_{l}b_{m}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+b_{a}\left(\sum_{ijk}\alpha_{ijk}\left(1-\sum_{l\in ijk}b_{l}\right)+\alpha_{1234}\left(3-2\sum_{i}b_{i}\right)\right).
 \end{equation}
 
 \end_inset
@@ -1551,7 +1547,7 @@ Looks funny to write
 }\alpha_{ijk}\left(b_{j}+b_{k}-b_{i}\right)+\sum_{ijk=\substack{134,\\
 124
 }
-}\left(b_{i}-b_{j}+b_{k}-1\right)+\alpha_{ijkl}\left(b_{1}+b_{4}-1\right)\right)
+}\left(b_{i}-b_{j}+b_{k}-1\right)+\alpha_{1234}\left(b_{1}+b_{4}-1\right)\right)
 \end{align}
 
 \end_inset
