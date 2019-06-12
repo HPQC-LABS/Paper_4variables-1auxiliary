@@ -2192,7 +2192,7 @@ is exactly the same as the following function when minimized over the auxiliary
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left(3\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{ij}\sum_{ijk}\alpha_{ijk}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
+\left(3\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{ij}\sum_{k\notin ij}\alpha_{ijk}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum_{jk\not\ni i}\alpha_{ijk}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
 \end{equation}
 
 \end_inset
@@ -2288,7 +2288,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
--\sum_{i}\alpha_{i23}b_{i}+\sum_{i=1,4}\sum_{j=2,3}\alpha_{i23}b_{i}b_{j}+\left(\alpha_{134}+\alpha_{124}\right)b_{1}b_{4}+\sum_{i}\alpha_{i23}\left(b_{i}-b_{2}-b_{3}\right)b_{a}+\sum_{i}\alpha_{1i4}\left(1-b_{1}+b_{i}-b_{4}\right)b_{a}.
+-\sum_{i}\alpha_{i23}b_{i}+\sum_{i=1,4}\sum_{j=2,3}\alpha_{i23}b_{i}b_{j}+\left(\alpha_{134}+\alpha_{124}+\alpha_{1234}\right)b_{1}b_{4}+\sum_{i}\alpha_{i23}\left(b_{i}-b_{2}-b_{3}\right)b_{a}+\sum_{i}\alpha_{1i4}\left(1-b_{1}+b_{i}-b_{4}\right)b_{a}+\alpha_{1234}(1-b_{1}-b_{4}).
 \end{equation}
 
 \end_inset
