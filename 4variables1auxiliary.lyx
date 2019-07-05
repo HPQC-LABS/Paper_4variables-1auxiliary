@@ -199,6 +199,14 @@ or filter?
 \end_inset
 
 ) 
+\lang english
+
+\begin_inset Formula $>0$
+\end_inset
+
+
+\lang british
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Ishikawa2011,Fix2011"
@@ -425,21 +433,40 @@ literal "false"
 \end_inset
 
  auxiliary variables.
- Unfortunately those functions are either extremely obscure functions that
- would rarely come up in a real-world problem, or they are just monomials
- (meaning that for a real-world problem containing many terms, each of these
- terms would be quadratized separately, with 
+ For many functions this can still be very costly though, because for example,
+ quadratizing each monomial term with 
+\begin_inset Formula $\log_{2}(k)-1$
+\end_inset
+
+ auxiliary variables can mean the new optimization problem has far more
+ variables than the original one.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+Unfortunately those functions are either extremely obscure functions that
+ would rarely come up in a real-world problem.
+ , or they are just monomials (meaning that for a real-world problem containing
+ many terms, each of these terms would be quadratized separately, with 
 \begin_inset Formula $\log_{2}(k)-1$
 \end_inset
 
  new auxiliary variables being added each time, and adding up to a potentially
  untractable number of total variables in the quadratic optimization problem).
  
-\begin_inset Newline newline
+\end_layout
+
 \end_inset
 
 
 \lang english
+
+\begin_inset Newline newline
+\end_inset
+
 
 \begin_inset VSpace -2.5mm
 \end_inset
@@ -586,10 +613,6 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -605,14 +628,18 @@ All possible cases of 4-variable functions.
 \begin_inset Tabular
 <lyxtabular version="3" rows="14" columns="5">
 <features tabularvalignment="middle">
-<column alignment="right" valignment="top">
-<column alignment="right" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="0pt">
-<column alignment="right" valignment="top" width="4cm">
-<row topspace="2mm" bottomspace="2mm">
-<cell multicolumn="1" alignment="left" valignment="top" bottomline="true" usebox="none">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="right" valignment="top" width="1.75cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
 
 \begin_layout Plain Layout
 \begin_inset Formula $-\alpha_{1234}$
@@ -762,35 +789,53 @@ All possible cases of 4-variable functions.
 \end_layout
 
 \end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
-\begin_inset Text
 
-\begin_layout Plain Layout
+
+\begin_inset Formula $\alpha_{ijk}\le-\alpha_{1234}$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{ijk}\le-\frac{\alpha_{1234}}{2}$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell multicolumn="2" alignment="center" valignment="top" bottomline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $-\frac{\alpha_{1234}}{2}\le\alpha_{ijk}\le0$
+\end_inset
+
 
 \end_layout
 
 \end_inset
 </cell>
-<cell multicolumn="2" alignment="right" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0\le\alpha_{ijk}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -828,7 +873,7 @@ All possible cases of 4-variable functions.
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -851,7 +896,7 @@ Lemma 1
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -860,7 +905,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -869,7 +914,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -881,7 +926,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -893,7 +938,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="right" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -934,7 +979,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -957,7 +1002,7 @@ Lemma 8
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -969,7 +1014,7 @@ Lemma 8
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -978,7 +1023,7 @@ Lemma 8
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -987,7 +1032,7 @@ Lemma 8
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -999,12 +1044,22 @@ Lemma 8
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 2 and substituting 
+Lemma 2
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ and substituting 
 \begin_inset Formula $b_{4}\mapsto1-b_{4}$
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -1044,7 +1099,7 @@ Lemma 2 and substituting
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1100,7 +1155,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1116,14 +1171,14 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4 & Lemma 5
+Lemma 4, 5
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1135,7 +1190,7 @@ Lemma 4 & Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1144,7 +1199,7 @@ Lemma 4 & Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1156,7 +1211,7 @@ Lemma 4 & Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1168,12 +1223,22 @@ Lemma 4 & Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 8 and substituing 
+Lemma 8
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ and substituing 
 \begin_inset Formula $b_{3}\mapsto1-b_{3},b_{4}\mapsto1-b_{4}$
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -1213,7 +1278,7 @@ Lemma 8 and substituing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1269,7 +1334,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1285,14 +1350,14 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4 & Lemma 5
+Lemma 4, 5
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1304,7 +1369,7 @@ Lemma 4 & Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1313,7 +1378,7 @@ Lemma 4 & Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1325,7 +1390,7 @@ Lemma 4 & Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1337,7 +1402,7 @@ Lemma 4 & Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1378,7 +1443,7 @@ Lemma 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1431,7 +1496,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1451,7 +1516,7 @@ Lemma 6
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1463,7 +1528,7 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1472,7 +1537,7 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1484,7 +1549,7 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1493,7 +1558,7 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="right" valignment="top" usebox="none">
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2027,10 +2092,6 @@ Case 2.8:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newline newline
-\end_inset
-
-
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -2183,7 +2244,10 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
--\sum_{i}\alpha_{12i}b_{i}+\sum_{i=3,4}\sum_{j=1,2}\alpha_{12i}b_{i}b_{j}+\left(\alpha_{134}+\alpha_{234}+\alpha_{1234}\right)b_{3}b_{4}+\sum_{i}\alpha_{12i}\left(b_{i}-b_{1}-b_{2}\right)b_{a}+\sum_{i}\alpha_{i34}\left(1-b_{3}+b_{i}-b_{4}\right)b_{a}+\alpha_{1234}(1-b_{3}-b_{4}).
+-\sum_{i}\alpha_{12i}b_{i}+\sum_{\substack{i=3,4\\
+j=1,2
+}
+}\alpha_{12i}b_{i}b_{j}+\left(\alpha_{134}+\alpha_{234}+\alpha_{1234}\right)b_{3}b_{4}+\sum_{i}\alpha_{12i}\left(b_{i}-b_{1}-b_{2}\right)b_{a}+\sum_{i}\alpha_{i34}\left(1-b_{3}+b_{i}-b_{4}\right)b_{a}+\alpha_{1234}(1-b_{3}-b_{4}).
 \end{equation}
 
 \end_inset
