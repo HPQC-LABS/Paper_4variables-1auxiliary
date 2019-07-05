@@ -484,7 +484,16 @@ This motivated us to look for quadratizations that are compact, but also
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
@@ -603,7 +612,7 @@ First we reduce to the case where
 \uwave default
 \noun default
 \color inherit
- Then we will prove 7 Lemmas which cover all such cases:
+ Then we will prove 7 Lemmas which cover all such cases.
 \end_layout
 
 \begin_layout Standard
@@ -2092,6 +2101,13 @@ Case 2.8:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -3040,18 +3056,6 @@ Case 2.9: All four of
 
  See Lemma 0.14 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
 
 \end_inset
 
