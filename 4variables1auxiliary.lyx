@@ -2170,6 +2170,25 @@ f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right) & \equiv\alpha_{1234}b_{
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+In particular if alpha_123 <= -alpha_1234 / 2 then alpha_123' >= -alpha_1234
+ / 2, and also if alpha_123 >= -alpha_1234 / 2 then alpha_123' <= -alpha_1234
+ / 2.
+ So if there are at least two cubic coefficients less than -alpha_1234 /
+ 2, then we can flip two bits and this will change two cubic coefficients
+ less than -alpha_1234 / 2 to greater than -alpha_1234 / 2, so we can guarantee
+ there is at most one cubic coefficient less than -alpha_1234 / 2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset line
 LatexCommand rule
 offset "0.5ex"
@@ -2226,7 +2245,7 @@ is exactly the same as the following function when minimized over the auxiliary
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left(3\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{ij}\sum_{k\notin ij}\alpha_{ijk}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum_{jk\not\ni i}\alpha_{ijk}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
+\left(3\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{ij}\sum_{k\notin ij}\alpha_{ijk}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum_{jk,i\ne jk}\alpha_{ijk}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
 \end{equation}
 
 \end_inset
