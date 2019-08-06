@@ -1041,7 +1041,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 2
+Lemma 1
 \end_layout
 
 \end_inset
@@ -1094,6 +1094,9 @@ Lemma 2
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $b_{4}$
+\end_inset
+
 
 \end_layout
 
@@ -1104,24 +1107,8 @@ Lemma 2
 
 \begin_layout Plain Layout
 
-\color red
-Lemma 3
-\color inherit
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-and substituting 
-\begin_inset Formula $b_{4}\mapsto1-b_{4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\color black
+Lemma 2
 \end_layout
 
 \end_inset
@@ -1251,7 +1238,236 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{123}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{134},\alpha_{234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b_{3,}b_{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\color black
+Lemma 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{123,}\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{134},\alpha_{234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $b_{3,}b_{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lemma 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{123}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{134},\alpha_{234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $b_{3,}b_{4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lemma 1
 \end_layout
 
 \end_inset
@@ -1262,98 +1478,6 @@ Lemma 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\alpha_{123}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha_{124}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha_{134},\alpha_{234}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\color red
-Lemma 2
-\color inherit
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-and substituing 
-\begin_inset Formula $b_{3}\mapsto1-b_{3},b_{4}\mapsto1-b_{4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
 \begin_inset Formula $\alpha_{123,}\alpha_{124}$
 \end_inset
 
@@ -1362,7 +1486,7 @@ and substituing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1371,7 +1495,16 @@ and substituing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1383,7 +1516,7 @@ and substituing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1408,166 +1541,7 @@ and substituing
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Lemma 1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha_{123}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha_{124}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha_{134},\alpha_{234}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $b_{3,}b_{4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Lemma 1
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha_{123,}\alpha_{124}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha_{134},\alpha_{234}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\begin_inset Formula $b_{3,}b_{4}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1714,14 +1688,14 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 4
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1733,7 +1707,7 @@ Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1742,7 +1716,7 @@ Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1754,7 +1728,7 @@ Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1766,7 +1740,7 @@ Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -1775,11 +1749,11 @@ Lemma 5
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -2103,7 +2077,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 4
 \end_layout
 
 \end_inset
@@ -2184,7 +2158,7 @@ Lemma 5
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -2265,14 +2239,14 @@ Lemma 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 2
+Lemma 1
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2284,7 +2258,7 @@ Lemma 2
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2293,7 +2267,7 @@ Lemma 2
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2302,7 +2276,7 @@ Lemma 2
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2314,7 +2288,7 @@ Lemma 2
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2339,11 +2313,11 @@ Lemma 2
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 3
+Lemma 2
 \end_layout
 
 \end_inset
@@ -2464,14 +2438,14 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 6
+Lemma 5
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2483,7 +2457,7 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2492,7 +2466,7 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2504,7 +2478,7 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2513,7 +2487,7 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2522,11 +2496,11 @@ Lemma 6
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 4
 \end_layout
 
 \end_inset
@@ -2841,7 +2815,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 6
+Lemma 5
 \end_layout
 
 \end_inset
@@ -2922,7 +2896,7 @@ Lemma 6
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 4
 \end_layout
 
 \end_inset
@@ -3003,7 +2977,7 @@ Lemma 5
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -3081,7 +3055,7 @@ Lemma 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 2
+Lemma 1
 \end_layout
 
 \end_inset
@@ -4039,9 +4013,9 @@ noprefix "false"
 \begin_inset Formula 
 \begin{align}
  & =\alpha_{1234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}-b_{1}b_{3}b_{4}+b_{1}b_{2}b_{3}b_{4}\right)+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}+b_{1}b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}+b_{1}b_{2}b_{4}\right)\\
- & +\alpha_{134}\left(b_{3}b_{4}-b_{1}b_{3}b_{4}\right)+\alpha_{234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}\right)\\
+ & \quad+\alpha_{134}\left(b_{3}b_{4}-b_{1}b_{3}b_{4}\right)+\alpha_{234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}\right)\\
  & =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\left(-\alpha_{134}-\alpha_{1234}\right)b_{1}b_{3}b_{4}+\left(-\alpha_{234}-\alpha_{1234}\right)b_{2}b_{3}b_{4}\\
- & +\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}\\
+ & \quad+\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}\\
  & =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\bar{\alpha}_{134}b_{1}b_{3}b_{4}+\bar{\alpha}_{234}b_{2}b_{3}b_{4}+f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right)
 \end{align}
 
@@ -4136,14 +4110,22 @@ height "1pt"
 
 \series bold
 Lemma 1: If 
-\begin_inset Formula $\alpha_{1234}\ge0$
+\begin_inset Formula $\alpha_{1234}\ge0,$
 \end_inset
 
-, 
+ and either 
 \begin_inset Formula $\alpha_{ijk}\ge-\frac{\alpha_{1234}}{2}$
 \end_inset
 
- , then Eq.
+ for all 
+\begin_inset Formula $ijk,$
+\end_inset
+
+ or 
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le0\le\alpha_{234}\le\alpha_{134}\le\alpha_{124},$
+\end_inset
+
+ then Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4201,53 +4183,6 @@ height "1pt"
 
 \series bold
 Lemma 2: If 
-\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}$
-\end_inset
-
- and 
-\begin_inset Formula $0\le\alpha_{234}\le\alpha_{134}\le\alpha_{124},$
-\end_inset
-
- then Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:general4variable"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is perfectly quadratized by 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:Case1Quadratization"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0.5ex"
-width "100col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Lemma 3: If 
 \begin_inset Formula $\alpha_{1234}\le0$
 \end_inset
 
@@ -4295,8 +4230,12 @@ height "1pt"
 \begin_layout Standard
 
 \series bold
-Lemma 4: If 
-\begin_inset Formula $\alpha_{123}\le-\alpha_{1234}$
+Lemma 3: If 
+\begin_inset Formula $\alpha_{1234}\ge0,$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha_{123}\le-\alpha_{1234},$
 \end_inset
 
  and 
@@ -4367,8 +4306,12 @@ height "1pt"
 \begin_layout Standard
 
 \series bold
-Lemma 5: If 
-\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0$
+Lemma 4: If 
+\begin_inset Formula $\alpha_{1234}\ge0,$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
 \end_inset
 
  and 
@@ -4448,8 +4391,12 @@ height "1pt"
 \begin_layout Standard
 
 \series bold
-Lemma 6: If 
-\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0$
+Lemma 5: If 
+\begin_inset Formula $\alpha_{1234}\ge0,$
+\end_inset
+
+ 
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
 \end_inset
 
  and 
