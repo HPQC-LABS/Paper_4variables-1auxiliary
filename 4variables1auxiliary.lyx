@@ -393,7 +393,7 @@ literal "false"
 ) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Anthony2014,Tanburn2015a,Okada2015s,Anthony2015,Anthony2016,Leib2016,Rocchetto2016,Anthony2017,Chancellor2017,Boros2018,Boros2018a"
+key "Anthony2014,Ishikawa2014,Boros2014,Tanburn2015a,Okada2015s,Anthony2015,Anthony2016,DelasCuevasGemmaandCubitt2016,Leib2016,Rocchetto2016,Anthony2017,Chancellor2017,Boros2018,Boros2018a,Dridi2017,Dattani2019"
 literal "false"
 
 \end_inset
