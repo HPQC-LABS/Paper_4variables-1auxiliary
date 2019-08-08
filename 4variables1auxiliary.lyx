@@ -7045,10 +7045,114 @@ Case 2.8:
 \end_layout
 
 \begin_layout Standard
+\noindent
 \begin_inset Newpage newpage
 \end_inset
 
+If: 
+\begin_inset Formula $\alpha_{123}\le-\alpha_{1234}$
+\end_inset
 
+ & 
+\begin_inset Formula $\alpha_{124}\ge$
+\end_inset
+
+0
+\begin_inset Newline newline
+\end_inset
+
+or: 
+\begin_inset Formula $\alpha_{134}\le-\alpha_{1234}$
+\end_inset
+
+& 
+\begin_inset Formula $\alpha_{234}\ge0$
+\end_inset
+
+, then Lemma 2
+\begin_inset Newline newline
+\end_inset
+
+Else if: 
+\begin_inset Formula $\alpha_{123}\le-\alpha_{1234}$
+\end_inset
+
+ & 
+\begin_inset Formula $\alpha_{134}\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+or: 
+\begin_inset Formula $\alpha_{124}\le-\alpha_{1234}$
+\end_inset
+
+ & 
+\begin_inset Formula $\alpha_{234}\ge0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+or: 
+\begin_inset Formula $\alpha_{134}\le-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+or: 
+\begin_inset Formula $\alpha_{124}\ge0$
+\end_inset
+
+, then Lemma 1
+\end_layout
+
+\begin_layout Standard
+\noindent
+If: 
+\begin_inset Formula $\alpha_{123}\ge-\frac{\alpha_{1234}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+or: 
+\begin_inset Formula $\alpha_{234}\le-\frac{\alpha_{1234}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+or: 
+\begin_inset Formula $\alpha_{124}\le-\frac{\alpha_{1234}}{2}$
+\end_inset
+
+ & 
+\begin_inset Formula $\alpha_{134}\ge-\frac{\alpha_{1234}}{2}$
+\end_inset
+
+, then Lemma 1
+\end_layout
+
+\begin_layout Standard
+\noindent
+Else if: 
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{ijk}\le0$
+\end_inset
+
+, then Lemma 5
 \end_layout
 
 \begin_layout Standard
@@ -7335,7 +7439,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
--\sum_{i}\alpha_{12i}b_{i}+\sum_{\substack{i=3,4\\
+-\sum_{i}\alpha_{12i}b_{i}+\sum_{\substack{i\\
 j=1,2
 }
 }\alpha_{12i}b_{i}b_{j}+\left(\alpha_{134}+\alpha_{234}+\alpha_{1234}\right)b_{3}b_{4}+\sum_{i}\alpha_{12i}\left(b_{i}-b_{1}-b_{2}\right)b_{a}+\sum_{i}\alpha_{i34}\left(1-b_{3}+b_{i}-b_{4}\right)b_{a}+\alpha_{1234}(1-b_{3}-b_{4}).
@@ -7387,7 +7491,7 @@ Lemma 4: If
 \end_inset
 
  
-\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
+\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{234}\le0,$
 \end_inset
 
  and 
@@ -7443,9 +7547,33 @@ Looks funny to write
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
+ & \negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace-\negthinspace\negthinspace\negthinspace\sum_{i}\negthinspace\alpha_{12i}\negthinspace\left(\negthinspace b_{1}\negthinspace\negthinspace+\negthinspace b_{2}\negthinspace\right)\negthinspace+\negthinspace\negthinspace\negthinspace\sum_{\substack{i\\
+j=1,2
+}
+}\alpha_{12i}b_{i}b_{j}+\left(\alpha_{134}+\alpha_{234}+\alpha_{1234}\right)b_{3}b_{4}+\sum_{i}\alpha_{12i}\left(b_{i}-b_{1}-b_{2}\right)b_{a}+\sum_{i}\alpha_{i34}\left(1-b_{3}+b_{i}-b_{4}\right)b_{a}+\alpha_{1234}(1-b_{3}-b_{4})\\
+ & +\sum_{i}\alpha_{i34}\left(1+b_{i}-b_{3}-b_{4}\right)-\alpha_{1234}b_{a}\left(b_{3}+b_{4}-1\right)
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
  & \sum_{i=3,4}\alpha_{12i}\left(-b_{1}-b_{2}+b_{1}b_{i}+b_{2}b_{i}\right)+\sum_{i=1,2}\alpha_{i34}\left(1+b_{i}-b_{3}-b_{4}+b_{3}b_{4}\right)+\alpha_{1234}\left(1-b_{3}-b_{4}+b_{3}b_{4}\right)\\
  & +b_{a}\left(\sum_{i=3,4}\alpha_{12i}\left(b_{1}+b_{2}-b_{i}\right)+\sum_{i=1,2}\alpha_{i34}\left(-b_{i}+b_{3}+b_{4}-1\right)+\alpha_{1234}\left(b_{3}+b_{4}-1\right)\right)
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -7472,7 +7600,7 @@ Lemma 5: If
 \end_inset
 
  
-\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{234}\le0,$
 \end_inset
 
  and 
@@ -8659,6 +8787,32 @@ Case 2.3.2:
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang british
+Discussion
+\end_layout
+
+\begin_layout Subsection
+non-uniqueness
+\end_layout
+
+\begin_layout Subsection
+
+\lang british
+Gadget graphs
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Lemma 1,2 = 
+\begin_inset Formula $K_{5}$
 \end_inset
 
 
