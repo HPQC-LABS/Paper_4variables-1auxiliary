@@ -2695,7 +2695,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 4 & 5
 \end_layout
 
 \end_inset
@@ -3301,7 +3301,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 4 & 5
 \end_layout
 
 \end_inset
@@ -5514,7 +5514,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 4 & 5
 \end_layout
 
 \end_inset
@@ -5891,7 +5891,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 4 & 5
 \end_layout
 
 \end_inset
@@ -7491,7 +7491,7 @@ Lemma 4: If
 \end_inset
 
  
-\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{234}\le0,$
+\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
 \end_inset
 
  and 
@@ -7600,7 +7600,7 @@ Lemma 5: If
 \end_inset
 
  
-\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{234}\le0,$
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
 \end_inset
 
  and 
