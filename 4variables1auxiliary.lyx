@@ -1074,7 +1074,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\alpha_{1234}-\sum_{i}\left(\alpha_{12i}+\alpha_{1234}\right)b_{i}+\sum_{i}\alpha_{i34}b_{a}+\sum_{ijk}\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\right)b_{i}b_{a}-\sum_{i=3,4}\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\right)b_{i}b_{a}.
+\negthinspace\alpha_{1234}-\sum_{i}\negthinspace\left(\alpha_{12i}\negthinspace+\negthinspace\alpha_{1234}\right)\negthinspace b_{i}+\sum_{i}\negthinspace\alpha_{i34}b_{a}+\sum_{ijk}\negthinspace\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\negthinspace\negthinspace\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}-\sum_{i=3,4}\negthinspace\negthinspace\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}
 \end{equation}
 
 \end_inset
@@ -1271,10 +1271,48 @@ Looks funny to write
 
 \begin_layout Standard
 \begin_inset Formula 
+\begin{equation}
+\negthinspace\alpha_{1234}-\sum_{i}\negthinspace\left(\alpha_{12i}\negthinspace+\negthinspace\alpha_{1234}\right)\negthinspace b_{i}+\sum_{i}\negthinspace\alpha_{i34}b_{a}+\sum_{ijk}\negthinspace\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\negthinspace\negthinspace\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}-\sum_{i=3,4}\negthinspace\negthinspace\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -4mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-\sum_{i}\alpha_{12i}\left(b_{1}+b_{2}\right)-\sum_{i}\alpha_{i34}\left(b_{3}+b_{4}-1-b_{i}\right)-\alpha_{1234}\left(b_{3}+b_{4}-1\right)b_{a}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
 \begin{align}
- & \negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\alpha_{1234}-\negthinspace\negthinspace\negthinspace\sum_{i}\negthinspace\alpha_{12i}\negthinspace\left(\negthinspace b_{1}\negthinspace\negthinspace+\negthinspace b_{2}\negthinspace\right)\negthinspace+\sum_{i}\alpha_{i34}b_{a}+\sum_{ijk}\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\right)b_{i}b_{a}-\sum_{i=3,4}\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\right)b_{i}b_{a}\\
- & +\sum_{i}\alpha_{i34}\left(1+b_{i}-b_{3}-b_{4}\right)-\alpha_{1234}\left(b_{3}+b_{4}-1\right)b_{a}.
+ & \alpha_{1234}-\sum_{i}\left(\alpha_{12i}+\alpha_{1234}\right)b_{i}+\sum_{i}\alpha_{i34}b_{a}+\sum_{ijk}\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\right)b_{i}b_{a}-\sum_{i=3,4}\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\right)b_{i}b_{a}.\\
+ & -\sum_{i}\alpha_{12i}\left(b_{1}+b_{2}\right)-\sum_{i}\alpha_{i34}\left(b_{3}+b_{4}-1-b_{i}\right)-\alpha_{1234}\left(b_{3}+b_{4}-1\right)b_{a}.
 \end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
