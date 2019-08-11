@@ -620,9 +620,12 @@ Results
 \noindent
 
 \series bold
+\color blue
 \lang british
-Theorem 1: All 4-variable functions of binary variables with real-valued
- coefficients can be quadratized perfectly with only 1-auxiliary 
+Theorem 1: 
+\color black
+All 4-variable functions of binary variables with real-valued coefficients
+ can be quadratized perfectly with only 1-auxiliary 
 \begin_inset Note Note
 status open
 
@@ -650,6 +653,8 @@ with real-valued coefficient
 
 .
  
+\color inherit
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1461,6 +1466,633 @@ LatexCommand rule
 offset "0ex"
 width "104col%"
 height "1pt"
+
+\end_inset
+
+
+\begin_inset VSpace 2mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the Appendix, Lemmas 1-5 are each proven for their own specific conditions
+ on the coefficients 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ However with `bit-flipping' (a strategy described in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ishikawa2011"
+literal "false"
+
+\end_inset
+
+ and on Pg.
+ 27 of the current version of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dattani2019"
+literal "false"
+
+\end_inset
+
+) we can extend their applicability to more general conditions for which
+ a laborious proof was not peformed explicitly.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+Lemma 6: If one bit is flipped (
+\begin_inset Formula $b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1}$
+\end_inset
+
+) everywhere in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the function remains exactly the same except with 
+\begin_inset Formula $\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}\equiv....$
+\end_inset
+
+, and some extra quadratic terms: 
+\begin_inset Formula $\textcolor{blue}{\ensuremath{f_{{\rm quadratic,1}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}\equiv.....$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\emph on
+Proof:
+\emph default
+ We start with Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ but with every occurrence of 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ replaced by its flipped version:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1234}\bar{b}_{1}b_{2}b_{3}b_{4}+\alpha_{123}\bar{b}_{1}b_{2}b_{3}+\alpha_{124}\bar{b}_{1}b_{2}b_{4}+\alpha_{134}\bar{b}_{1}b_{3}b_{4}+\alpha_{234}b_{2}b_{3}b_{4}.\label{eq:1flip}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Expanding 
+\begin_inset Formula $\bar{b}_{1}$
+\end_inset
+
+ as 
+\begin_inset Formula $1-b_{1}$
+\end_inset
+
+, and completely expanding the expressions for each term of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1flip"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1234}..........\label{eq:1flipExpanded}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -14mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
++\,.....
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+We can now regroup everything in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1flipExpanded"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ such that it is back in the form of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, except with new coefficients for two of the terms, and some extra quadratics
+ terms:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1234}....
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
++\,\alpha_{1234}.....
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace -18mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+=\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}b_{1}b_{3}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}b_{2}b_{3}b_{4}+\textcolor{blue}{\ensuremath{f_{{\rm quadratic,1}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset VSpace -4mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length -6mm
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "104col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+
+\backslash
+noindent
+\end_layout
+
+\end_inset
+
+Lemma 7: If two bits are flipped (
+\begin_inset Formula $b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1},b_{2}\rightarrow\bar{b}_{2}\equiv1-b_{2}$
+\end_inset
+
+) everywhere in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, the function remains exactly the same except with 
+\begin_inset Formula $\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}\equiv-\left(\alpha_{134}+\alpha_{1234}\right),\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}\equiv-\left(\alpha_{234}+\alpha_{1234}\right)$
+\end_inset
+
+, and some extra quadratic terms: 
+\begin_inset Formula $\textcolor{blue}{\ensuremath{f_{{\rm quadratic,2}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}\equiv\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}.$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\emph on
+Proof:
+\emph default
+ We start with Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ but with every occurrence of 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{2}$
+\end_inset
+
+ replaced by their flipped versions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1234}\bar{b}_{1}\bar{b}_{2}b_{3}b_{4}+\alpha_{123}\bar{b}_{1}\bar{b}_{2}b_{3}+\alpha_{124}\bar{b}_{1}\bar{b}_{2}b_{4}+\alpha_{134}\bar{b}_{1}b_{3}b_{4}+\alpha_{234}\bar{b}_{2}b_{3}b_{4}.\label{eq:2flips}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Expanding 
+\begin_inset Formula $\bar{b}_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{b}_{2}$
+\end_inset
+
+ as 
+\begin_inset Formula $1-b_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $1-b_{2}$
+\end_inset
+
+ respectively, and completely expanding the expressions for each term of
+ Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2flips"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, we get:
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}-b_{1}b_{3}b_{4}+b_{1}b_{2}b_{3}b_{4}\right)+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}+b_{1}b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}+b_{1}b_{2}b_{4}\right)\label{eq:2flipsExpanded}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -14mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
++\,\alpha_{134}\left(b_{3}b_{4}-b_{1}b_{3}b_{4}\right)+\alpha_{234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+We can now regroup everything in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2flipsExpanded"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ such that it is back in the form of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, except with new coefficients for two of the terms, and some extra quadratics
+ terms:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}-\left(\alpha_{134}+\alpha_{1234}\right)b_{1}b_{3}b_{4}-\left(\alpha_{234}+\alpha_{1234}\right)b_{2}b_{3}b_{4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
++\,\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}.
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace -18mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+=\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}b_{1}b_{3}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}b_{2}b_{3}b_{4}+\textcolor{blue}{\ensuremath{f_{{\rm quadratic,2}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length -6mm
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "104col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 2mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can now regroup everything in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2flipsExpanded"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ such that it is back in the form of Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, except with new coefficients for two of the terms, and some extra quadratics
+ terms:
+\size scriptsize
+\color black
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This just shows that even with 
+\begin_inset Quotes eld
+\end_inset
+
+smallest
+\begin_inset Quotes erd
+\end_inset
+
+ font, it doesn't look better in fact it looks worse.
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\color black
+\begin_inset Formula 
+\begin{align}
+ & =\alpha_{1234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}-b_{1}b_{3}b_{4}+b_{1}b_{2}b_{3}b_{4}\right)+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}+b_{1}b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}+b_{1}b_{2}b_{4}\right)+\alpha_{134}\left(b_{3}b_{4}-b_{1}b_{3}b_{4}\right)+\alpha_{234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}\right)\\
+ & =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\left(-\alpha_{134}-\alpha_{1234}\right)b_{1}b_{3}b_{4}+\left(-\alpha_{234}-\alpha_{1234}\right)b_{2}b_{3}b_{4}+\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}\\
+ & =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\bar{\alpha}_{134}b_{1}b_{3}b_{4}+\bar{\alpha}_{234}b_{2}b_{3}b_{4}+f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right)
+\end{align}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\size default
+\color inherit
+where we have defined:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align}
+\bar{\alpha}_{134} & \equiv-\alpha_{134}-\alpha_{1234},\\
+\bar{\alpha}_{234} & \equiv-\alpha_{234}-\alpha_{1234},\\
+f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right) & \equiv\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -7894,99 +8526,6 @@ Else if:
 \end_inset
 
 , then Lemma 5
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Lemma 0: If a function of the form in Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:general4variable"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- can be perfectly quadratized, then the function obtained by flipping two
- bits in the original function, can also be perfectly quadratized.
- Here is how:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\alpha_{1234}\bar{b}_{1}\bar{b}_{2}b_{3}b_{4}+\alpha_{123}\bar{b}_{1}\bar{b}_{2}b_{3}+\alpha_{124}\bar{b}_{1}\bar{b}_{2}b_{4}+\alpha_{134}\bar{b}_{1}b_{3}b_{4}+\alpha_{234}\bar{b}_{2}b_{3}b_{4}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset VSpace -6mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
- & =\alpha_{1234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}-b_{1}b_{3}b_{4}+b_{1}b_{2}b_{3}b_{4}\right)+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}+b_{1}b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}+b_{1}b_{2}b_{4}\right)\\
- & \quad+\alpha_{134}\left(b_{3}b_{4}-b_{1}b_{3}b_{4}\right)+\alpha_{234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}\right)\\
- & =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\left(-\alpha_{134}-\alpha_{1234}\right)b_{1}b_{3}b_{4}+\left(-\alpha_{234}-\alpha_{1234}\right)b_{2}b_{3}b_{4}\\
- & \quad+\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}\\
- & =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\bar{\alpha}_{134}b_{1}b_{3}b_{4}+\bar{\alpha}_{234}b_{2}b_{3}b_{4}+f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right)
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size scriptsize
-\color black
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\size scriptsize
-\color black
-\begin_inset Formula 
-\begin{align}
- & =\alpha_{1234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}-b_{1}b_{3}b_{4}+b_{1}b_{2}b_{3}b_{4}\right)+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}+b_{1}b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}+b_{1}b_{2}b_{4}\right)+\alpha_{134}\left(b_{3}b_{4}-b_{1}b_{3}b_{4}\right)+\alpha_{234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}\right)\\
- & =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\left(-\alpha_{134}-\alpha_{1234}\right)b_{1}b_{3}b_{4}+\left(-\alpha_{234}-\alpha_{1234}\right)b_{2}b_{3}b_{4}+\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}\\
- & =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\bar{\alpha}_{134}b_{1}b_{3}b_{4}+\bar{\alpha}_{234}b_{2}b_{3}b_{4}+f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right)
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\size default
-\color inherit
-where we have defined:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\bar{\alpha}_{134} & \equiv-\alpha_{134}-\alpha_{1234},\\
-\bar{\alpha}_{234} & \equiv-\alpha_{234}-\alpha_{1234},\\
-f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right) & \equiv\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}.
-\end{align}
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
