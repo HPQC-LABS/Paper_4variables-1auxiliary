@@ -59,7 +59,7 @@
 \use_package undertilde 1
 \cite_engine natbib
 \cite_engine_type authoryear
-\biblio_style plain
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -922,7 +922,7 @@ is exactly the same as the following function when minimized over the auxiliary
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left(3\alpha_{1234}+\sum_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{ij}\sum_{k\notin ij}\alpha_{ijk}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum_{jk,i\ne jk}\alpha_{ijk}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
+\left(3\alpha_{1234}+\sum\nolimits_{ijk}\alpha_{ijk}\right)b_{a}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+\sum_{ij}\sum_{k\notin ij}\alpha_{ijk}b_{i}b_{j}-\sum_{i}\left(2\alpha_{1234}+\sum\nolimits_{jk,i\ne jk}\alpha_{ijk}\right)b_{i}b_{a}.\label{eq:Case1Quadratization}
 \end{equation}
 
 \end_inset
@@ -996,7 +996,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\left(\alpha_{1234}\left(\sum_{i}b_{i}-3\right)+\sum_{ijk}\alpha_{ijk}\left(\sum_{l\in ijk}b_{l}-2\right)\right)b_{a}.
+\bigg(\negthinspace\alpha_{1234}\left(\sum\nolimits_{i}b_{i}-3\right)+\sum_{ijk}\alpha_{ijk}\left(\sum\nolimits_{l\in ijk}b_{l}-2\right)\negthinspace\negthinspace\negthinspace\bigg)b_{a}.
 \end{equation}
 
 \end_inset
@@ -1074,8 +1074,34 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
+\alpha_{1234}-\sum_{i}\left(\alpha_{12i}+\alpha_{1234}\right)b_{i}+\sum_{i}\alpha_{i34}b_{a}+\sum_{ijk}\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\sum_{\substack{i=p,q\\
+p,q=1,2\,\text{or}\,3,4
+}
+}\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\left(\sum\nolimits_{\substack{j=r,s\\
+r,s=3,4\,\text{or}\,1,2
+}
+}\alpha_{pqj}-\alpha_{irs}\right)b_{i}b_{a}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
 \negthinspace\alpha_{1234}-\sum_{i}\negthinspace\left(\alpha_{12i}\negthinspace+\negthinspace\alpha_{1234}\right)\negthinspace b_{i}+\sum_{i}\negthinspace\alpha_{i34}b_{a}+\sum_{ijk}\negthinspace\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\negthinspace\negthinspace\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}-\sum_{i=3,4}\negthinspace\negthinspace\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1272,7 +1298,13 @@ Looks funny to write
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\negthinspace\alpha_{1234}-\sum_{i}\negthinspace\left(\alpha_{12i}\negthinspace+\negthinspace\alpha_{1234}\right)\negthinspace b_{i}+\sum_{i}\negthinspace\alpha_{i34}b_{a}+\sum_{ijk}\negthinspace\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\negthinspace\negthinspace\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}-\sum_{i=3,4}\negthinspace\negthinspace\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}
+\negthinspace\alpha_{1234}-\sum_{i}\negthinspace\left(\alpha_{12i}\negthinspace+\negthinspace\alpha_{1234}\right)\negthinspace b_{i}+\sum_{i}\negthinspace\alpha_{i34}b_{a}+\sum_{ijk}\negthinspace\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\sum_{\substack{i=p,q\\
+p,q=1,2\,\text{or}\,3,4
+}
+}\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\left(\sum\nolimits _{\substack{j=r,s\\
+r,s=3,4\,\text{or}\,1,2
+}
+}\alpha_{pqj}-\alpha_{irs}\right)b_{i}b_{a}
 \end{equation}
 
 \end_inset
@@ -1281,7 +1313,7 @@ Looks funny to write
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace -4mm
+\begin_inset VSpace -6mm
 \end_inset
 
 
@@ -1410,7 +1442,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\sum_{ijk}\alpha_{ijk}\sum_{lm\subset ijk}b_{l}b_{m}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+b_{a}\left(\sum_{ijk}\alpha_{ijk}\left(1-\sum_{l\in ijk}b_{l}\right)+\alpha_{1234}\left(3-2\sum_{i}b_{i}\right)\right).
+\sum_{ijk}\alpha_{ijk}\sum_{lm\subset ijk}b_{l}b_{m}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+b_{a}\left(\sum\nolimits_{ijk}\alpha_{ijk}\left(1-\sum\nolimits_{l\in ijk}b_{l}\right)+\alpha_{1234}\left(3-2\sum\nolimits_{i}b_{i}\right)\right).
 \end{equation}
 
 \end_inset
