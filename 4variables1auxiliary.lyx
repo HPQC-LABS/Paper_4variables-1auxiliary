@@ -19282,6 +19282,71 @@ share
 
 \end_layout
 
+\begin_layout Section
+
+\lang british
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+We wish to thank Elisabeth Rodríguez-Heck for helpful comments on an early
+ version of this paper.
+ Since any 4-variable real-valued function of binary variables 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+what about with complex coefficients?
+\end_layout
+
+\end_inset
+
+can be represented by Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (as proved by Hammer in 1963 and as Proposition 2 in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Boros2002"
+literal "false"
+
+\end_inset
+
+)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+P.L.
+ Hammer, I.
+ Rosenberg, S.
+ Rudeanu, On the determination of the minima of pseudo-Boolean functions,
+ Stud.
+ Cerc.
+ Mat.
+ 14 (1963) 359–364 (in Romanian).
+\end_layout
+
+\end_inset
+
+, our result applies to any such function, and not only the functions included
+ in the conditions of Theorem 1.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Note Note
 status open
