@@ -138,8 +138,9 @@ Cambridge University, Department of Mathematics, UK
 \begin_layout Abstract
 
 \lang british
-We prove that any function whose input is 4 binary variables and whose output
- is a real number, is perfectly equivalent to a 
+We prove that any function with real-valued coefficients, whose input is
+ 4 binary variables and whose output is a real number, is perfectly equivalent
+ to a 
 \emph on
 quadratic 
 \emph default
@@ -155,6 +156,19 @@ function whose input is 5 binary variables and is minimized over the new
 
 -variable function even if 
 \begin_inset Formula $n\gg4.$
+\end_inset
+
+ We provide a simple example function where the previous state-of-the-art
+ quadratization methods would require 15 auxiliary variables to perfectly
+ quadratize, whereas with the results of this paper, we only need 5 auxiliary
+ variables (so each application of our theorem saves 10 auxiliary variables).
+\lang english
+
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\begin_inset VSpace -2.5mm
 \end_inset
 
 
@@ -470,26 +484,19 @@ literal "false"
 
 \end_inset
 
- that sometimes the entire function of 
+ that sometimes a function of 
 \begin_inset Formula $n$
 \end_inset
 
- variables can be quadratized with only log
+ variables can entirely be quadratized with only log
 \begin_inset Formula $_{2}k-1$
 \end_inset
 
  auxiliary variables no matter how many terms and how many variables it
- contains (so a 44-variable degree-5 function with 1 million degree-5 terms
+ contains (so a 44-variable, degree-5 function with 1 million degree-5 terms
  would only need 2 auxiliary variables rather than 2 million!).
- However, it is only known how to do this very 
-\begin_inset Quotes eld
-\end_inset
-
-compact
-\begin_inset Quotes erd
-\end_inset
-
- quadratization for a very specific class of functions called 
+ However, it is only known how to do this very `compact' quadratization
+ for a very specific class of functions called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -509,7 +516,8 @@ at-least-
 \begin_inset Formula $k$
 \end_inset
 
-ON) functions, which includes the case of a single positive monomial term.
+ON) functions, which includes functions consisting of only a single positive
+ monomial term.
 \end_layout
 
 \begin_layout Standard
@@ -555,29 +563,14 @@ literal "false"
 
 \end_inset
 
- that it is possible to quadratize very large functions so compactly inspired
- us, and the fact that such 
-\begin_inset Quotes eld
-\end_inset
-
-compact
-\begin_inset Quotes erd
-\end_inset
-
- quadratizations are only known for a very specific category of functions
- (the A
+ that it is possible to quadratize multi-term functions so compactly inspired
+ us, and the fact that such `compact' quadratizations are only known for
+ a very specific category of functions (the A
 \begin_inset Formula $k$
 \end_inset
 
-ON functions), motivated us to look for quadratizations that are 
-\begin_inset Quotes eld
-\end_inset
-
-compact
-\begin_inset Quotes erd
-\end_inset
-
-, but also applicable to a much wider class of functions.
+ON functions), motivated us to look for quadratizations that are `compact',
+ but also applicable to a much wider class of functions.
  The result of this study is the theorem described in the title of this
  paper, and explained in more detail in the section below.
  It allows up to 5 terms of a function (1 of them can be of degree-4 and
@@ -592,6 +585,17 @@ compact
 \end_inset
 
 -1 auxiliary variables for each term).
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
+\begin_inset VSpace -2.5mm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -671,15 +675,7 @@ with real-valued coefficient
 \begin_layout Standard
 
 \lang british
-By 
-\begin_inset Quotes eld
-\end_inset
-
-perfect
-\begin_inset Quotes erd
-\end_inset
-
- quadratization we mean all 
+By `perfect' quadratization we mean all 
 \begin_inset Formula $2^{4}$
 \end_inset
 
@@ -1658,7 +1654,7 @@ noprefix "false"
 \end_inset
 
 
-\begin_inset VSpace -18mm
+\begin_inset VSpace -15mm
 \end_inset
 
 
@@ -1727,7 +1723,7 @@ noprefix "false"
 \end_inset
 
 , and some extra quadratic terms: 
-\begin_inset Formula $\textcolor{blue}{\ensuremath{f_{{\rm quadratic,2}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}\equiv\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}.$
+\begin_inset Formula $\textcolor{blue}{\ensuremath{f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}\equiv\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}.$
 \end_inset
 
  
@@ -1830,7 +1826,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace -14mm
+\begin_inset VSpace -11mm
 \end_inset
 
 
@@ -1871,7 +1867,7 @@ noprefix "false"
 
 \end_inset
 
-, except with new coefficients for two of the terms, and some extra quadratics
+, except with new coefficients for two of the terms, and some extra quadratic
  terms:
 \end_layout
 
@@ -1887,7 +1883,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace -10mm
+\begin_inset VSpace -7mm
 \end_inset
 
 
@@ -1906,7 +1902,7 @@ noprefix "false"
 \end_inset
 
 
-\begin_inset VSpace -18mm
+\begin_inset VSpace -15mm
 \end_inset
 
 
@@ -1915,7 +1911,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-=\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}b_{1}b_{3}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}b_{2}b_{3}b_{4}+\textcolor{blue}{\ensuremath{f_{{\rm quadratic,2}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}.
+=\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}b_{1}b_{3}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}b_{2}b_{3}b_{4}+\textcolor{blue}{\ensuremath{f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}.
 \end{equation}
 
 \end_inset
@@ -18990,14 +18986,11 @@ Case 2.3.2:
 
 \begin_layout Standard
 \noindent
-\begin_inset Newpage newpage
-\end_inset
-
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace -15mm
+\begin_inset VSpace -35mm
 \end_inset
 
 
@@ -19207,7 +19200,7 @@ status open
 
 normally we would need at least 15 auxiliary variables (at least one for
  each term).
- Instead we quadratize the entire function with only 5 auxiliary variables.
+ Instead we quadratize the whole function with only 5 auxiliary variables.
  To do this we will apply Theorem 1 for 5 sub-functions (displayed below
  in five different colors) that contain only 4 variables:
 \begin_inset VSpace -1mm
