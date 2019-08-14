@@ -1528,7 +1528,11 @@ noprefix "false"
 \end_inset
 
 , then the function remains exactly the same except with 
-\begin_inset Formula $\textcolor{blue}{\ensuremath{\bar{\alpha}_{1234}}}\equiv-\text{\ensuremath{\alpha_{1234},} }{\color{blue}\bar{\alpha}_{123}}=-\alpha_{123,}{\color{blue}\,\bar{\alpha}_{124}}=-\alpha_{124,}\,{\color{blue}\bar{\alpha}_{134}}=-\alpha_{134},\,{\color{blue}\bar{\alpha}_{234}}=\alpha_{234}+\alpha_{1234.}$
+\begin_inset Formula $\textcolor{blue}{\ensuremath{\bar{\alpha}_{1234}}}\equiv-\text{\ensuremath{\alpha_{1234},} }{\color{blue}\bar{\alpha}_{123}}=-\alpha_{123,}{\color{blue}\,\bar{\alpha}_{124}}=-\alpha_{124,}\,{\color{blue}\bar{\alpha}_{134}}=-\alpha_{134},\,{\color{blue}\bar{\alpha}_{234}}=\alpha_{234}+\alpha_{1234,}$
+\end_inset
+
+and some extra quadratic terms: 
+\begin_inset Formula $\textcolor{blue}{\ensuremath{f_{{\rm quadratic}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}\equiv\alpha_{123}b_{2}b_{3}+\alpha_{124}b_{2}b_{4}+\alpha_{134}b_{3}b_{4}.$
 \end_inset
 
  
@@ -1647,7 +1651,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
--\alpha_{1234}b_{1}b_{2}b_{3}b_{4}-\alpha_{123}b_{1}b_{2}b_{3}-\alpha_{124}b_{1}b_{2}b_{4}-\alpha_{134}b_{1}b_{3}b_{4}+(\alpha_{1234}+\alpha_{234})b_{2}b_{3}b_{4}
+-\alpha_{1234}b_{1}b_{2}b_{3}b_{4}-\alpha_{123}b_{1}b_{2}b_{3}-\alpha_{124}b_{1}b_{2}b_{4}-\alpha_{134}b_{1}b_{3}b_{4}+(\alpha_{1234}+\alpha_{234})b_{2}b_{3}b_{4}+\alpha_{123}b_{2}b_{3}+\alpha_{124}b_{2}b_{4}+\alpha_{134}b_{3}b_{4}
 \end{equation}
 
 \end_inset
@@ -1666,7 +1670,7 @@ noprefix "false"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-={\color{blue}\bar{\alpha}_{1234}}b_{1}b_{2}b_{3}b_{4}+{\color{blue}\bar{\alpha}}_{{\color{blue}123}}b_{1}b_{2}b_{3}+{\color{blue}\bar{\alpha}_{124}}b_{1}b_{2}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}b_{1}b_{3}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}b_{2}b_{3}b_{4}.
+={\color{blue}\bar{\alpha}_{1234}}b_{1}b_{2}b_{3}b_{4}+{\color{blue}\bar{\alpha}}_{{\color{blue}123}}b_{1}b_{2}b_{3}+{\color{blue}\bar{\alpha}_{124}}b_{1}b_{2}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}b_{1}b_{3}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}b_{2}b_{3}b_{4}+{\color{blue}f_{\text{quadratic}}(b_{1},b_{2},b_{3},b_{4})}.
 \end{equation}
 
 \end_inset
@@ -19435,7 +19439,7 @@ normally we would need at least 15 auxiliary variables (at least one for
 \lang british
 \begin_inset Formula 
 \begin{equation}
-\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{red}{4b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{violet}{3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{teal}{2b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{orange}{b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}}\textcolor{blue}{-\hspace{-0.05em}3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{violet}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{violet}{-\hspace{-0.05em}4b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{teal}{-\hspace{-0.05em}3b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}.
+\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{red}{4b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{violet}{3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{teal}{2b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{orange}{b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}}\textcolor{blue}{-\hspace{-0.05em}3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{violet}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{blue}{+(-\hspace{-0.05em}2b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{{\color{orange}+\hspace{-0.05em}}\textcolor{orange}{b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4})\hspace{-0.05em}\hspace{-0.05em}}-\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{violet}{-\hspace{-0.05em}4b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{teal}{-\hspace{-0.05em}3b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}.
 \end{equation}
 
 \end_inset
@@ -19444,7 +19448,7 @@ normally we would need at least 15 auxiliary variables (at least one for
 \size default
 \color inherit
 We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
- each sub-function:
+ each sub-function, using Lemmas 5, 4, 3, 2, and 1 in that order:
 \end_layout
 
 \begin_layout Standard
@@ -19454,12 +19458,12 @@ We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
 \lang british
 \begin_inset Formula 
 \begin{align}
-\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{blue}{b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+b_{2}b_{3}+3b_{2}b_{4}+3b_{3}b_{4}-b_{a_{1}}(5b_{1}+5b_{2}+5b_{3}+7b_{4}-9)\\
+\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{blue}{2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
 \textcolor{red}{4b_{1}b_{2}b_{3}b_{5}}-\textcolor{red}{5b_{1}b_{2}b_{5}}-\textcolor{red}{b_{1}b_{3}b_{5}}-\textcolor{red}{b_{2}b_{3}b_{5}} & \rightarrow-3b_{1}+6b_{2}-3b_{3}+5b_{5}-5b_{1}b_{2}+3b_{1}b_{3}-5b_{1}b_{5}-b_{2}b_{3}-b_{3}b_{5}\\
  & \,\,\,\,\,\,\,\,\hspace{-0.05em}\hspace{-0.05em}\,-b_{a_{2}}(-8b_{1}+6b_{2}-4b_{3}+5b_{5}+3)+3\\
 \textcolor{violet}{3b_{1}b_{2}b_{4}b_{5}}-\textcolor{violet}{b_{1}b_{4}b_{5}}-\textcolor{violet}{4b_{2}b_{4}b_{5}} & \rightarrow b_{1}+4b_{2}+3b_{1}b_{2}-b_{1}b_{4}-b_{1}b_{5}-4b_{2}b_{4}-4b_{2}b_{5}+b_{a_{3}}(-4b_{1}-7b_{2}+5b_{4}+5b_{5}+3)\\
 \textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}-\textcolor{teal}{3b_{3}b_{4}b_{5}} & \rightarrow b_{a_{4}}(2b_{1}-3b_{3}-3b_{4}-3b_{5}+6)\\
-\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}} & \rightarrow b_{2}b_{3}+b_{2}b_{4}+b_{2}b_{5}+b_{3}b_{4}+b_{3}b_{5}+b_{4}b_{5}+b_{a_{5}}(3-2b_{2}-2b_{3}-2b_{4}-2b_{5})
+\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}+b_{2}b_{3}b_{4}} & \rightarrow2b_{2}b_{3}+2b_{2}b_{4}+b_{2}b_{5}+2b_{3}b_{4}+b_{3}b_{5}+b_{4}b_{5}+b_{a_{5}}(4-3b_{2}-3b_{3}-3b_{4}-2b_{5})
 \end{align}
 
 \end_inset
@@ -19623,7 +19627,7 @@ Lemma 3,4 =
 \begin_layout Subsection
 
 \lang british
-Sub-modulatiry 
+Sub-modulatiry
 \end_layout
 
 \begin_layout Subsection
