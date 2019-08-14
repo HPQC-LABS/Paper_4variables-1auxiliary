@@ -158,10 +158,10 @@ function whose input is 5 binary variables and is minimized over the new
 \begin_inset Formula $n\gg4.$
 \end_inset
 
- We provide a simple example function where the previous state-of-the-art
- quadratization methods would require 15 auxiliary variables to perfectly
- quadratize, whereas with the results of this paper, we only need 5 auxiliary
- variables (so each application of our theorem saves 10 auxiliary variables).
+ We provide a simple example function where a termwise quadratization method
+ would require 15 auxiliary variables to perfectly quadratize, whereas with
+ the results of this paper, we only need 5 auxiliary variables (so each
+ application of our theorem saves 10 auxiliary variables).
 \lang english
 
 \begin_inset VSpace -2.5mm
@@ -19249,10 +19249,32 @@ We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
 \size default
 \color inherit
 The final quadratic function contains only 10 variables (the 5 original
- ones and the 5 new auxiliary variables), whereas applying the previous
- state-of-the-art quadratization techniques would in the best case result
- in a quadratic function with 20 variables (the 5 original ones and the
- 15 new auxiliary variables).
+ ones and the 5 new auxiliary variables), whereas applying a termwise
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+the previous state-of-the-art 
+\end_layout
+
+\end_inset
+
+quadratization technique
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+s
+\end_layout
+
+\end_inset
+
+ would in the best case result in a quadratic function with 20 variables
+ (the 5 original ones and the 15 new auxiliary variables).
 \end_layout
 
 \begin_layout Standard
@@ -19293,7 +19315,14 @@ Acknowledgments
 \lang british
 We wish to thank Elisabeth Rodríguez-Heck for helpful comments on an early
  version of this paper.
- Since any 4-variable real-valued function of binary variables 
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+Since any 4-variable real-valued function of binary variables 
 \begin_inset Note Note
 status open
 
@@ -19345,6 +19374,22 @@ P.L.
 
 , our result applies to any such function, and not only the functions included
  in the conditions of Theorem 1.
+ (keep in mind that Eq.
+ 1 isn't 
+\begin_inset Quotes eld
+\end_inset
+
+any 4-variable function
+\begin_inset Quotes erd
+\end_inset
+
+, we have to explain that quadratic, linear, and constant terms don't need
+ to be quadratized.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
