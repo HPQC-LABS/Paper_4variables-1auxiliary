@@ -19282,7 +19282,94 @@ Examples
 \size normal
 \color black
 \lang british
-15-term, 5-variable, degree-4, function with all terms at least cubic: 
+8-variable, degree-4, function with all terms at least cubic: 
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\lang british
+\begin_inset Formula 
+\begin{equation}
+Ab_{1}b_{2}b_{3}b_{4}+Bb_{1}b_{2}b_{3}+Cb_{1}b_{2}b_{4}+Db_{1}b_{3}b_{4}+Eb_{2}b_{3}b_{4}+Fb_{5}b_{6}b_{7}b_{8}+Gb_{5}b_{6}b_{7}+Hb_{5}b_{6}b_{8}+Ib_{5}b_{7}b_{8}+Jb_{6}b_{7}b_{8}+Kb_{1}b_{8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\lang british
+\begin_inset Formula 
+\begin{equation}
+\textcolor{blue}{Ab_{1}b_{2}b_{3}b_{4}}+\textcolor{blue}{Bb_{1}b_{2}b_{3}}+\textcolor{blue}{Cb_{1}b_{2}b_{4}}+\textcolor{blue}{Db_{1}b_{3}b_{4}}+\textcolor{blue}{Eb_{2}b_{3}b_{4}}+\textcolor{red}{Fb_{5}b_{6}b_{7}b_{8}}+\textcolor{red}{Gb_{5}b_{6}b_{7}}+\textcolor{red}{H_{5}b_{6}b_{8}}+\textcolor{red}{Ib_{5}b_{7}b_{8}}+\textcolor{red}{Jb_{6}b_{7}b_{8}}+Fb_{1}b_{8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang british
+Comparison to previous state-of-the-art
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\lang british
+\begin_inset Formula 
+\begin{align}
+\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{blue}{2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
+\textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}-\textcolor{red}{b_{1}b_{3}b_{5}}-\textcolor{violet}{b_{1}b_{4}b_{5}}-\textcolor{teal}{3b_{3}b_{4}b_{5}} & \rightarrow\\
+\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}-\textcolor{red}{b_{2}b_{3}b_{5}}+b_{2}b_{3}b_{4}-\textcolor{violet}{4b_{2}b_{4}b_{5}}} & \rightarrow
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Seems to require 4 auxiliaries with pairwise covers.
+ How much with FGBZ? We may be able to have some cubic terms that mix the
+ 1-4 set with the 5-8 set such that we still overall need fewer auxiliaries
+ than pairwise covers or FGBZ.
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+\color black
+\lang british
+4
+\begin_inset Formula $N$
+\end_inset
+
+-variable, degree-4, function with all terms at least cubic: 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+This is (perhaps?) the most extreme example.
+ We need N auxiliaries and pairwise covers needs 2N.
+ How much does FGBZ need? 
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+\color black
+\lang british
+13-term, 5-variable, degree-4, function with all terms at least cubic: 
 \size small
 
 \begin_inset Note Note
@@ -19385,6 +19472,14 @@ To quadratize the following function:
 \size small
 \color black
 \lang british
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\size small
+\color black
+\lang british
 \begin_inset Formula 
 \begin{equation}
 \hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}+\hspace{-0.05em}4b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}\hspace{-0.05em}+\hspace{-0.05em}3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}+\hspace{-0.05em}2b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}+\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}-\hspace{-0.05em}3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}-\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{5}\hspace{-0.05em}-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}\hspace{-0.05em}-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}-\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}-\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}\hspace{-0.05em}-\hspace{-0.05em}4b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}-\hspace{-0.05em}3b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5},
@@ -19393,7 +19488,21 @@ To quadratize the following function:
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
 \size default
+
+\begin_inset Formula 
+\begin{equation}
+\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}+b_{1}b_{3}b_{4}b_{5}+b_{2}b_{3}b_{4}b_{5}-3b_{1}b_{2}b_{3}-b_{1}b_{2}b_{4}-b_{1}b_{3}b_{4}+b_{1}b_{3}b_{5}+b_{1}b_{4}b_{5}+b_{2}b_{3}b_{4}+b_{2}b_{3}b_{5}+b_{2}b_{4}b_{5}+b_{3}b_{4}b_{5},
+\end{equation}
+
+\end_inset
+
+
 \color inherit
 
 \begin_inset VSpace -1mm
@@ -19437,21 +19546,55 @@ normally we would need at least 15 auxiliary variables (at least one for
 \size small
 \color black
 \lang british
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\size small
+\color black
+\lang british
 \begin_inset Formula 
 \begin{equation}
-\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{red}{4b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{violet}{3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{teal}{2b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{orange}{b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}}\textcolor{blue}{-\hspace{-0.05em}3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{violet}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{blue}{+(-\hspace{-0.05em}2b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{{\color{orange}+\hspace{-0.05em}}\textcolor{orange}{b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4})\hspace{-0.05em}\hspace{-0.05em}}-\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{violet}{-\hspace{-0.05em}4b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{teal}{-\hspace{-0.05em}3b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}.
+\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{red}{4b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{violet}{3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{teal}{2b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}+\hspace{-0.05em}\textcolor{orange}{b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}\hspace{-0.05em}}\textcolor{blue}{-\hspace{-0.05em}3b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}5b_{1}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{blue}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{violet}{-\hspace{-0.05em}b_{1}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}-\textcolor{blue}{b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{4}}\hspace{-0.05em}\textcolor{red}{-\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}b_{3}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{violet}{-\hspace{-0.05em}4b_{2}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}\hspace{-0.05em}\textcolor{teal}{-\hspace{-0.05em}3b_{3}\hspace{-0.05em}b_{4}\hspace{-0.05em}b_{5}}.
 \end{equation}
 
 \end_inset
 
 
-\size default
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\lang british
+\begin_inset Formula 
+\begin{equation}
+\textcolor{blue}{5b_{1}b_{2}b_{3}b_{4}}+\textcolor{teal}{b_{1}b_{3}b_{4}b_{5}}+\textcolor{red}{b_{2}b_{3}b_{4}b_{5}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}+\textcolor{teal}{b_{1}b_{3}b_{5}}+\textcolor{teal}{b_{1}b_{4}b_{5}}+\textcolor{blue}{b_{2}b_{3}b_{4}}+\textcolor{red}{b_{2}b_{3}b_{5}}+\textcolor{red}{b_{2}b_{4}b_{5}}+\textcolor{teal}{b_{3}b_{4}b_{5}}.
+\end{equation}
+
+\end_inset
+
+
 \color inherit
 We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
  each sub-function, using Lemmas 5, 4, 3, 2, and 1 in that order:
 \end_layout
 
 \begin_layout Standard
+
+\size small
+\color black
+\lang british
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 
 \size small
 \color black
@@ -19463,14 +19606,38 @@ We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
  & \,\,\,\,\,\,\,\,\hspace{-0.05em}\hspace{-0.05em}\,-b_{a_{2}}(-8b_{1}+6b_{2}-4b_{3}+5b_{5}+3)+3\\
 \textcolor{violet}{3b_{1}b_{2}b_{4}b_{5}}-\textcolor{violet}{b_{1}b_{4}b_{5}}-\textcolor{violet}{4b_{2}b_{4}b_{5}} & \rightarrow b_{1}+4b_{2}+3b_{1}b_{2}-b_{1}b_{4}-b_{1}b_{5}-4b_{2}b_{4}-4b_{2}b_{5}+b_{a_{3}}(-4b_{1}-7b_{2}+5b_{4}+5b_{5}+3)\\
 \textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}-\textcolor{teal}{3b_{3}b_{4}b_{5}} & \rightarrow b_{a_{4}}(2b_{1}-3b_{3}-3b_{4}-3b_{5}+6)\\
-\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}+b_{2}b_{3}b_{4}} & \rightarrow2b_{2}b_{3}+2b_{2}b_{4}+b_{2}b_{5}+2b_{3}b_{4}+b_{3}b_{5}+b_{4}b_{5}+b_{a_{5}}(4-3b_{2}-3b_{3}-3b_{4}-2b_{5})
+\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}} & \rightarrow2b_{2}b_{3}+2b_{2}b_{4}+b_{2}b_{5}+2b_{3}b_{4}+b_{3}b_{5}+b_{4}b_{5}+b_{a_{5}}(4-3b_{2}-3b_{3}-3b_{4}-2b_{5})
 \end{align}
 
 \end_inset
 
 
-\size default
-\color inherit
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\color black
+\lang british
+\begin_inset Formula 
+\begin{align}
+\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}\textcolor{blue}{-3b_{1}b_{2}b_{3}}\textcolor{blue}{-b_{1}b_{2}b_{4}}\textcolor{blue}{-b_{1}b_{3}b_{4}}\textcolor{blue}{-2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
+\textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}\textcolor{teal}{-b_{1}b_{3}b_{5}}\textcolor{teal}{-b_{1}b_{4}b_{5}}\textcolor{teal}{-3b_{3}b_{4}b_{5}} & \rightarrow\\
+\textcolor{orange}{\textcolor{red}{b_{2}b_{3}b_{4}b_{5}-b_{2}b_{3}b_{5}}\textcolor{red}{-4b_{2}b_{4}b_{5}}} & \rightarrow
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
 The final quadratic function contains only 10 variables (the 5 original
  ones and the 5 new auxiliary variables), whereas applying a termwise
 \begin_inset Note Note
@@ -19533,18 +19700,28 @@ share
 Comparison to previous state-of-the-art
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
 
-\size normal
-\color black
 \lang british
-Example # 2: 
+Pairwise covers would require 5? auxiliaries:
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Standard
 
+\color black
 \lang british
-Comparison to previous state-of-the-art
+\begin_inset Formula 
+\begin{align}
+\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{blue}{2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
+\textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}-\textcolor{red}{b_{1}b_{3}b_{5}}-\textcolor{violet}{b_{1}b_{4}b_{5}}-\textcolor{teal}{3b_{3}b_{4}b_{5}} & \rightarrow\\
+\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}-\textcolor{red}{b_{2}b_{3}b_{5}}+b_{2}b_{3}b_{4}-\textcolor{violet}{4b_{2}b_{4}b_{5}}} & \rightarrow
+\end{align}
+
+\end_inset
+
+
+\color inherit
+FGBZ?
 \end_layout
 
 \begin_layout Section
