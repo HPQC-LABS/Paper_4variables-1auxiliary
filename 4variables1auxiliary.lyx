@@ -19796,7 +19796,7 @@ Gadget graphs
 \begin_layout Standard
 
 \lang british
-Lemma 1,2,5 = 
+Lemma 1, 5 = 
 \begin_inset Formula $K_{5}$
 \end_inset
 
@@ -19811,16 +19811,21 @@ Lemma 3,4 =
 \end_inset
 
 .
- Or is it 
-\begin_inset Formula $K_{5}$
-\end_inset
-
-? an early version seems to have 
+ There is no 
 \begin_inset Formula $b1b2$
 \end_inset
 
 .
- 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Lemma 2 = 
+\begin_inset Formula $K_{1,4}$
+\end_inset
+
+ has an auxiliary bit adjacent to all 4 original bits and no other edges.
 \end_layout
 
 \begin_layout Subsection
@@ -19846,7 +19851,8 @@ Acknowledgments
 \lang british
 We wish to thank Elisabeth Rodríguez-Heck for helpful comments on an early
  version of this paper.
- 
+ We also wish to thank Man Hou Hong, Kai Cheong Choi, Cho Hou Tang, and
+ Chong Hou Lao for helpful discussions about the notation in Lemma 3.
 \begin_inset Note Note
 status open
 
