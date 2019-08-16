@@ -19316,7 +19316,7 @@ Ab_{1}b_{2}b_{3}b_{4}+Bb_{1}b_{2}b_{3}+Cb_{1}b_{2}b_{4}+Db_{1}b_{3}b_{4}+Eb_{2}b
 \begin_layout Standard
 
 \lang british
-This can be quadratized using Lemams A and B:
+This can be quadratized using Lemams 1 and 2:
 \end_layout
 
 \begin_layout Standard
@@ -19391,7 +19391,7 @@ This is (perhaps?) the most extreme example.
 \size normal
 \color black
 \lang british
-13-term, 5-variable, degree-4, function with all terms at least cubic: 
+12-term, 5-variable, degree-4, function with all terms at least cubic: 
 \size small
 
 \begin_inset Note Note
@@ -19552,10 +19552,10 @@ status open
 
 \end_inset
 
-normally we would need at least 15 auxiliary variables (at least one for
+normally we would need at least 12 auxiliary variables (at least one for
  each term).
- Instead we quadratize the whole function with only 5 auxiliary variables.
- To do this we will apply Theorem 1 for 5 sub-functions (displayed below
+ Instead we quadratize the whole function with only 3 auxiliary variables.
+ To do this we will apply Theorem 1 for 3 sub-functions (displayed below
  in five different colors) that contain only 4 variables:
 \begin_inset VSpace -1mm
 \end_inset
@@ -19597,7 +19597,7 @@ status collapsed
 \lang british
 \begin_inset Formula 
 \begin{equation}
-\textcolor{blue}{5b_{1}b_{2}b_{3}b_{4}}+\textcolor{teal}{b_{1}b_{3}b_{4}b_{5}}+\textcolor{red}{b_{2}b_{3}b_{4}b_{5}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}+\textcolor{teal}{b_{1}b_{3}b_{5}}+\textcolor{teal}{b_{1}b_{4}b_{5}}+\textcolor{blue}{b_{2}b_{3}b_{4}}+\textcolor{red}{b_{2}b_{3}b_{5}}+\textcolor{red}{b_{2}b_{4}b_{5}}+\textcolor{teal}{b_{3}b_{4}b_{5}}.
+\textcolor{blue}{5b_{1}b_{2}b_{3}b_{4}}+\textcolor{teal}{4b_{1}b_{2}b_{3}b_{5}}+\textcolor{red}{3b_{1}b_{2}b_{4}b_{5}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}-\textcolor{teal}{5b_{1}b_{2}b_{5}}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{teal}{b_{1}b_{3}b_{5}}-\textcolor{red}{b_{1}b_{4}b_{5}}-\textcolor{blue}{2b_{2}b_{3}b_{4}}-\textcolor{teal}{b_{2}b_{3}b_{5}}-\textcolor{red}{4b_{2}b_{4}b_{5}}.
 \end{equation}
 
 \end_inset
@@ -19605,7 +19605,7 @@ status collapsed
 
 \color inherit
 We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
- each sub-function, using Lemmas 5, 4, 3, 2, and 1 in that order:
+ each sub-function, using Lemmas 5, 4, and 3 in that order:
 \end_layout
 
 \begin_layout Standard
@@ -19639,17 +19639,13 @@ status collapsed
 \end_inset
 
 
-\end_layout
+\size default
 
-\begin_layout Standard
-
-\color black
-\lang british
 \begin_inset Formula 
 \begin{align}
 \textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}\textcolor{blue}{-3b_{1}b_{2}b_{3}}\textcolor{blue}{-b_{1}b_{2}b_{4}}\textcolor{blue}{-b_{1}b_{3}b_{4}}\textcolor{blue}{-2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
-\textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}\textcolor{teal}{-b_{1}b_{3}b_{5}}\textcolor{teal}{-b_{1}b_{4}b_{5}}\textcolor{teal}{-3b_{3}b_{4}b_{5}} & \rightarrow\\
-\textcolor{orange}{\textcolor{red}{b_{2}b_{3}b_{4}b_{5}-b_{2}b_{3}b_{5}}\textcolor{red}{-4b_{2}b_{4}b_{5}}} & \rightarrow
+\textcolor{teal}{4b_{1}b_{2}b_{3}b_{5}}\textcolor{teal}{-5b_{1}b_{2}b_{5}}\textcolor{teal}{-b_{1}b_{3}b_{5}}\textcolor{teal}{-b_{2}b_{3}b_{5}} & \rightarrow-3b_{1}+6b_{2}-3b_{3}+5b_{5}-5b_{1}b_{2}+3b_{1}b_{3}-5b_{1}b_{5}-b_{2}b_{3}-b_{3}b_{5}-b_{a_{2}}(-8b_{1}+6b_{2}-4b_{3}+5b_{5}+3)+3\\
+{\color{red}3b_{1}b_{2}b_{4}b_{5}-b_{1}b_{4}b_{5}-4b_{2}b_{4}b_{5}} & \rightarrow b_{1}+4b_{2}+3b_{1}b_{2}-b_{1}b_{4}-b_{1}b_{5}-4b_{2}b_{4}-4b_{2}b_{5}+b_{a_{3}}(-4b_{1}-7b_{2}+5b_{4}+5b_{5}+3)
 \end{align}
 
 \end_inset
@@ -19660,8 +19656,8 @@ status collapsed
 \begin_layout Standard
 
 \lang british
-The final quadratic function contains only 10 variables (the 5 original
- ones and the 5 new auxiliary variables), whereas applying a termwise
+The final quadratic function contains only 8 variables (the 5 original ones
+ and the 3 new auxiliary variables), whereas applying a termwise
 \begin_inset Note Note
 status open
 
@@ -19685,8 +19681,8 @@ s
 
 \end_inset
 
- would in the best case result in a quadratic function with 20 variables
- (the 5 original ones and the 15 new auxiliary variables).
+ would in the best case result in a quadratic function with 17 variables
+ (the 5 original ones and the 12 new auxiliary variables).
 \end_layout
 
 \begin_layout Standard
@@ -19725,7 +19721,7 @@ Comparison to previous state-of-the-art
 \begin_layout Standard
 
 \lang british
-Pairwise covers would require 5? auxiliaries:
+Pairwise covers would require 4 auxiliaries:
 \end_layout
 
 \begin_layout Standard
