@@ -19291,7 +19291,7 @@ Examples
 \lang british
 \begin_inset Formula 
 \begin{equation}
-Ab_{1}b_{2}b_{3}b_{4}+Bb_{1}b_{2}b_{3}+Cb_{1}b_{2}b_{4}+Db_{1}b_{3}b_{4}+Eb_{2}b_{3}b_{4}+Fb_{5}b_{6}b_{7}b_{8}+Gb_{5}b_{6}b_{7}+Hb_{5}b_{6}b_{8}+Ib_{5}b_{7}b_{8}+Jb_{6}b_{7}b_{8}+Kb_{1}b_{8}
+b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+2b_{1}b_{3}b_{4}+3b_{2}b_{3}b_{4}-b_{5}b_{6}b_{7}b_{8}-2b_{5}b_{6}b_{7}-3b_{5}b_{6}b_{8}-4b_{5}b_{7}b_{8}-5b_{6}b_{7}b_{8}+b_{1}b_{8}
 \end{equation}
 
 \end_inset
@@ -19305,7 +19305,7 @@ Ab_{1}b_{2}b_{3}b_{4}+Bb_{1}b_{2}b_{3}+Cb_{1}b_{2}b_{4}+Db_{1}b_{3}b_{4}+Eb_{2}b
 \lang british
 \begin_inset Formula 
 \begin{equation}
-\textcolor{blue}{Ab_{1}b_{2}b_{3}b_{4}}+\textcolor{blue}{Bb_{1}b_{2}b_{3}}+\textcolor{blue}{Cb_{1}b_{2}b_{4}}+\textcolor{blue}{Db_{1}b_{3}b_{4}}+\textcolor{blue}{Eb_{2}b_{3}b_{4}}+\textcolor{red}{Fb_{5}b_{6}b_{7}b_{8}}+\textcolor{red}{Gb_{5}b_{6}b_{7}}+\textcolor{red}{H_{5}b_{6}b_{8}}+\textcolor{red}{Ib_{5}b_{7}b_{8}}+\textcolor{red}{Jb_{6}b_{7}b_{8}}+Fb_{1}b_{8}
+\textcolor{blue}{b_{1}b_{2}b_{3}b_{4}}+\textcolor{blue}{b_{1}b_{2}b_{3}}+\textcolor{blue}{b_{1}b_{2}b_{4}}+\textcolor{blue}{2b_{1}b_{3}b_{4}}+\textcolor{blue}{3b_{2}b_{3}b_{4}}\textcolor{red}{-b_{5}b_{6}b_{7}b_{8}}-\textcolor{red}{2b_{5}b_{6}b_{7}}-\textcolor{red}{3b_{5}b_{6}b_{8}}-\textcolor{red}{4b_{5}b_{7}b_{8}}-\textcolor{red}{5b_{6}b_{7}b_{8}}+b_{1}b_{8}
 \end{equation}
 
 \end_inset
@@ -19316,7 +19316,7 @@ Ab_{1}b_{2}b_{3}b_{4}+Bb_{1}b_{2}b_{3}+Cb_{1}b_{2}b_{4}+Db_{1}b_{3}b_{4}+Eb_{2}b
 \begin_layout Standard
 
 \lang british
-This can be quadratized using Lemams 1 and 2:
+This can be quadratized using Lemmas 1 and 2:
 \end_layout
 
 \begin_layout Standard
@@ -19325,9 +19325,8 @@ This can be quadratized using Lemams 1 and 2:
 \lang british
 \begin_inset Formula 
 \begin{align}
-\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{blue}{2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
-\textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}-\textcolor{red}{b_{1}b_{3}b_{5}}-\textcolor{violet}{b_{1}b_{4}b_{5}}-\textcolor{teal}{3b_{3}b_{4}b_{5}} & \rightarrow\\
-\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}-\textcolor{red}{b_{2}b_{3}b_{5}}+b_{2}b_{3}b_{4}-\textcolor{violet}{4b_{2}b_{4}b_{5}}} & \rightarrow
+\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}b_{1}b_{2}b_{3}b_{4}}+\textcolor{blue}{b_{1}b_{2}b_{3}}+\textcolor{blue}{b_{1}b_{2}b_{4}}+\textcolor{blue}{2b_{1}b_{3}b_{4}}+\textcolor{blue}{3b_{2}b_{3}b_{4}} & \rightarrow3b_{1}b_{2}+4b_{1}b_{3}+4b_{1}b_{4}+5b_{2}b_{3}+5b_{2}b_{4}+6b_{3}b_{4}+b_{a_{1}}(10-6b_{1}-7b_{2}-8b_{3}-8b_{4})\\
+\textcolor{red}{-b_{5}b_{6}b_{7}b_{8}}-\textcolor{red}{2b_{5}b_{6}b_{7}}-\textcolor{red}{3b_{5}b_{6}b_{8}}-\textcolor{red}{4b_{5}b_{7}b_{8}}-\textcolor{red}{5b_{6}b_{7}b_{8}} & \rightarrow b_{a_{2}}(31-10b_{5}-11b_{6}-12b_{7}-13b_{8})\\
 \end{align}
 
 \end_inset
@@ -19360,8 +19359,39 @@ Comparison to previous state-of-the-art
 \begin_layout Standard
 
 \lang british
-Seems to require 4 auxiliaries with pairwise covers.
- How much with FGBZ? We may be able to have some cubic terms that mix the
+Pairwise covers require 4 auxiliaries.
+ (We need at least 2 auxiliaries to cover the cubic terms 
+\begin_inset Formula $b_{1}b_{2}b_{3},b_{1}b_{2}b_{4},b_{1}b_{3}b_{4},b_{2}b_{3}b_{4},$
+\end_inset
+
+and also at least 2 to cover the cubic terms 
+\begin_inset Formula $b_{5}b_{6}b_{7,}b_{5}b_{6}b_{8,}b_{5}b_{7}b_{8},b_{6}b_{7}b_{8}).$
+\end_inset
+
+ Also 
+\begin_inset Formula $\{12,34,56,78\}$
+\end_inset
+
+ is a pairwise cover for the index combinations in this function, and for
+ this cover the quadratisation can also be given as an RBS:
+\color black
+
+\begin_inset Formula 
+\begin{align}
+ & b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+2b_{1}b_{3}b_{4}+3b_{2}b_{3}b_{4}-b_{5}b_{6}b_{7}b_{8}-2b_{5}b_{6}b_{7}-3b_{5}b_{6}b_{8}-4b_{5}b_{7}b_{8}-5b_{6}b_{7}b_{8}+b_{1}b_{8}\\
+\rightarrow & b_{12}b_{34}+b_{12}b_{3}+b_{12}b_{4}+2b_{1}b_{34}+3b_{2}b_{34}-b_{56}b_{78}-2b_{56}b_{7}-3b_{56}b_{8}-4b_{5}b_{78}-5b_{6}b_{78}+b_{1}b_{8}\\
+ & +3(b_{1}b_{2}-2b_{12}b_{1}-2b_{12}b_{2}+3b_{12})+6(b_{3}b_{4}-2b_{34}b_{3}-2b_{34}b_{4}+3b_{34})+6(b_{5}b_{6}-2b_{56}b_{5}-2b_{56}b_{6}+3b_{56})+10(b_{7}b_{8}-2b_{78}b_{7}-2b_{78}b_{8}+3b_{78})
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+How much with FGBZ? We may be able to have some cubic terms that mix the
  1-4 set with the 5-8 set such that we still overall need fewer auxiliaries
  than pairwise covers or FGBZ.
 \end_layout
@@ -19375,7 +19405,7 @@ Seems to require 4 auxiliaries with pairwise covers.
 \begin_inset Formula $N$
 \end_inset
 
--variable, degree-4, function with all terms at least cubic: 
+-variable, degree-4, function with all terms at least cubic:
 \end_layout
 
 \begin_layout Standard
@@ -19519,7 +19549,7 @@ status collapsed
 
 \begin_inset Formula 
 \begin{equation}
-\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}+b_{1}b_{3}b_{4}b_{5}+b_{2}b_{3}b_{4}b_{5}-3b_{1}b_{2}b_{3}-b_{1}b_{2}b_{4}-b_{1}b_{3}b_{4}+b_{1}b_{3}b_{5}+b_{1}b_{4}b_{5}+b_{2}b_{3}b_{4}+b_{2}b_{3}b_{5}+b_{2}b_{4}b_{5}+b_{3}b_{4}b_{5},
+5b_{1}b_{2}b_{3}b_{4}+4b_{1}b_{2}b_{3}b_{5}+3b_{1}b_{2}b_{4}b_{5}-3b_{1}b_{2}b_{3}-b_{1}b_{2}b_{4}-5b_{1}b_{2}b_{5}-b_{1}b_{3}b_{4}-b_{1}b_{3}b_{5}-b_{1}b_{4}b_{5}-2b_{2}b_{3}b_{4}-b_{2}b_{3}b_{5}-4b_{2}b_{4}b_{5}
 \end{equation}
 
 \end_inset
@@ -19721,7 +19751,14 @@ Comparison to previous state-of-the-art
 \begin_layout Standard
 
 \lang british
-Pairwise covers would require 4 auxiliaries:
+Pairwise covers would require 4 auxiliaries.
+ It is not possible in 3 auxiliaries because we cannot cover all 9 cubic
+ terms in .
+ One pairwise cover for the index combinations of this function is 
+\begin_inset Formula $\{12,34,35,45\}$
+\end_inset
+
+ and for this cover the quadratisation can also be given as an RBS:
 \end_layout
 
 \begin_layout Standard
@@ -19730,9 +19767,9 @@ Pairwise covers would require 4 auxiliaries:
 \lang british
 \begin_inset Formula 
 \begin{align}
-\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{blue}{2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
-\textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}-\textcolor{red}{b_{1}b_{3}b_{5}}-\textcolor{violet}{b_{1}b_{4}b_{5}}-\textcolor{teal}{3b_{3}b_{4}b_{5}} & \rightarrow\\
-\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}-\textcolor{red}{b_{2}b_{3}b_{5}}+b_{2}b_{3}b_{4}-\textcolor{violet}{4b_{2}b_{4}b_{5}}} & \rightarrow
+ & 5b_{1}b_{2}b_{3}b_{4}+4b_{1}b_{2}b_{3}b_{5}+3b_{1}b_{2}b_{4}b_{5}-3b_{1}b_{2}b_{3}-b_{1}b_{2}b_{4}-5b_{1}b_{2}b_{5}-b_{1}b_{3}b_{4}-b_{1}b_{3}b_{5}-b_{1}b_{4}b_{5}-2b_{2}b_{3}b_{4}-b_{2}b_{3}b_{5}-4b_{2}b_{4}b_{5}\\
+\rightarrow & 5b_{12}b_{34}+4b_{12}b_{35}+3b_{12}b_{45}-3b_{12}b_{3}-b_{12}b_{4}-5b_{12}b_{5}-b_{1}b_{34}-b_{1}b_{35}-b_{1}b_{45}-2b_{2}b_{34}-b_{2}b_{35}-4b_{2}b_{45}\\
+ & +21(b_{1}b_{2}-2b_{12}b_{1}-2b_{12}b_{2}+3b_{12})+8(b_{3}b_{4}-2b_{34}b_{3}-2b_{34}b_{4}+3b_{34})+6(b_{3}b_{5}-2b_{35}b_{3}-2b_{35}b_{5}+3b_{35})+8(b_{4}b_{5}-2b_{45}b_{4}-2b_{45}b_{5}+3b_{45})
 \end{align}
 
 \end_inset
