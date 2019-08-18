@@ -19282,7 +19282,31 @@ Examples
 \size normal
 \color black
 \lang british
-8-variable, degree-4, function with all terms at least cubic: 
+8-variable, degree-4, function
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+The following function can be quadratized using only 
+\emph on
+two
+\emph default
+ auxiliary variables when using Theorem 1 of the present paper, but would
+ require a minimum of 
+\emph on
+four 
+\emph default
+auxiliary variables when using the previous state-of-of-the-art methods:
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset VSpace -1mm
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -19291,9 +19315,51 @@ Examples
 \lang british
 \begin_inset Formula 
 \begin{equation}
-b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+2b_{1}b_{3}b_{4}+3b_{2}b_{3}b_{4}-b_{5}b_{6}b_{7}b_{8}-2b_{5}b_{6}b_{7}-3b_{5}b_{6}b_{8}-4b_{5}b_{7}b_{8}-5b_{6}b_{7}b_{8}+b_{1}b_{8}
+b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+2b_{1}b_{3}b_{4}+3b_{2}b_{3}b_{4}-b_{5}b_{6}b_{7}b_{8}-2b_{5}b_{6}b_{7}-3b_{5}b_{6}b_{8}-4b_{5}b_{7}b_{8}-5b_{6}b_{7}b_{8}+b_{1}b_{8}.
 \end{equation}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset VSpace -1mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\lang british
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\noindent
+
+\lang british
+\begin_inset VSpace -3mm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+To apply Theorem 1 of the present paper, we will first split the super-quadratic
+ terms into two categories, each involving a different set of 4 variables:
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\lang british
+\begin_inset VSpace -1mm
 \end_inset
 
 
@@ -19311,12 +19377,13 @@ b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+2b_{1}b_{3}b_{4}+3b_{2}b_{3
 \end_inset
 
 
-\end_layout
+\color inherit
+The two sub-functions can be quadratized using Lemma 1 (with the addition
+ of the auxiliary variable 
+\begin_inset Formula $b_{a_{1}}$
+\end_inset
 
-\begin_layout Standard
-
-\lang british
-This can be quadratized using Lemmas 1 and 2:
+) and 2 respectively:
 \end_layout
 
 \begin_layout Standard
@@ -19325,8 +19392,8 @@ This can be quadratized using Lemmas 1 and 2:
 \lang british
 \begin_inset Formula 
 \begin{align}
-\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}b_{1}b_{2}b_{3}b_{4}}+\textcolor{blue}{b_{1}b_{2}b_{3}}+\textcolor{blue}{b_{1}b_{2}b_{4}}+\textcolor{blue}{2b_{1}b_{3}b_{4}}+\textcolor{blue}{3b_{2}b_{3}b_{4}} & \rightarrow3b_{1}b_{2}+4b_{1}b_{3}+4b_{1}b_{4}+5b_{2}b_{3}+5b_{2}b_{4}+6b_{3}b_{4}+b_{a_{1}}(10-6b_{1}-7b_{2}-8b_{3}-8b_{4})\\
-\textcolor{red}{-b_{5}b_{6}b_{7}b_{8}}-\textcolor{red}{2b_{5}b_{6}b_{7}}-\textcolor{red}{3b_{5}b_{6}b_{8}}-\textcolor{red}{4b_{5}b_{7}b_{8}}-\textcolor{red}{5b_{6}b_{7}b_{8}} & \rightarrow b_{a_{2}}(31-10b_{5}-11b_{6}-12b_{7}-13b_{8})\\
+\negthickspace\negthickspace\negthickspace\negthickspace\negthickspace\textcolor{blue}{b_{1}b_{2}b_{3}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{b_{1}b_{2}b_{3}}\negthinspace+\negthinspace\textcolor{blue}{b_{1}b_{2}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{2b_{1}b_{3}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{3b_{2}b_{3}b_{4}} & \negthinspace\rightarrow\negthinspace3b_{1}b_{2}\negthinspace+\negthinspace4b_{1}b_{3}\negthinspace+\negthinspace4b_{1}b_{4}\negthinspace+\negthinspace5b_{2}b_{3}\negthinspace+\negthinspace5b_{2}b_{4}\negthinspace+\negthinspace6b_{3}b_{4}\negthinspace+\negthinspace b_{a_{1}}(10\negthinspace-\negthinspace6b_{1}\negthinspace-\negthinspace7b_{2}\negthinspace-\negthinspace8b_{3}\negthinspace-\negthinspace8b_{4})\\
+\negthickspace\negthickspace\textcolor{red}{\negthickspace\negthickspace\negthickspace-b_{5}b_{6}b_{7}b_{8}}\negthinspace-\negthinspace\textcolor{red}{2b_{5}b_{6}b_{7}}\negthinspace-\negthinspace\textcolor{red}{3b_{5}b_{6}b_{8}}\negthinspace-\negthinspace\textcolor{red}{4b_{5}b_{7}b_{8}}\negthinspace-\negthinspace\textcolor{red}{5b_{6}b_{7}b_{8}} & \negthinspace\rightarrow\negthinspace b_{a_{2}}(31\negthinspace-\negthinspace10b_{5}\negthinspace-\negthinspace11b_{6}\negthinspace-\negthinspace12b_{7}\negthinspace-\negthinspace13b_{8})
 \end{align}
 
 \end_inset
@@ -19342,13 +19409,89 @@ Comparison to previous state-of-the-art
 
 \begin_layout Standard
 
-\color black
+\lang british
+Prior to the present paper, a minimum of 
+\emph on
+four 
+\emph default
+auxiliary variables would be needed because out of all the methods described
+ in the book of quadratizations 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dattani2019"
+literal "false"
+
+\end_inset
+
+, no method can quadratize the terms involving 
+\begin_inset Formula $(b_{1},b_{2},b_{3},b_{4})$
+\end_inset
+
+ and the terms involving 
+\begin_inset Formula $(b_{5},b_{6},b_{7},b_{8})$
+\end_inset
+
+ with fewer than two auxiliary variables each, which is what can be done
+ with Rosenberg's substitution method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rosenberg1975"
+literal "false"
+
+\end_inset
+
+ with the following auxiliary variables defined:
+\begin_inset Formula 
+\begin{equation}
+\textcolor{blue}{b_{a_{1}}\textcolor{blue}{\equiv b_{1}b_{2},}\,\,\,\,\,\,\textcolor{blue}{b_{a_{2}}}\textcolor{blue}{\equiv b_{3}b_{4},}\,\,\,\,\,\,}\textcolor{red}{b_{a_{3}}\textcolor{red}{\equiv b_{5}b_{6},}}\,\,\,\,\,\,\textcolor{red}{b_{a_{4}}\textcolor{red}{\equiv b_{7}b_{8}.}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
 \lang british
 \begin_inset Formula 
 \begin{align}
-\textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{blue}{2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
-\textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}-\textcolor{red}{b_{1}b_{3}b_{5}}-\textcolor{violet}{b_{1}b_{4}b_{5}}-\textcolor{teal}{3b_{3}b_{4}b_{5}} & \rightarrow\\
-\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}-\textcolor{red}{b_{2}b_{3}b_{5}}+b_{2}b_{3}b_{4}-\textcolor{violet}{4b_{2}b_{4}b_{5}}} & \rightarrow
+\textcolor{blue}{b_{a_{1}}} & \textcolor{blue}{\equiv b_{1}b_{2},}\\
+\textcolor{blue}{b_{a_{2}}} & \textcolor{blue}{\equiv b_{3}b_{4},}\\
+\textcolor{red}{b_{a_{3}}} & \textcolor{red}{\equiv b_{5}b_{6},}\\
+\textcolor{red}{b_{a_{4}}} & \textcolor{red}{\equiv b_{7}b_{8},}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\lang british
+which leads to the following quadratic terms:
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Formula 
+\begin{align}
+\textcolor{blue}{b_{12}b_{34}\negthinspace+\negthinspace b_{12}b_{3}\negthinspace+\negthinspace b_{12}b_{4}\negthinspace+\negthinspace2b_{1}b_{34}\negthinspace+\negthinspace3b_{2}b_{34}\negthinspace+\negthinspace3(b_{1}b_{2}\negthinspace-\negthinspace2b_{12}b_{1}\negthinspace-\negthinspace2b_{12}b_{2}\negthinspace+\negthinspace3b_{12})\negthinspace+\negthinspace6(b_{3}b_{4}\negthinspace-\negthinspace2b_{34}b_{3}\negthinspace-\negthinspace2b_{34}b_{4}\negthinspace+\negthinspace3b_{34})}\\
+\textcolor{red}{-b_{56}b_{78}\negthinspace-\negthinspace2b_{56}b_{7}\negthinspace-\negthinspace3b_{56}b_{8}\negthinspace-\negthinspace4b_{5}b_{78}\negthinspace-\negthinspace5b_{6}b_{78}\negthinspace+\negthinspace b_{1}b_{8}\negthinspace+\negthinspace6(b_{5}b_{6}\negthinspace-\negthinspace2b_{56}b_{5}\negthinspace-\negthinspace2b_{56}b_{6}\negthinspace+\negthinspace3b_{56})\negthinspace+\negthinspace10(b_{7}b_{8}\negthinspace-\negthinspace2b_{78}b_{7}\negthinspace-\negthinspace2b_{78}b_{8}\negthinspace+\negthinspace3b_{78})}
 \end{align}
 
 \end_inset
@@ -19357,6 +19500,39 @@ Comparison to previous state-of-the-art
 \end_layout
 
 \begin_layout Standard
+
+\color black
+\lang british
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\color black
+\lang british
+\begin_inset Formula 
+\begin{align}
+\negthickspace\negthickspace\negthickspace\negthickspace\negthickspace\textcolor{blue}{b_{1}b_{2}b_{3}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{b_{1}b_{2}b_{3}}\negthinspace+\negthinspace\textcolor{blue}{b_{1}b_{2}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{2b_{1}b_{3}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{3b_{2}b_{3}b_{4}} & \negthinspace\rightarrow\negthinspace b_{12}b_{34}+b_{12}b_{3}+b_{12}b_{4}+2b_{1}b_{34}+3b_{2}b_{34}+3(b_{1}b_{2}-2b_{12}b_{1}-2b_{12}b_{2}+3b_{12})+6(b_{3}b_{4}-2b_{34}b_{3}-2b_{34}b_{4}+3b_{34})\\
+\negthickspace\negthickspace\textcolor{red}{\negthickspace\negthickspace\negthickspace-b_{5}b_{6}b_{7}b_{8}}\negthinspace-\negthinspace\textcolor{red}{2b_{5}b_{6}b_{7}}\negthinspace-\negthinspace\textcolor{red}{3b_{5}b_{6}b_{8}}\negthinspace-\negthinspace\textcolor{red}{4b_{5}b_{7}b_{8}}\negthinspace-\negthinspace\textcolor{red}{5b_{6}b_{7}b_{8}} & \negthinspace\rightarrow\negthinspace-b_{56}b_{78}-2b_{56}b_{7}-3b_{56}b_{8}-4b_{5}b_{78}-5b_{6}b_{78}+b_{1}b_{8}+6(b_{5}b_{6}-2b_{56}b_{5}-2b_{56}b_{6}+3b_{56})+10(b_{7}b_{8}-2b_{78}b_{7}-2b_{78}b_{8}+3b_{78})
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 
 \lang british
 Pairwise covers require 4 auxiliaries.
@@ -19374,14 +19550,7 @@ and also at least 2 to cover the cubic terms
 
  is a pairwise cover for the index combinations in this function, and for
  this cover the quadratisation can also be given as an RBS:
-\color black
-
-\begin_inset Formula 
-\begin{align}
- & b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}+b_{1}b_{2}b_{4}+2b_{1}b_{3}b_{4}+3b_{2}b_{3}b_{4}-b_{5}b_{6}b_{7}b_{8}-2b_{5}b_{6}b_{7}-3b_{5}b_{6}b_{8}-4b_{5}b_{7}b_{8}-5b_{6}b_{7}b_{8}+b_{1}b_{8}\\
-\rightarrow & b_{12}b_{34}+b_{12}b_{3}+b_{12}b_{4}+2b_{1}b_{34}+3b_{2}b_{34}-b_{56}b_{78}-2b_{56}b_{7}-3b_{56}b_{8}-4b_{5}b_{78}-5b_{6}b_{78}+b_{1}b_{8}\\
- & +3(b_{1}b_{2}-2b_{12}b_{1}-2b_{12}b_{2}+3b_{12})+6(b_{3}b_{4}-2b_{34}b_{3}-2b_{34}b_{4}+3b_{34})+6(b_{5}b_{6}-2b_{56}b_{5}-2b_{56}b_{6}+3b_{56})+10(b_{7}b_{8}-2b_{78}b_{7}-2b_{78}b_{8}+3b_{78})
-\end{align}
+\end_layout
 
 \end_inset
 
@@ -19389,11 +19558,30 @@ and also at least 2 to cover the cubic terms
 \end_layout
 
 \begin_layout Standard
+- auxiliaries should probably be labeled as such, although I also like the
+ notation of the notation containing the original variable names.
+ Maybe 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+ is a better subscript.
+\end_layout
+
+\begin_layout Standard
+- RBS also involves way more terms.
+ 
+\end_layout
+
+\begin_layout Standard
+- RBS also has much worse range: -20 to +30, vs -13 to +31.
+\end_layout
+
+\begin_layout Standard
 
 \lang british
-How much with FGBZ? We may be able to have some cubic terms that mix the
- 1-4 set with the 5-8 set such that we still overall need fewer auxiliaries
- than pairwise covers or FGBZ.
+- We may be able to have some cubic terms that mix the 1-4 set with the
+ 5-8 set such that we still overall need fewer auxiliaries than pairwise
+ covers.
 \end_layout
 
 \begin_layout Subsection
@@ -19412,8 +19600,8 @@ How much with FGBZ? We may be able to have some cubic terms that mix the
 
 \lang british
 This is (perhaps?) the most extreme example.
- We need N auxiliaries and pairwise covers needs 2N.
- How much does FGBZ need? 
+ We need N auxiliaries and PC/RBS needs 2N.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -19644,7 +19832,7 @@ We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
 \color black
 \lang british
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -19674,7 +19862,8 @@ status collapsed
 \begin_inset Formula 
 \begin{align}
 \textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}\textcolor{blue}{-3b_{1}b_{2}b_{3}}\textcolor{blue}{-b_{1}b_{2}b_{4}}\textcolor{blue}{-b_{1}b_{3}b_{4}}\textcolor{blue}{-2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
-\textcolor{teal}{4b_{1}b_{2}b_{3}b_{5}}\textcolor{teal}{-5b_{1}b_{2}b_{5}}\textcolor{teal}{-b_{1}b_{3}b_{5}}\textcolor{teal}{-b_{2}b_{3}b_{5}} & \rightarrow-3b_{1}+6b_{2}-3b_{3}+5b_{5}-5b_{1}b_{2}+3b_{1}b_{3}-5b_{1}b_{5}-b_{2}b_{3}-b_{3}b_{5}-b_{a_{2}}(-8b_{1}+6b_{2}-4b_{3}+5b_{5}+3)+3\\
+\textcolor{teal}{4b_{1}b_{2}b_{3}b_{5}}\textcolor{teal}{-5b_{1}b_{2}b_{5}}\textcolor{teal}{-b_{1}b_{3}b_{5}}\textcolor{teal}{-b_{2}b_{3}b_{5}} & \rightarrow-3b_{1}+6b_{2}-3b_{3}+5b_{5}-5b_{1}b_{2}+3b_{1}b_{3}-5b_{1}b_{5}-b_{2}b_{3}-b_{3}b_{5}\\
+ & \,\,\,\,\,\,\,\,\hspace{-0.05em}\hspace{-0.05em}\,-b_{a_{2}}(-8b_{1}+6b_{2}-4b_{3}+5b_{5}+3)+3\\
 {\color{red}3b_{1}b_{2}b_{4}b_{5}-b_{1}b_{4}b_{5}-4b_{2}b_{4}b_{5}} & \rightarrow b_{1}+4b_{2}+3b_{1}b_{2}-b_{1}b_{4}-b_{1}b_{5}-4b_{2}b_{4}-4b_{2}b_{5}+b_{a_{3}}(-4b_{1}-7b_{2}+5b_{4}+5b_{5}+3)
 \end{align}
 
@@ -19775,8 +19964,6 @@ Pairwise covers would require 4 auxiliaries.
 \end_inset
 
 
-\color inherit
-FGBZ?
 \end_layout
 
 \begin_layout Section
