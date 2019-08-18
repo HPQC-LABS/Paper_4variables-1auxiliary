@@ -19966,6 +19966,18 @@ Pairwise covers would require 4 auxiliaries.
 
 \end_layout
 
+\begin_layout Subsection
+
+\size normal
+\color black
+\lang british
+Just for fun maybe also 
+\begin_inset Formula $\sin(b_{1})e^{b_{2}}\sqrt{b_{3}+b_{4}}$
+\end_inset
+
+ 
+\end_layout
+
 \begin_layout Section
 
 \lang british
@@ -20048,6 +20060,147 @@ Lemma 2 =
  has an auxiliary bit adjacent to all 4 original bits and no other edges.
 \end_layout
 
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+Gadget Graphs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+k4-e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Graphics
+	filename fig_Gadget41_K5-e.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+k5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Graphics
+	filename fig_Gadget41_K5.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+X
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Graphics
+	filename fig_Gadget41_star.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 
 \lang british
@@ -20071,8 +20224,20 @@ Acknowledgments
 \lang british
 We wish to thank Elisabeth Rodríguez-Heck for helpful comments on an early
  version of this paper.
- We also wish to thank Man Hou Hong, Kai Cheong Choi, Cho Hou Tang, and
- Chong Hou Lao for helpful discussions about the notation in Lemma 3.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+We also wish to thank Man Hou Hong, Kai Cheong Choi, Cho Hou Tang, and Chong
+ Hou Lao for helpful discussions about the notation in Lemma 3.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
