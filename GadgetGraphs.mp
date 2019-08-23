@@ -22,7 +22,7 @@ prologues := 3;	% needed if there are LaTeX labels and also for converting to pd
 
 % for writing out the indices:
 numeric showindices;
-showindices := 1;       % hide the indices
+showindices := 0;       % hide the indices
 %showindices := 1;      % show the indices
 
 if showindices=1:
