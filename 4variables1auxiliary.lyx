@@ -19490,8 +19490,8 @@ which leads to the following quadratic terms:
 \lang british
 \begin_inset Formula 
 \begin{align}
-\textcolor{blue}{b_{12}b_{34}\negthinspace+\negthinspace b_{12}b_{3}\negthinspace+\negthinspace b_{12}b_{4}\negthinspace+\negthinspace2b_{1}b_{34}\negthinspace+\negthinspace3b_{2}b_{34}\negthinspace+\negthinspace3(b_{1}b_{2}\negthinspace-\negthinspace2b_{12}b_{1}\negthinspace-\negthinspace2b_{12}b_{2}\negthinspace+\negthinspace3b_{12})\negthinspace+\negthinspace6(b_{3}b_{4}\negthinspace-\negthinspace2b_{34}b_{3}\negthinspace-\negthinspace2b_{34}b_{4}\negthinspace+\negthinspace3b_{34})}\\
-\textcolor{red}{-b_{56}b_{78}\negthinspace-\negthinspace2b_{56}b_{7}\negthinspace-\negthinspace3b_{56}b_{8}\negthinspace-\negthinspace4b_{5}b_{78}\negthinspace-\negthinspace5b_{6}b_{78}\negthinspace+\negthinspace b_{1}b_{8}\negthinspace+\negthinspace6(b_{5}b_{6}\negthinspace-\negthinspace2b_{56}b_{5}\negthinspace-\negthinspace2b_{56}b_{6}\negthinspace+\negthinspace3b_{56})\negthinspace+\negthinspace10(b_{7}b_{8}\negthinspace-\negthinspace2b_{78}b_{7}\negthinspace-\negthinspace2b_{78}b_{8}\negthinspace+\negthinspace3b_{78})}
+\textcolor{blue}{b_{a_{1}}b_{a_{2}}\negthinspace+\negthinspace b_{a_{1}}b_{3}\negthinspace+\negthinspace b_{a_{1}}b_{4}\negthinspace+\negthinspace2b_{1}b_{a_{2}}\negthinspace+\negthinspace3b_{2}b_{a_{2}}\negthinspace+\negthinspace3(b_{a_{1}}\negthinspace-\negthinspace2b_{a_{1}}b_{1}\negthinspace-\negthinspace2b_{a_{1}}b_{2}\negthinspace+\negthinspace3b_{a_{1}})\negthinspace+\negthinspace6(b_{a_{2}}\negthinspace-\negthinspace2b_{a_{2}}b_{3}\negthinspace-\negthinspace2b_{a_{2}}b_{4}\negthinspace+\negthinspace3b_{a_{2}})}\\
+\textcolor{red}{-b_{a_{3}}b_{a_{4}}\negthinspace-\negthinspace2b_{a_{3}}b_{7}\negthinspace-\negthinspace3b_{a_{3}}b_{8}\negthinspace-\negthinspace4b_{5}b_{a_{4}}\negthinspace-\negthinspace5b_{6}b_{a_{4}}\negthinspace+\negthinspace b_{1}b_{8}\negthinspace+\negthinspace6(b_{a_{3}}\negthinspace-\negthinspace2b_{a_{3}}b_{5}\negthinspace-\negthinspace2b_{a_{3}}b_{6}\negthinspace+\negthinspace3b_{a_{3}})\negthinspace+\negthinspace10(b_{a_{4}}\negthinspace-\negthinspace2b_{a_{4}}b_{7}\negthinspace-\negthinspace2b_{a_{4}}b_{8}\negthinspace+\negthinspace3b_{a_{4}})}
 \end{align}
 
 \end_inset
@@ -19555,16 +19555,6 @@ and also at least 2 to cover the cubic terms
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-- auxiliaries should probably be labeled as such, although I also like the
- notation of the notation containing the original variable names.
- Maybe 
-\begin_inset Formula $a_{ij}$
-\end_inset
-
- is a better subscript.
 \end_layout
 
 \begin_layout Standard
@@ -19864,7 +19854,7 @@ status open
 \textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}\textcolor{blue}{-3b_{1}b_{2}b_{3}}\textcolor{blue}{-b_{1}b_{2}b_{4}}\textcolor{blue}{-b_{1}b_{3}b_{4}}\textcolor{blue}{-2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
 \textcolor{teal}{4b_{1}b_{2}b_{3}b_{5}}\textcolor{teal}{-5b_{1}b_{2}b_{5}}\textcolor{teal}{-b_{1}b_{3}b_{5}}\textcolor{teal}{-b_{2}b_{3}b_{5}} & \rightarrow-3b_{1}+6b_{2}-3b_{3}+5b_{5}-5b_{1}b_{2}+3b_{1}b_{3}-5b_{1}b_{5}-b_{2}b_{3}-b_{3}b_{5}\\
  & \,\,\,\,\,\,\,\,\hspace{-0.05em}\hspace{-0.05em}\,-b_{a_{2}}(-8b_{1}+6b_{2}-4b_{3}+5b_{5}+3)+3\\
-{\color{red}3b_{1}b_{2}b_{4}b_{5}-b_{1}b_{4}b_{5}-4b_{2}b_{4}b_{5}} & \rightarrow b_{1}+4b_{2}+3b_{1}b_{2}-b_{1}b_{4}-b_{1}b_{5}-4b_{2}b_{4}-4b_{2}b_{5}+b_{a_{3}}(-4b_{1}-7b_{2}+5b_{4}+5b_{5}+3)
+{\color{red}3b_{1}b_{2}b_{4}b_{5}\negthinspace-\negthinspace b_{1}b_{4}b_{5}\negthinspace-\negthinspace4b_{2}b_{4}b_{5}} & \rightarrow b_{1}\negthinspace+\negthinspace4b_{2}\negthinspace+\negthinspace3b_{1}b_{2}\negthinspace-\negthinspace b_{1}b_{4}\negthinspace-\negthinspace b_{1}b_{5}\negthinspace-\negthinspace4b_{2}b_{4}\negthinspace-\negthinspace4b_{2}b_{5}\negthinspace+\negthinspace b_{a_{3}}(-4b_{1}\negthinspace-\negthinspace7b_{2}\negthinspace+\negthinspace5b_{4}\negthinspace+\negthinspace5b_{5}\negthinspace+\negthinspace3)
 \end{align}
 
 \end_inset
@@ -19888,7 +19878,7 @@ the previous state-of-the-art
 
 \end_inset
 
-quadratization technique
+ quadratization technique
 \begin_inset Note Note
 status open
 
@@ -19975,7 +19965,16 @@ Just for fun maybe also
 \begin_inset Formula $\sin(b_{1})e^{b_{2}}\sqrt{b_{3}+b_{4}}$
 \end_inset
 
- 
+ which can be converted to a polynomial and then quadratized.
+ This shows that 
+\begin_inset Quotes eld
+\end_inset
+
+all functions can be quadded
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
