@@ -19829,6 +19829,7 @@ status open
 \size small
 \color black
 \lang british
+The 15-term example
 \begin_inset Formula 
 \begin{align}
 \textcolor{blue}{\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}\hspace{-0.05em}5b_{1}b_{2}b_{3}b_{4}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{blue}{2b_{2}b_{3}b_{4}} & \rightarrow b_{1}b_{2}+b_{1}b_{3}+3b_{1}b_{4}+2b_{2}b_{4}+2b_{3}b_{4}-b_{a_{1}}(5b_{1}+4b_{2}+4b_{3}+6b_{4}-8)\\
@@ -19839,6 +19840,19 @@ status open
 \textcolor{orange}{b_{2}b_{3}b_{4}b_{5}} & \rightarrow2b_{2}b_{3}+2b_{2}b_{4}+b_{2}b_{5}+2b_{3}b_{4}+b_{3}b_{5}+b_{4}b_{5}+b_{a_{5}}(4-3b_{2}-3b_{3}-3b_{4}-2b_{5})
 \end{align}
 
+\end_inset
+
+
+\begin_inset Formula $-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{red}{5b_{1}b_{2}b_{5}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{red}{b_{1}b_{3}b_{5}}-\textcolor{violet}{b_{1}b_{4}b_{5}}-\textcolor{blue}{2b_{2}b_{3}b_{4}\textcolor{red}{-\textcolor{red}{b_{2}b_{3}b_{5}}-\textcolor{violet}{4b_{2}b_{4}b_{5}}-\textcolor{teal}{3b_{3}b_{4}b_{5}}\textcolor{blue}{+5b_{1}b_{2}b_{3}b_{4}}+4b_{1}b_{2}b_{3}b_{5}}}+\textcolor{violet}{3b_{1}b_{2}b_{4}b_{5}}+\textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}+\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}}$
+\end_inset
+
+(using pairwise cover {123, 12, 13, 23, 45})
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Formula $\longrightarrow-3b_{12}b_{3}-b_{12}b_{4}-5b_{12}b_{5}-b_{13}b_{4}-b_{13}b_{5}-b_{1}b_{45}-2b_{23}b_{4}-b_{23}b_{5}-4b_{2}b_{45}-3b_{3}b_{45}+5b_{123}b_{4}+4b_{123}b_{5}+3b_{12}b_{45}+2b_{13}b_{45}+b_{23}b_{45}+9(b_{123}(5-2b_{1}-2b_{2}-2b_{3})+b_{12}b_{3})+21(b_{12}(3-2b_{1}-2b_{2})+b_{1}b_{2})+4(b_{13}(3-2b_{1}-2b_{3})+b_{1}b_{3})+4(b_{23}(3-2b_{2}-2b_{3})+b_{2}b_{3})+14(b_{45}(3-2b_{4}-2b_{5})+b_{4}b_{5})$
 \end_inset
 
 
