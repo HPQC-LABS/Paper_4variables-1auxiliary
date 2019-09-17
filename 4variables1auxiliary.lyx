@@ -19976,7 +19976,7 @@ Pairwise covers would require 4 auxiliaries.
 \color black
 \lang british
 Just for fun maybe also 
-\begin_inset Formula $\sin(b_{1})e^{b_{2}}\sqrt{b_{3}+b_{4}}$
+\begin_inset Formula ${\rm arctan}(b_{1}+b_{2})e^{\min\left(b_{2},b_{3}\right)}\sqrt{5b_{4}}$
 \end_inset
 
  which can be converted to a polynomial and then quadratized.
@@ -19989,6 +19989,14 @@ all functions can be quadded
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+
+\size normal
+\color black
+\lang british
+Any special cases of our two new theorems
 \end_layout
 
 \begin_layout Section
