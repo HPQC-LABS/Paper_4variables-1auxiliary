@@ -19395,7 +19395,11 @@ The two sub-functions can be quadratized using Lemma 1 (with the addition
 \begin_inset Formula $b_{a_{1}}$
 \end_inset
 
-) and 2 respectively:
+) and 2 (with the addition of the auxiliary variable 
+\begin_inset Formula $b_{a_{2}}$
+\end_inset
+
+) respectively:
 \end_layout
 
 \begin_layout Standard
@@ -19609,15 +19613,6 @@ Previous state-of-the-art
 (-20 to +30), Present (-13 to +31).
 \end_layout
 
-\begin_layout Standard
-\noindent
-
-\lang british
--> We may be able to have some cubic terms that mix the 1-4 set with the
- 5-8 set such that we still overall need fewer auxiliaries than pairwise
- covers.
-\end_layout
-
 \begin_layout Subsection
 
 \size normal
@@ -19634,19 +19629,32 @@ Previous state-of-the-art
 
 \lang british
 This is (perhaps?) the most extreme example.
- We need N auxiliaries and PC/RBS needs 2N.
+ 
 \end_layout
 
 \begin_layout Standard
 
 \lang british
-Consider the function
+Consider the function:
 \end_layout
 
 \begin_layout Standard
 
 \lang british
 \begin_inset VSpace -2mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Formula 
+\begin{equation}
+b_{1}b_{2}b_{3}b_{4}+b_{4}b_{5}+b_{5}b_{6}b_{7}b_{8}+b_{8}b_{9}+b_{9}b_{10}b_{11}b_{12}+\cdots+b_{4N-4}b_{4N-3}+b_{4N-3}b_{4N-2}b_{4N-1}b_{4N}.
+\end{equation}
+
 \end_inset
 
 
@@ -19680,6 +19688,13 @@ status collapsed
 
 \size default
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\color black
+\lang british
 \begin_inset Formula 
 \begin{equation}
 \sum_{i=0}^{N-1}\sum_{J\subseteq\{4i+1,\ 4i+2,\ 4i+3,\ 4i+4\}}\alpha_{I}\prod_{j\in J}b_{j}
@@ -19690,7 +19705,26 @@ status collapsed
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
+With Theorem 1, we can quadratize this function with only 
+\begin_inset Formula $N$
+\end_inset
+
+ auxiliary variables, one for each 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 
 \lang british
 This is the sum of 
@@ -19706,7 +19740,7 @@ This is the sum of
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang british
 For a 4-variable functions with general coefficients, RBS requires at least
@@ -19726,6 +19760,11 @@ For a 4-variable functions with general coefficients, RBS requires at least
 
  auxiliary variables are needed.
  By using Theorem 1, we only need half as many.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
