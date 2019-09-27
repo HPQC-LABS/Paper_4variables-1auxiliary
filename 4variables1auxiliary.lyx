@@ -20525,7 +20525,7 @@ Previous state-of-the-art
 \size normal
 \color black
 \lang british
-4-variable function that is not written as a polynomial.
+4-variable function that is not written as a polynomial
 \end_layout
 
 \begin_layout Standard
@@ -20570,7 +20570,7 @@ literal "false"
 , and we get the polynomial:
 \begin_inset Formula 
 \begin{align}
-\sqrt{5}b_{4}\left(\frac{\pi}{4}b_{1}+\frac{\pi}{4}b_{2}+b_{1}b_{2}\left(\arctan2-\frac{\pi}{2}\right)+\frac{\pi}{4}(e-1)b_{2}b_{3}+b_{1}b_{2}b_{3}((e-1)\left(\arctan2-\frac{\pi}{4}\right)\right)
+\sqrt{5}b_{4}\left(\frac{\pi}{4}b_{1}+\frac{\pi}{4}b_{2}+b_{1}b_{2}\left(\arctan\left(2\right)-\frac{\pi}{2}\right)+\frac{\pi}{4}(e-1)b_{2}b_{3}+b_{1}b_{2}b_{3}(e-1)\left(\arctan\left(2\right)-\frac{\pi}{4}\right)\right)
 \end{align}
 
 \end_inset
@@ -20583,7 +20583,7 @@ literal "false"
 \lang british
 \begin_inset Formula 
 \begin{equation}
-=\frac{\sqrt{5}\pi}{4}b_{1}b_{4}+\frac{\sqrt{5}\pi}{4}b_{2}b_{4}+\sqrt{5}\left(\arctan2-\frac{\pi}{2}\right)b_{1}b_{2}b_{4}+\frac{\sqrt{5}\pi}{4}(e-1)b_{2}b_{3}b_{4}+(e-1)\left(\arctan2-\frac{\pi}{4}\right)b_{1}b_{2}b_{3}b_{4}.
+=\frac{\sqrt{5}\pi}{4}b_{1}b_{4}+\frac{\sqrt{5}\pi}{4}b_{2}b_{4}+\sqrt{5}\left(\arctan\left(2\right)-\frac{\pi}{2}\right)b_{1}b_{2}b_{4}+\frac{\sqrt{5}\pi}{4}(e-1)b_{2}b_{3}b_{4}+(e-1)\left(\arctan\left(2\right)-\frac{\pi}{4}\right)b_{1}b_{2}b_{3}b_{4}.
 \end{equation}
 
 \end_inset
