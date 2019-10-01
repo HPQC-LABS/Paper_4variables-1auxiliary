@@ -823,7 +823,7 @@ this is no longer necessary because we're showing the full table.
 \end_layout
 
 \begin_layout Standard
-We will now provide 5 different quadratization formulas for Eq.
+We will now provide 4 different quadratization formulas for Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -834,14 +834,14 @@ noprefix "false"
 
 \end_inset
 
- (Lemmas 1-5), which each are only valid for their own specific conditions
+ (Lemmas 1-4), which each are only valid for their own specific conditions
  on the 
 \begin_inset Formula $\alpha$
 \end_inset
 
- coefficients; but we will then prove with Lemmas 6-8 that these 5 cases
+ coefficients; but we will then prove with Lemmas 6-8 that these 54cases
  for the coefficients, cover every possible case.
- The explicit quadratizations for Lemmas 1-5 are given below, but their
+ The explicit quadratizations for Lemmas 1-4 are given below, but their
  proofs take up a lot of space so they are given in the Appendix.
 \end_layout
 
@@ -873,11 +873,11 @@ height "1pt"
 \noindent
 
 \series bold
-Lemma 1: If 
-\begin_inset Formula $\alpha_{1234}\ge0,$
+Lemma 1: Suppose 
+\begin_inset Formula $\alpha_{1234}\ge0.$
 \end_inset
 
- and either 
+ If 
 \begin_inset Formula $\alpha_{ijk}\ge-\frac{\alpha_{1234}}{2}$
 \end_inset
 
@@ -889,7 +889,15 @@ Lemma 1: If
 \begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le0\le\alpha_{234}\le\alpha_{134}\le\alpha_{124},$
 \end_inset
 
- then Eq.
+ or both 
+\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha_{123}+\alpha_{124}\ge-\alpha_{1234}$
+\end_inset
+
+, then Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1352,9 +1360,6 @@ height "1pt"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset VSpace 2mm
 \end_inset
 
@@ -1362,81 +1367,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Standard
-\noindent
-
-\series bold
-Lemma 5: If 
-\begin_inset Formula $\alpha_{1234}\ge0,$
-\end_inset
-
- 
-\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
-\end_inset
-
- and 
-\begin_inset Formula $\alpha_{123}+\alpha_{124}\ge-\alpha_{1234}$
-\end_inset
-
-, then Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:general4variable"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is perfectly quadratized by 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-the same formula as Lemma 1
-\end_layout
-
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\sum_{ijk}\alpha_{ijk}\sum_{lm\subset ijk}b_{l}b_{m}+\alpha_{1234}\sum_{ij}b_{i}b_{j}+b_{a}\left(\sum\nolimits _{ijk}\alpha_{ijk}\left(1-\sum\nolimits _{l\in ijk}b_{l}\right)+\alpha_{1234}\left(3-2\sum\nolimits _{i}b_{i}\right)\right).
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hspace{}
-\length -6mm
-\end_inset
-
-
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "104col%"
-height "1pt"
-
-\end_inset
-
-
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In the Appendix, Lemmas 1-5 are each proven for their own specific conditions
+In the Appendix, Lemmas 1-4 are each proven for their own specific conditions
  on the coefficients 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -2123,7 +2054,7 @@ noprefix "false"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3816,7 +3747,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4, 5
+Lemma 1, 4
 \end_layout
 
 \end_inset
@@ -4141,7 +4072,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4, 5
+Lemma 1, 4
 \end_layout
 
 \end_inset
@@ -4687,11 +4618,7 @@ Lemma 1
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -6077,7 +6004,7 @@ Lemma 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 1
 \end_layout
 
 \end_inset
@@ -6225,7 +6152,7 @@ Lemma 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 5
+Lemma 1
 \end_layout
 
 \end_inset
@@ -19652,7 +19579,7 @@ Consider the function:
 \lang british
 \begin_inset Formula 
 \begin{equation}
-b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{3}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{7}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{11}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}\cdots\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}4}\hspace{-0.05em}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}.
+2b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{3}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}+2\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{7}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}+2\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{11}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}\cdots\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}4}\hspace{-0.05em}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}\hspace{-0.05em}+2\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}.
 \end{equation}
 
 \end_inset
@@ -19689,7 +19616,7 @@ status collapsed
 \size default
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -19700,6 +19627,15 @@ status open
 \sum_{i=0}^{N-1}\sum_{J\subseteq\{4i+1,\ 4i+2,\ 4i+3,\ 4i+4\}}\alpha_{I}\prod_{j\in J}b_{j}
 \end{equation}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Formula $2b_{1}b_{2}b_{3}b_{4}-b_{1}b_{2}b_{4}\longrightarrow b_{1}b_{2}+2b_{1}b_{3}+b_{1}b_{4}+2b_{2}b_{3}+b_{2}b_{4}+2b_{3}b_{4}-b_{a}(3b_{1}+3b_{2}+4b_{3}+3b_{4}+1)$
 \end_inset
 
 
@@ -19737,7 +19673,6 @@ With Theorem 1, we can quadratize this function with only
  each, and there is no known way to quadratize these terms in such a way
  that a byproduct term of the quadratization would cancel the corresponding
  cubic term.
- 
 \end_layout
 
 \begin_layout Standard
@@ -20230,7 +20165,30 @@ Range of coefficients:
 \lang british
 Previous state-of-the-art 
 \lang english
-(-5 to +21), Present (-7 to +8).
+(-42 to +63)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+from the penalty terms
+\end_layout
+
+\end_inset
+
+, Present (-7 to +10)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $-7b_{a_{3}}b_{2}+10b_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -20310,7 +20268,7 @@ We then apply Theorem 1 five times, once for the terms of each color:
  & \,\,\,\,\,\,\,\,\hspace{-0.05em}\hspace{-0.05em}\,\textcolor{red}{-b_{a_{2}}(-8b_{1}+6b_{2}-4b_{3}+5b_{5}+3)+3}\\
 \textcolor{violet}{3b_{1}b_{2}b_{4}b_{5}}\textcolor{violet}{-b_{1}b_{4}b_{5}}\textcolor{violet}{-4b_{2}b_{4}b_{5}} & \textcolor{violet}{\rightarrow}\textcolor{violet}{b_{1}+4b_{2}+3b_{1}b_{2}-b_{1}b_{4}-b_{1}b_{5}-4b_{2}b_{4}-4b_{2}b_{5}+b_{a_{3}}(-4b_{1}-7b_{2}+5b_{4}+5b_{5}+3)}\\
 \textcolor{teal}{2b_{1}b_{3}b_{4}b_{5}}\textcolor{teal}{-3b_{3}b_{4}b_{5}} & \textcolor{teal}{\rightarrow}\textcolor{teal}{b_{a_{4}}(2b_{1}-3b_{3}-3b_{4}-3b_{5}+6)}\\
-\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}} & \textcolor{orange}{\rightarrow}\textcolor{orange}{2b_{2}b_{3}+2b_{2}b_{4}+b_{2}b_{5}+2b_{3}b_{4}+b_{3}b_{5}+b_{4}b_{5}+b_{a_{5}}(4-3b_{2}-3b_{3}-3b_{4}-2b_{5})}.
+\textcolor{orange}{b_{2}b_{3}b_{4}b_{5}} & \textcolor{orange}{\rightarrow}\textcolor{orange}{b_{2}b_{3}+b_{2}b_{4}+b_{2}b_{5}+b_{3}b_{4}+b_{3}b_{5}+b_{4}b_{5}+b_{a_{5}}(3-2b_{2}-2b_{3}-2b_{4}-2b_{5})}.
 \end{align}
 
 \end_inset
@@ -20552,7 +20510,7 @@ noprefix "false"
 \lang british
 \begin_inset Formula 
 \begin{equation}
-{\rm arctan}(b_{1}+b_{2})e^{\min\left(b_{2},b_{3}\right)}\sqrt{5b_{4}}.
+f={\rm arctan}(b_{1}+b_{2})e^{\min\left(b_{2},b_{3}\right)}\sqrt{5b_{4}}.
 \end{equation}
 
 \end_inset
@@ -20570,7 +20528,7 @@ literal "false"
 , and we get the polynomial:
 \begin_inset Formula 
 \begin{align}
-\sqrt{5}b_{4}\left(\frac{\pi}{4}b_{1}+\frac{\pi}{4}b_{2}+b_{1}b_{2}\left(\arctan\left(2\right)-\frac{\pi}{2}\right)+\frac{\pi}{4}(e-1)b_{2}b_{3}+b_{1}b_{2}b_{3}(e-1)\left(\arctan\left(2\right)-\frac{\pi}{4}\right)\right)
+f=\sqrt{5}b_{4}\left(\frac{\pi}{4}b_{1}+\frac{\pi}{4}b_{2}+b_{1}b_{2}\left(\arctan\left(2\right)-\frac{\pi}{2}\right)+\frac{\pi}{4}(e-1)b_{2}b_{3}+b_{1}b_{2}b_{3}(e-1)\left(\arctan\left(2\right)-\frac{\pi}{4}\right)\right)
 \end{align}
 
 \end_inset
@@ -20714,12 +20672,108 @@ We can then apply Lemma 1 to quadratize the last three terms.
 
 \end_layout
 
+\begin_layout Standard
+We can also use RBS for 
+\begin_inset Formula $b_{2}b_{4}$
+\end_inset
+
+ and 
+\begin_inset Formula $b_{1}b_{3},$
+\end_inset
+
+ to quadratise 
+\begin_inset Formula $f$
+\end_inset
+
+ as (after rouding the coefficients):
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Formula 
+\begin{equation}
+1.76b_{1}b_{4}+1.76b_{2}b_{4}-1.04b_{1}b_{a_{1}}+3.02b_{3}b_{a_{1}}+1.24b_{a_{1}}b_{a_{2}}+5.30(b_{2}b_{4}\negthinspace-\negthinspace2b_{a_{1}}b_{2}\negthinspace-\negthinspace2b_{a_{1}}b_{4}\negthinspace+\negthinspace3b_{a_{1}})+1.24(b_{1}b_{3}\negthinspace-\negthinspace2b_{a_{2}}b_{1}\negthinspace-\negthinspace2b_{a_{2}}b_{3}\negthinspace+\negthinspace3b_{a_{2}}).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+This is the best we can do using previously methods that we know.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang british
+Comparison
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\bar under
+\lang british
+Number of auxiliary variables:
+\bar default
+ Previous state-of-the-art (2), Present (1).
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\bar under
+\lang british
+Number of quadratic terms in quadratization result:
+\bar default
+ Previous state-of-the-art (11), Present (10).
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\bar under
+Range of coefficients:
+\bar default
+ 
+\lang british
+Previous state-of-the-art 
+\lang english
+(-10.60 to +15.90), Present (-1.44 to +5.50).
+\end_layout
+
 \begin_layout Subsection
 
 \size normal
 \color black
 \lang british
 Any special cases of our two new theorems
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+Consider the function 
+\begin_inset Formula $\min(4-3b_{1}-3b_{2}-3b_{3}-2b_{4},0)=b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}-2b_{1}b_{2}-2b_{1}b_{3}-b_{1}b_{4}-2b_{2}b_{3}-b_{2}b_{4}-b_{3}b_{4}.$
+\end_inset
+
+ This can be quadratised as 
+\begin_inset Formula $b_{a}(4-3b_{1}-3b_{2}-3b_{3}-2b_{4})$
+\end_inset
+
+ because 
+\begin_inset Formula $b_{a}^{*}=1$
+\end_inset
+
+ is a minimiser iff 
+\begin_inset Formula $4-3b_{1}-3b_{2}-3b_{3}-2b_{4}\le0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -20735,7 +20789,7 @@ Non-uniqueness
 \begin_layout Standard
 We note that functions can have multiple different quadratizations, even
  when with the same number of auxiliary qubits.
- Therefore, while Lemmas 1-5 constitute the only quadratization formulas
+ Therefore, while Lemmas 1-4 constitute the only quadratization formulas
  needed for proving Theorem 1, we considered the possibility that alternative
  quadratization formulas exist, but it turned out that all quadratization
  formulas that we found, could by bit-flipping be turned exactly into one
