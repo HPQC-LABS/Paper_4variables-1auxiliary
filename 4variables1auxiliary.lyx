@@ -19510,29 +19510,35 @@ Comparison
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 \lang british
 Number of auxiliary variables:
-\bar default
+\series default
+\color inherit
  Previous state-of-the-art (4), Present (2).
 \end_layout
 
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 \lang british
 Number of quadratic terms in quadratization result:
-\bar default
+\series default
+\color inherit
  Previous state-of-the-art (19), Present (14).
 \end_layout
 
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 Range of coefficients:
-\bar default
+\series default
+\color inherit
  
 \lang british
 Previous state-of-the-art 
@@ -19555,8 +19561,19 @@ Previous state-of-the-art
 \begin_layout Standard
 
 \lang british
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
 This is (perhaps?) the most extreme example.
  
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -19670,9 +19687,19 @@ With Theorem 1, we can quadratize this function with only
 \end_inset
 
  variables because the degree-4 terms alone would require 2 auxiliary variables
- each, and there is no known way to quadratize these terms in such a way
- that a byproduct term of the quadratization would cancel the corresponding
- cubic term.
+ each
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+, and there is no known way to quadratize these terms in such a way that
+ a byproduct term of the quadratization would cancel the corresponding cubic
+ term
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -20031,9 +20058,9 @@ Previous state-of-the-art
 \begin_layout Standard
 
 \lang british
-Pairwise covers would require 4 auxiliaries.
- It is not possible in 3 auxiliaries because we cannot cover all 9 cubic
- terms in (this sentence isn't complete?).
+Pairwise covers would require 4 auxiliary variables.
+ It is not possible with only 3 auxiliary variables because we cannot cover
+ all 9 cubic terms in (this sentence isn't complete?).
  One pairwise cover for the index combinations of this function is 
 \begin_inset Formula $\{12,34,35,45\}$
 \end_inset
@@ -20138,29 +20165,35 @@ Comparison
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 \lang british
 Number of auxiliary variables:
-\bar default
+\series default
+\color inherit
  Previous state-of-the-art (4), Present (3).
 \end_layout
 
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 \lang british
 Number of quadratic terms in quadratization result:
-\bar default
+\series default
+\color inherit
  Previous state-of-the-art (24), Present (27).
 \end_layout
 
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 Range of coefficients:
-\bar default
+\series default
+\color inherit
  
 \lang british
 Previous state-of-the-art 
@@ -20448,29 +20481,35 @@ Comparison
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 \lang british
 Number of auxiliary variables:
-\bar default
+\series default
+\color inherit
  Previous state-of-the-art (5), Present (5).
 \end_layout
 
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 \lang british
 Number of quadratic terms in quadratization result:
-\bar default
+\series default
+\color inherit
  Previous state-of-the-art (31), Present (37).
 \end_layout
 
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 Range of coefficients:
-\bar default
+\series default
+\color inherit
  
 \lang british
 Previous state-of-the-art 
@@ -20510,7 +20549,7 @@ noprefix "false"
 \lang british
 \begin_inset Formula 
 \begin{equation}
-f={\rm arctan}(b_{1}+b_{2})e^{\min\left(b_{2},b_{3}\right)}\sqrt{5b_{4}}.
+{\rm arctan}(b_{1}+b_{2})e^{\min\left(b_{2},b_{3}\right)}\sqrt{5b_{4}}.
 \end{equation}
 
 \end_inset
@@ -20528,9 +20567,18 @@ literal "false"
 , and we get the polynomial:
 \begin_inset Formula 
 \begin{align}
-f=\sqrt{5}b_{4}\left(\frac{\pi}{4}b_{1}+\frac{\pi}{4}b_{2}+b_{1}b_{2}\left(\arctan\left(2\right)-\frac{\pi}{2}\right)+\frac{\pi}{4}(e-1)b_{2}b_{3}+b_{1}b_{2}b_{3}(e-1)\left(\arctan\left(2\right)-\frac{\pi}{4}\right)\right)
+\sqrt{5}b_{4}\left(\frac{\pi}{4}b_{1}+\frac{\pi}{4}b_{2}+b_{1}b_{2}\left(\arctan\left(2\right)-\frac{\pi}{2}\right)+\frac{\pi}{4}(e-1)b_{2}b_{3}+b_{1}b_{2}b_{3}(e-1)\left(\arctan\left(2\right)-\frac{\pi}{4}\right)\right)
 \end{align}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset VSpace -8mm
 \end_inset
 
 
@@ -20655,7 +20703,8 @@ any 4-variable function
 
 \end_inset
 
-We can then apply Lemma 1 to quadratize the last three terms.
+The last three terms have degree larger than 2, but we can quadratize all
+ three of them with one application of Lemma 1.
  We thus obtain the quadratic function (after rounding the coefficients):
 \end_layout
 
@@ -20669,23 +20718,8 @@ We can then apply Lemma 1 to quadratize the last three terms.
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-We can also use RBS for 
-\begin_inset Formula $b_{2}b_{4}$
-\end_inset
-
- and 
-\begin_inset Formula $b_{1}b_{3},$
-\end_inset
-
- to quadratise 
-\begin_inset Formula $f$
-\end_inset
-
- as (after rouding the coefficients):
+The best alternative quadratization as far as we are aware, uses Rosenberg's
+ substitution, in which we first define the auxiliary variables:
 \end_layout
 
 \begin_layout Standard
@@ -20693,18 +20727,25 @@ We can also use RBS for
 \lang british
 \begin_inset Formula 
 \begin{equation}
-1.76b_{1}b_{4}+1.76b_{2}b_{4}-1.04b_{1}b_{a_{1}}+3.02b_{3}b_{a_{1}}+1.24b_{a_{1}}b_{a_{2}}+5.30(b_{2}b_{4}\negthinspace-\negthinspace2b_{a_{1}}b_{2}\negthinspace-\negthinspace2b_{a_{1}}b_{4}\negthinspace+\negthinspace3b_{a_{1}})+1.24(b_{1}b_{3}\negthinspace-\negthinspace2b_{a_{2}}b_{1}\negthinspace-\negthinspace2b_{a_{2}}b_{3}\negthinspace+\negthinspace3b_{a_{2}}).
+b_{a_{1}}\equiv b_{1}b_{3},\,\,\,\,\,\,b_{a_{2}}\equiv b_{2}b_{4},
 \end{equation}
 
 \end_inset
 
-
+and get the following quadratic function:
 \end_layout
 
 \begin_layout Standard
 
 \lang british
-This is the best we can do using previously methods that we know.
+\begin_inset Formula 
+\begin{equation}
+1.76b_{a_{2}}+1.76b_{1}b_{4}-1.04b_{1}b_{a_{2}}+3.02b_{3}b_{a_{2}}+1.24b_{a_{1}}b_{a_{2}}+5.30\left(b_{2}b_{4}\negthinspace-\negthinspace2b_{2}b_{a_{2}}\negthinspace-\negthinspace2b_{4}b_{a_{2}}\negthinspace+\negthinspace3b_{a_{2}}\right)+1.24\left(b_{1}b_{3}\negthinspace-\negthinspace2b_{1}b_{a_{1}}\negthinspace-\negthinspace2b_{3}b_{a_{1}}\negthinspace+\negthinspace3b_{a_{1}}\right).
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection*
@@ -20716,35 +20757,49 @@ Comparison
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 \lang british
 Number of auxiliary variables:
-\bar default
+\series default
+\color inherit
  Previous state-of-the-art (2), Present (1).
 \end_layout
 
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 \lang british
 Number of quadratic terms in quadratization result:
-\bar default
- Previous state-of-the-art (11), Present (10).
+\series default
+\color inherit
+ Previous state-of-the-art (10), Present (10).
 \end_layout
 
 \begin_layout Standard
 \noindent
 
-\bar under
+\series bold
+\color blue
 Range of coefficients:
-\bar default
+\series default
+\color inherit
  
 \lang british
 Previous state-of-the-art 
 \lang english
 (-10.60 to +15.90), Present (-1.44 to +5.50).
 \end_layout
+
+\begin_layout Standard
+
+\size normal
+\color black
+\lang british
+\begin_inset Note Note
+status open
 
 \begin_layout Subsection
 
@@ -20754,7 +20809,7 @@ Previous state-of-the-art
 Any special cases of our two new theorems
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \lang british
 Consider the function 
@@ -20774,6 +20829,11 @@ Consider the function
 \end_inset
 
 .
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
