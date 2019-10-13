@@ -29,24 +29,32 @@
     urlcolor={blue!100!black}
 }
 %\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
+\usepackage[paper=a4paper,top=1.3in,bottom=1.3in,right=1.1in,left=1.1in]{geometry} % needed to move title page up: https://tex.stackexchange.com/questions/31705/different-margins-for-title-page
 
 \makeatother
 
 \usepackage{babel}
 \begin{document}
+\newgeometry{top=1.3cm,bottom=1.3cm,right=2.3cm,left=2.3cm} 
 
 \title{All 4-variable functions can be perfectly quadratized with only 1
 auxiliary variable}
+\selectlanguage{british}%
 
 \author{Nike Dattani}
+
 \affiliation{Harvard-Smithsonian \foreignlanguage{english}{Center} for Astrophysics,
 USA}
 
 \author{Hou Tin Chau}
+
 \affiliation{Cambridge University, Department of Mathematics, UK}
 
+\maketitle
+\selectlanguage{english}%
 \vspace{-2mm}
 
+\selectlanguage{british}%
 \begin{abstract}
 We prove that any function with real-valued coefficients, whose input
 is 4 binary variables and whose output is a real number, is perfectly
@@ -64,7 +72,6 @@ each application of our theorem saves 10 auxiliary variables).\foreignlanguage{e
 \vspace{-2.5mm}
 }
 \end{abstract}
-\maketitle
 
 \section{Introduction}
 
@@ -127,7 +134,7 @@ quadratization for a very specific class of functions called ``at-least-$k$-of-$
 (A$k$ON) functions, which includes functions consisting of only a
 single positive monomial term.
 
-%\foreignlanguage{english}{}\\
+\foreignlanguage{english}{}\\
 
 Learning from \citep{Boros2018,Boros2018a} that it is possible to
 quadratize multi-term functions so compactly inspired us, and the
@@ -146,6 +153,9 @@ with log$_{2}$$k$-1 auxiliary variables for each term).
 \vspace{-2.5mm}
 \vspace{-2.5mm}
 
+\newpage{}
+
+\restoregeometry 
 \selectlanguage{british}%
 
 \section{Results}
@@ -160,13 +170,12 @@ By `perfect' quadratization we mean all $2^{4}$ output values of
 the 4-variable function are exactly preserved when minimizing over
 the auxiliary variable in the 5-variable quadratic function. Therefore
 any 4-variable subset of an $n$-variable problem can be quadratized
-with only 1-auxiliary variable.\\
+with only 1-auxiliary variable.
 
 \selectlanguage{english}%
-\vspace{-2.5mm}
-We prove the theorem by providing an explicit quadratization for various
-different cases, of the following function of binary variables $b_{i}\in\{0,1\}$
-with real-valued coefficients $\alpha$:
+We prove the theorem by providing an explicit quadratization for
+various different cases, of the following function of binary variables
+$b_{i}\in\{0,1\}$ with real-valued coefficients $\alpha$:
 
 \begin{equation}
 \alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\alpha_{134}b_{1}b_{3}b_{4}+\alpha_{234}b_{2}b_{3}b_{4}.\label{eq:general4variable}
