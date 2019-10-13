@@ -37,7 +37,7 @@
 \providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
 \providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
 \providecommand \urlprefix  [0]{URL }%
-\providecommand \Eprint [0]{\href }%
+\providecommand \eprint [0]{\href }%
 \providecommand \doibase [0]{http://dx.doi.org/}%
 \providecommand \selectlanguage [0]{\@gobble}%
 \providecommand \bibinfo  [0]{\@secondoftwo}%
@@ -121,28 +121,26 @@
   {\bibfield  {journal} {\bibinfo  {journal} {Physical Review Letters}\
   }\textbf {\bibinfo {volume} {108}},\ \bibinfo {pages} {130501} (\bibinfo
   {year} {2012})}\BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Tanburn}\ \emph {et~al.}(2015)\citenamefont
-  {Tanburn}, \citenamefont {Okada},\ and\ \citenamefont
-  {Dattani}}]{Tanburn2015a}%
+\bibitem [{\citenamefont {Tanburn}\ \emph
+  {et~al.}(2015{\natexlab{a}})\citenamefont {Tanburn}, \citenamefont {Okada},\
+  and\ \citenamefont {Dattani}}]{Tanburn2015d}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
   {Tanburn}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Okada}}, \
   and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Dattani}},\ }\href
-  {http://arxiv.org/abs/1508.04816} {\emph {\bibinfo {title} {{Reducing
-  multi-qubit interactions in adiabatic quantum computation without adding
-  auxiliary qubits. Part 1: The "deduc-reduc" method and its application to
-  quantum factorization of numbers}}}}\ (\bibinfo {year} {2015})\ \eprint
-  {http://arxiv.org/abs/1508.04816} {arXiv:1508.04816} \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Lunt}\ \emph {et~al.}(2015)\citenamefont {Lunt},
-  \citenamefont {Tanburn}, \citenamefont {Okada},\ and\ \citenamefont
-  {Dattani}}]{Lunt2015}%
+  {http://arxiv.org/abs/1508.04816} {\  (\bibinfo {year}
+  {2015}{\natexlab{a}})},\ \eprint {http://arxiv.org/abs/1508.04816}
+  {arXiv:1508.04816} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Tanburn}\ \emph
+  {et~al.}(2015{\natexlab{b}})\citenamefont {Tanburn}, \citenamefont {Lunt},\
+  and\ \citenamefont {Dattani}}]{Tanburn2015e}%
   \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
-  {Lunt}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Tanburn}},
-  \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Okada}}, \ and\ \bibinfo
-  {author} {\bibfnamefont {N.~S.}\ \bibnamefont {Dattani}},\ }
-  {\bibfield  {journal} {\bibinfo  {journal} {Physical Review A (in
-  preparation)}\ } (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Tanburn}}, \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Lunt}}, \
+  and\ \bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont {Dattani}},\
+  }\href {http://arxiv.org/abs/1510.07420} {\  (\bibinfo {year}
+  {2015}{\natexlab{b}})},\ \eprint {http://arxiv.org/abs/1510.07420}
+  {arXiv:1510.07420} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Li}\ \emph {et~al.}(2017)\citenamefont {Li},
   \citenamefont {Dattani}, \citenamefont {Chen}, \citenamefont {Liu},
   \citenamefont {Wang}, \citenamefont {Tanburn}, \citenamefont {Chen},
@@ -157,16 +155,16 @@
   \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Peng}}, \ and\ \bibinfo
   {author} {\bibfnamefont {J.}~\bibnamefont {Du}},\ }\href
   {http://arxiv.org/abs/1706.08061} {\bibfield  {journal} {\bibinfo  {journal}
-  {http://arxiv.org/abs/1706.08061}} (\bibinfo {year} {2017})},\ \eprint
+  {http://arxiv.org/abs/1706.08061}\ } (\bibinfo {year} {2017})},\ \eprint
   {http://arxiv.org/abs/1706.08061} {arXiv:1706.08061} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Gaitan}\ and\ \citenamefont
-  {Clark}(2012)}]{Gaitan2012}%
+  {Clark}(2012)}]{Gaitan2012a}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
   {Gaitan}}\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Clark}},\
   }\href {\doibase 10.1103/PhysRevLett.108.010501} {\bibfield  {journal}
   {\bibinfo  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume}
-  {108}},\ \bibinfo {pages} {010501} (\bibinfo {year} {2012})}\BibitemShut
+  {108}} (\bibinfo {year} {2012}),\ 10.1103/PhysRevLett.108.010501}\BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Bian}\ \emph {et~al.}(2013)\citenamefont {Bian},
   \citenamefont {Chudak}, \citenamefont {Macready}, \citenamefont {Clark},\
@@ -181,15 +179,12 @@
   {Physical Review Letters}\ }\textbf {\bibinfo {volume} {111}},\ \bibinfo
   {pages} {130505} (\bibinfo {year} {2013})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Okada}\ \emph {et~al.}(2015)\citenamefont {Okada},
-  \citenamefont {Tanburn},\ and\ \citenamefont {Dattani}}]{Okada2015s}%
+  \citenamefont {Tanburn},\ and\ \citenamefont {Dattani}}]{Okada2015b}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
   {Okada}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Tanburn}}, \
   and\ \bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont {Dattani}},\
-  }\href {http://arxiv.org/abs/1508.07190} {\emph {\bibinfo {title} {{Reducing
-  multi-qubit interactions in adiabatic quantum computation without adding
-  auxiliary qubits. Part 2: The "split-reduc" method and its application to
-  quantum determination of Ramsey numbers}}}}\ (\bibinfo {year} {2015})\
+  }\href {http://arxiv.org/abs/1508.07190} {\  (\bibinfo {year} {2015})},\
   \eprint {http://arxiv.org/abs/1508.07190} {arXiv:1508.07190} \BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Rother}\ \emph {et~al.}(2007)\citenamefont {Rother},
@@ -288,9 +283,8 @@
   {Anthony}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Boros}},
   \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Crama}}, \ and\ \bibinfo
   {author} {\bibfnamefont {A.}~\bibnamefont {Gruber}},\ }\href
-  {http://orbi.ulg.ac.be/handle/2268/184526} {\bibfield  {journal} {\bibinfo
-  {journal} {Quadratic reformulations of nonlinear binary optimization
-  problems}\ } (\bibinfo {year} {2015})}\BibitemShut {NoStop}%
+  {http://orbi.ulg.ac.be/handle/2268/184526} {\  (\bibinfo {year}
+  {2015})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Anthony}\ \emph {et~al.}(2016)\citenamefont
   {Anthony}, \citenamefont {Boros}, \citenamefont {Crama},\ and\ \citenamefont
   {Gruber}}]{Anthony2016}%
@@ -359,7 +353,7 @@
   {Boros}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Crama}}, \ and\
   \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Rodr{\'{i}}guez-Heck}},\
   }\href
-  {https://orbi.uliege.be/bitstream/2268/220766/1/ISAIM2018{\_}Boolean{\_}Boros{\_}etal{\_}WEBSITEVERSION.pdf}
+  {https://orbi.uliege.be/bitstream/2268/220766/1/ISAIM2018{\%}7B{\_}{\%}7DBoolean{\%}7B{\_}{\%}7DBoros{\%}7B{\_}{\%}7Detal{\%}7B{\_}{\%}7DWEBSITEVERSION.pdf}
   {\emph {\bibinfo {title} {{Quadratizations of symmetric pseudo-Boolean
   functions: sub-linear bounds on the number of auxiliary variables}}}},\
   \bibinfo {type} {Tech. Rep.}\ (\bibinfo {year} {2018})\BibitemShut {NoStop}%

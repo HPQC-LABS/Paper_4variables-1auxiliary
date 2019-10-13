@@ -248,7 +248,7 @@ literal "false"
 ) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Dattani2014j,Burges2002,Peng2008,Schaller2010,Xu2012,Tanburn2015a,Lunt2015,Li2017"
+key "Dattani2014j,Burges2002,Peng2008,Schaller2010,Xu2012,Tanburn2015d,Tanburn2015e,Li2017"
 literal "false"
 
 \end_inset
@@ -268,7 +268,7 @@ literal "false"
 ) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Gaitan2012,Bian2013,Okada2015s"
+key "Gaitan2012a,Bian2013,Okada2015b"
 literal "false"
 
 \end_inset
@@ -374,7 +374,7 @@ Quadratization methods exist which can turn an
  the number of variables does not change) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Ishikawa2014,Tanburn2015a,Okada2015s,Dridi2017"
+key "Ishikawa2014,Tanburn2015d,Okada2015b,Dridi2017"
 literal "false"
 
 \end_inset
@@ -424,7 +424,7 @@ literal "false"
 ) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Anthony2014,Ishikawa2014,Boros2014,Tanburn2015a,Okada2015s,Anthony2015,Anthony2016,DelasCuevasGemmaandCubitt2016,Leib2016,Rocchetto2016,Anthony2017,Chancellor2017,Boros2018,Boros2018a,Dridi2017,Dattani2019"
+key "Anthony2014,Ishikawa2014,Boros2014,Tanburn2015d,Okada2015b,Anthony2015,Anthony2016,DelasCuevasGemmaandCubitt2016,Leib2016,Rocchetto2016,Anthony2017,Chancellor2017,Boros2018,Boros2018a,Dridi2017,Dattani2019"
 literal "false"
 
 \end_inset
