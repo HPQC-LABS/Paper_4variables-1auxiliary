@@ -17,6 +17,7 @@
     urlcolor={blue!100!black}
 }
 %\usepackage[backend=biber,style=ieee, maxnames=1]{biblatex}
+\usepackage[paper=a4paper,top=1.3in,bottom=1.3in,right=1.1in,left=1.1in]{geometry} % needed to move title page up: https://tex.stackexchange.com/questions/31705/different-margins-for-title-page
 \end_preamble
 \options showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage,prl,superscriptaddress,Hyperref
 \use_default_options false
@@ -94,6 +95,22 @@
 \end_header
 
 \begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{top=1.3cm,bottom=1.3cm,right=2.3cm,left=2.3cm} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Title
 All 4-variable functions can be perfectly quadratized with only 1 auxiliary
@@ -599,14 +616,21 @@ ON functions), motivated us to look for quadratizations that are `compact',
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 \begin_inset Newpage newpage
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry 
 \end_layout
 
 \end_inset
@@ -686,14 +710,19 @@ By `perfect' quadratization we mean all
 \end_inset
 
 -variable problem can be quadratized with only 1-auxiliary variable.
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset VSpace -2.5mm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace -2.5mm
 \end_inset
 
 We prove the theorem by providing an explicit quadratization for various
