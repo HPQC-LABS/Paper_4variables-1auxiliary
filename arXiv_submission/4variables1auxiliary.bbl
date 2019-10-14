@@ -6,7 +6,7 @@
 %Control: page (0) single
 %Control: year (1) truncated
 %Control: production of eprint (0) enabled
-\begin{thebibliography}{33}%
+\begin{thebibliography}{38}%
 \makeatletter
 \providecommand \@ifxundefined [1]{%
  \@ifx{#1\undefined}
@@ -37,7 +37,7 @@
 \providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
 \providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
 \providecommand \urlprefix  [0]{URL }%
-\providecommand \eprint [0]{\href }%
+\providecommand \Eprint [0]{\href }%
 \providecommand \doibase [0]{http://dx.doi.org/}%
 \providecommand \selectlanguage [0]{\@gobble}%
 \providecommand \bibinfo  [0]{\@secondoftwo}%
@@ -74,7 +74,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont
   {Dattani}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
   {Bryans}},\ }\href {http://arxiv.org/abs/1411.6758} {\  (\bibinfo {year}
-  {2014})},\ \eprint {http://arxiv.org/abs/1411.6758} {arXiv:1411.6758}
+  {2014})},\ \Eprint {http://arxiv.org/abs/1411.6758} {arXiv:1411.6758}
   \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Burges}(2002)}]{Burges2002}%
   \BibitemOpen
@@ -129,7 +129,7 @@
   {Tanburn}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Okada}}, \
   and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Dattani}},\ }\href
   {http://arxiv.org/abs/1508.04816} {\  (\bibinfo {year}
-  {2015}{\natexlab{a}})},\ \eprint {http://arxiv.org/abs/1508.04816}
+  {2015}{\natexlab{a}})},\ \Eprint {http://arxiv.org/abs/1508.04816}
   {arXiv:1508.04816} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Tanburn}\ \emph
   {et~al.}(2015{\natexlab{b}})\citenamefont {Tanburn}, \citenamefont {Lunt},\
@@ -139,7 +139,7 @@
   {Tanburn}}, \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont {Lunt}}, \
   and\ \bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont {Dattani}},\
   }\href {http://arxiv.org/abs/1510.07420} {\  (\bibinfo {year}
-  {2015}{\natexlab{b}})},\ \eprint {http://arxiv.org/abs/1510.07420}
+  {2015}{\natexlab{b}})},\ \Eprint {http://arxiv.org/abs/1510.07420}
   {arXiv:1510.07420} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Li}\ \emph {et~al.}(2017)\citenamefont {Li},
   \citenamefont {Dattani}, \citenamefont {Chen}, \citenamefont {Liu},
@@ -155,7 +155,7 @@
   \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Peng}}, \ and\ \bibinfo
   {author} {\bibfnamefont {J.}~\bibnamefont {Du}},\ }\href
   {http://arxiv.org/abs/1706.08061} {\bibfield  {journal} {\bibinfo  {journal}
-  {http://arxiv.org/abs/1706.08061}\ } (\bibinfo {year} {2017})},\ \eprint
+  {http://arxiv.org/abs/1706.08061}\ } (\bibinfo {year} {2017})},\ \Eprint
   {http://arxiv.org/abs/1706.08061} {arXiv:1706.08061} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Gaitan}\ and\ \citenamefont
   {Clark}(2012)}]{Gaitan2012a}%
@@ -185,7 +185,7 @@
   {Okada}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Tanburn}}, \
   and\ \bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont {Dattani}},\
   }\href {http://arxiv.org/abs/1508.07190} {\  (\bibinfo {year} {2015})},\
-  \eprint {http://arxiv.org/abs/1508.07190} {arXiv:1508.07190} \BibitemShut
+  \Eprint {http://arxiv.org/abs/1508.07190} {arXiv:1508.07190} \BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Rother}\ \emph {et~al.}(2007)\citenamefont {Rother},
   \citenamefont {Kolmogorov}, \citenamefont {Lempitsky},\ and\ \citenamefont
@@ -199,12 +199,72 @@
   Conference on Computer Vision and Pattern Recognition}}}\ (\bibinfo
   {publisher} {IEEE},\ \bibinfo {year} {2007})\ pp.\ \bibinfo {pages}
   {1--8}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {King}\ \emph {et~al.}(2018)\citenamefont {King},
+  \citenamefont {Carrasquilla}, \citenamefont {Raymond}, \citenamefont
+  {Ozfidan}, \citenamefont {Andriyash}, \citenamefont {Berkley}, \citenamefont
+  {Reis}, \citenamefont {Lanting}, \citenamefont {Harris}, \citenamefont
+  {Altomare}, \citenamefont {Boothby}, \citenamefont {Bunyk}, \citenamefont
+  {Enderud}, \citenamefont {Fr{\'{e}}chette}, \citenamefont {Hoskinson},
+  \citenamefont {Ladizinsky}, \citenamefont {Oh}, \citenamefont
+  {Poulin-Lamarre}, \citenamefont {Rich}, \citenamefont {Sato}, \citenamefont
+  {Smirnov}, \citenamefont {Swenson}, \citenamefont {Volkmann}, \citenamefont
+  {Whittaker}, \citenamefont {Yao}, \citenamefont {Ladizinsky}, \citenamefont
+  {Johnson}, \citenamefont {Hilton},\ and\ \citenamefont {Amin}}]{King2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~D.}\ \bibnamefont
+  {King}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Carrasquilla}},
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Raymond}}, \bibinfo
+  {author} {\bibfnamefont {I.}~\bibnamefont {Ozfidan}}, \bibinfo {author}
+  {\bibfnamefont {E.}~\bibnamefont {Andriyash}}, \bibinfo {author}
+  {\bibfnamefont {A.}~\bibnamefont {Berkley}}, \bibinfo {author} {\bibfnamefont
+  {M.}~\bibnamefont {Reis}}, \bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Lanting}}, \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Harris}},
+  \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Altomare}}, \bibinfo
+  {author} {\bibfnamefont {K.}~\bibnamefont {Boothby}}, \bibinfo {author}
+  {\bibfnamefont {P.~I.}\ \bibnamefont {Bunyk}}, \bibinfo {author}
+  {\bibfnamefont {C.}~\bibnamefont {Enderud}}, \bibinfo {author} {\bibfnamefont
+  {A.}~\bibnamefont {Fr{\'{e}}chette}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {Hoskinson}}, \bibinfo {author} {\bibfnamefont
+  {N.}~\bibnamefont {Ladizinsky}}, \bibinfo {author} {\bibfnamefont
+  {T.}~\bibnamefont {Oh}}, \bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Poulin-Lamarre}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Rich}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Sato}}, \bibinfo
+  {author} {\bibfnamefont {A.~Y.}\ \bibnamefont {Smirnov}}, \bibinfo {author}
+  {\bibfnamefont {L.~J.}\ \bibnamefont {Swenson}}, \bibinfo {author}
+  {\bibfnamefont {M.~H.}\ \bibnamefont {Volkmann}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Whittaker}}, \bibinfo {author}
+  {\bibfnamefont {J.}~\bibnamefont {Yao}}, \bibinfo {author} {\bibfnamefont
+  {E.}~\bibnamefont {Ladizinsky}}, \bibinfo {author} {\bibfnamefont {M.~W.}\
+  \bibnamefont {Johnson}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Hilton}}, \ and\ \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Amin}},\ }\href {\doibase 10.1038/s41586-018-0410-x} {\enquote {\bibinfo
+  {title} {{Observation of topological phenomena in a programmable lattice of
+  1,800 qubits}},}\ } (\bibinfo {year} {2018})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dattani}\ \emph {et~al.}(2019)\citenamefont
+  {Dattani}, \citenamefont {Szalay},\ and\ \citenamefont
+  {Chancellor}}]{Dattani2019b}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont
+  {Dattani}}, \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Szalay}}, \
+  and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont {Chancellor}},\
+  }\href {https://arxiv.org/abs/1901.07636} {\bibfield  {journal} {\bibinfo
+  {journal} {Pegasus: The second connectivity graph for large-scale quantum
+  annealing hardware}\ } (\bibinfo {year} {2019})},\ \Eprint
+  {http://arxiv.org/abs/1901.07636} {arXiv:1901.07636} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dattani}\ and\ \citenamefont
+  {Chancellor}(2019)}]{Dattani2019c}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Dattani}}\ and\ \bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
+  {Chancellor}},\ }\href {http://arxiv.org/abs/1901.07676} {\  (\bibinfo {year}
+  {2019})},\ \Eprint {http://arxiv.org/abs/1901.07676} {arXiv:1901.07676}
+  \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Dattani}(2019)}]{Dattani2019}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.}~\bibnamefont
   {Dattani}},\ }\href {http://arxiv.org/abs/1901.04405} {\emph {\bibinfo
   {title} {{Quadratization in discrete optimization and quantum mechanics}}}}\
-  (\bibinfo {year} {2019})\ \eprint {http://arxiv.org/abs/1901.04405}
+  (\bibinfo {year} {2019})\ \Eprint {http://arxiv.org/abs/1901.04405}
   {arXiv:1901.04405} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Ishikawa}(2014)}]{Ishikawa2014}%
   \BibitemOpen
@@ -224,7 +284,7 @@
 \bibitem [{\citenamefont {Rosenberg}(1975)}]{Rosenberg1975}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {I.~G.}\ \bibnamefont
-  {Rosenberg}},\ } {\bibfield  {journal} {\bibinfo  {journal}
+  {Rosenberg}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
   {Cahiers du Centre d'Etudes de Recherche Operationnelle}\ }\textbf {\bibinfo
   {volume} {17}},\ \bibinfo {pages} {71} (\bibinfo {year} {1975})}\BibitemShut
   {NoStop}%
@@ -257,6 +317,17 @@
   \href {\doibase 10.1109/CVPR.2011.5995452} {\emph {\bibinfo {booktitle} {CVPR
   2011}}}\ (\bibinfo  {publisher} {IEEE},\ \bibinfo {year} {2011})\ pp.\
   \bibinfo {pages} {1857--1864}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Ramalingam}\ \emph {et~al.}(2011)\citenamefont
+  {Ramalingam}, \citenamefont {Russell}, \citenamefont {Ladick{\'{y}}},\ and\
+  \citenamefont {Torr}}]{Ramalingam2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Ramalingam}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Russell}},
+  \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Ladick{\'{y}}}}, \ and\
+  \bibinfo {author} {\bibfnamefont {P.~H.}\ \bibnamefont {Torr}},\ }\href
+  {\doibase 10.1016/j.dam.2016.11.022} {\bibfield  {journal} {\bibinfo
+  {journal} {Discrete Applied Mathematics}\ }\textbf {\bibinfo {volume}
+  {220}},\ \bibinfo {pages} {1} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Anthony}\ \emph {et~al.}(2014)\citenamefont
   {Anthony}, \citenamefont {Boros}, \citenamefont {Crama},\ and\ \citenamefont
   {Gruber}}]{Anthony2014}%
@@ -265,7 +336,7 @@
   {Anthony}}, \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Boros}},
   \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Crama}}, \ and\ \bibinfo
   {author} {\bibfnamefont {A.}~\bibnamefont {Gruber}},\ }\href
-  {https://arxiv.org/abs/1404.6535} {\  (\bibinfo {year} {2014})},\ \eprint
+  {https://arxiv.org/abs/1404.6535} {\  (\bibinfo {year} {2014})},\ \Eprint
   {http://arxiv.org/abs/1404.6535} {arXiv:1404.6535} \BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Boros}\ and\ \citenamefont
   {Gruber}(2014)}]{Boros2014}%
@@ -273,7 +344,7 @@
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.}~\bibnamefont
   {Boros}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont {Gruber}},\
   }\href {http://arxiv.org/abs/1404.6538} {\  (\bibinfo {year} {2014})},\
-  \eprint {http://arxiv.org/abs/1404.6538} {arXiv:1404.6538} \BibitemShut
+  \Eprint {http://arxiv.org/abs/1404.6538} {arXiv:1404.6538} \BibitemShut
   {NoStop}%
 \bibitem [{\citenamefont {Anthony}\ \emph {et~al.}(2015)\citenamefont
   {Anthony}, \citenamefont {Boros}, \citenamefont {Crama},\ and\ \citenamefont
@@ -367,6 +438,16 @@
   }\href {https://orbi.uliege.be/handle/2268/229971} {\emph {\bibinfo {title}
   {{Compact quadratizations for pseudo-Boolean functions}}}}\ (\bibinfo {year}
   {2018})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {{Wa Yip}}\ \emph {et~al.}(2019)\citenamefont {{Wa
+  Yip}}, \citenamefont {Xu}, \citenamefont {Koenig},\ and\ \citenamefont
+  {{Satish Kumar}}}]{WaYip2019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {{Wa
+  Yip}}}, \bibinfo {author} {\bibfnamefont {H.}~\bibnamefont {Xu}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Koenig}}, \ and\ \bibinfo {author}
+  {\bibfnamefont {T.~K.}\ \bibnamefont {{Satish Kumar}}},\ }\href {\doibase
+  10.1007/978-3-030-19212-9_43} {\bibfield  {journal} {\bibinfo  {journal}
+  {CPAIOR}\ } (\bibinfo {year} {2019})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Boros}\ and\ \citenamefont
   {Hammer}(2002)}]{Boros2002}%
   \BibitemOpen

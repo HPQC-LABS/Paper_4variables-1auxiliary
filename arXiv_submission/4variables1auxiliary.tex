@@ -1,6 +1,6 @@
 %% LyX 2.3.0 created this file.  For more info, see http://www.lyx.org/.
 %% Do not edit unless you really know what you are doing.
-\documentclass[british,english,showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage,prl,superscriptaddress,Hyperref]{revtex4-1}
+\documentclass[british,american,showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage,prl,superscriptaddress,Hyperref]{revtex4-1}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage{geometry}
@@ -8,6 +8,7 @@
 \setcounter{secnumdepth}{3}
 \usepackage{xcolor}
 \usepackage{array}
+\usepackage{units}
 \usepackage{multirow}
 \usepackage{amsmath}
 
@@ -35,7 +36,7 @@
 
 \usepackage{babel}
 \begin{document}
-\newgeometry{top=1.3cm,bottom=1.3cm,right=2.3cm,left=2.3cm} 
+\newgeometry{top=1.3cm,bottom=1.3cm,right=2.0cm,left=2.0cm} 
 
 \title{All 4-variable functions can be perfectly quadratized with only 1
 auxiliary variable}
@@ -43,14 +44,17 @@ auxiliary variable}
 
 \author{Nike Dattani}
 
-\affiliation{Harvard-Smithsonian \foreignlanguage{english}{Center} for Astrophysics,
+\affiliation{Harvard-Smithsonian \foreignlanguage{american}{Center} for Astrophysics,
 USA}
+\email{nik.dattani@gmail.com}
+
+\selectlanguage{british}%
 
 \author{Hou Tin Chau}
 
 \affiliation{Cambridge University, Department of Mathematics, UK}
+\email{houtinchau@gmail.com}
 
-\selectlanguage{english}%
 \vspace{-2mm}
 
 \selectlanguage{british}%
@@ -58,16 +62,27 @@ USA}
 We prove that any function with real-valued coefficients, whose input
 is 4 binary variables and whose output is a real number, is perfectly
 equivalent to a \emph{quadratic }function whose input is 5 binary
-variables and is minimized over the new variable. Our proof is constructive,
-so we provide quadratic functions that quadratize any 4-variable function,
-but there exists 5 different classes of 4-variable functions that
-each have their own 5-variable quadratization formula. Since we provide
-`perfect' quadratizations, we can apply these formulas to any 4-variable
-subset of an $n$-variable function even if $n\gg4.$ We provide a
-simple example function where a termwise quadratization method would
-require 15 auxiliary variables to perfectly quadratize, whereas with
-the results of this paper, we only need 5 auxiliary variables (so
-each application of our theorem saves 10 auxiliary variables).\foreignlanguage{english}{\vspace{-2.5mm}
+variables and is \foreignlanguage{american}{minimized} over the new
+variable. Our proof is constructive: we provide quadratizations for
+all possible 4-variable functions. There exists 4 different classes
+of 4-variable functions that each have their own 5-variable quadratization
+formula. Since we provide `\foreignlanguage{american}{perfect'} quadratizations,
+we can apply these formulas to any 4-variable subset of an $n$-variable
+function even if $n\gg4.$ We provide 5 examples of functions that
+can be \foreignlanguage{american}{quadratized} using the result of
+this work. For each of the 5 examples we compare the best possible
+quadratization we could construct using previously known methods,
+to a quadratization that we construct using our new result. In the
+most extreme example, the quadratization using our new result needs
+only $N$auxiliary variables for a $4N$-variable degree-4 function,
+whereas the previous state-of-the-art quadratization requires $2N$
+(double as many) auxiliary variables and therefore we can reduce by
+the cost of \foreignlanguage{american}{optimizing} such a function
+by a factor of $2^{1000}$ if it were to have $4000$ variables before
+quadratization. In all 5 of our examples, the range of coefficient
+sizes in our quadratic function is smaller than in the previous state-of-the-art
+one, and our coefficient range is a factor of 7 times smaller in our
+15-term, 5-variable example of a degree-4 function. \foreignlanguage{american}{\vspace{-2.5mm}
 \vspace{-2.5mm}
 }
 \end{abstract}
@@ -75,26 +90,28 @@ each application of our theorem saves 10 auxiliary variables).\foreignlanguage{e
 
 \section{Introduction}
 
-Many problems can be solved by minimizing a real-valued degree-$k$
-function of binary variables with $k>2$. Some examples include image
-de-blurring (where typically $k=4$ but in general we can have $k=m^{2}$
-with $m\ge2$ being the length in pixels of the square-shaped mask)
-\citep{Ishikawa2011,Fix2011}, integer factoring (where typically
-$k=4$) \citep{Dattani2014j,Burges2002,Peng2008,Schaller2010,Xu2012,Tanburn2015d,Tanburn2015e,Li2017},
+Many problems can be solved by \foreignlanguage{american}{minimizing}
+a real-valued degree-$k$ function of binary variables with $k>2$.
+Some examples include image de-blurring (where typically $k=4$ but
+in general we can have $k=m^{2}$ with $m\ge2$ being the length in
+pixels of the square-shaped mask) \citep{Ishikawa2011,Fix2011},
+integer factoring (where typically $k=4$) \citep{Dattani2014j,Burges2002,Peng2008,Schaller2010,Xu2012,Tanburn2015d,Tanburn2015e,Li2017},
 and determining whether or not a number $N$ is an $m$-color Ramsey
 number (where $k=\frac{mN\left(N-1\right)}{2}$) \citep{Gaitan2012a,Bian2013,Okada2015b}.
 \\
-\foreignlanguage{english}{\vspace{-2.5mm}
+\foreignlanguage{american}{\vspace{-2.5mm}
 }
 
 Solving such discrete optimization problems with $k>2$ can be very
-difficult, and more algorithms have been developed for the $k=2$
-case (such as the algorithm known as ``QPBO'' and extensions of
-it \citep{Rother2007}) than for the $k>2$ case. Fortunately it is
-possible to turn any $k$-degree binary optimization problem into
-a 2-degree binary optimization problem, by a transformation called
-``quadratization'' \citep{Dattani2019}. \\
-\foreignlanguage{english}{\vspace{-2.5mm}
+difficult, and more methods have been developed for the $k=2$ case
+(such as the algorithm known as ``QPBO'' and extensions of it \citep{Rother2007},
+and quantum annealing using thousands of superconducting qubits \citep{King2018}
+connected by graphs as complicated as Pegasus \citep{Dattani2019b,Dattani2019c})
+than for the $k>2$ case. Fortunately it is possible to turn any $k$-degree
+binary optimization problem into a 2-degree binary optimization problem,
+by a transformation called `quadratization' \citep{Dattani2019}.
+\\
+\foreignlanguage{american}{\vspace{-2.5mm}
 }
 
 Quadratization methods exist which can turn an $n$-variable degree-$k$
@@ -102,54 +119,58 @@ problem into an $n$-variable quadratic problem (i.e. the number of
 variables does not change) \citep{Ishikawa2014,Tanburn2015d,Okada2015b,Dridi2017},
 but not every function can be quadratized without adding some auxiliary
 variables (so the number of variables in the quadratic problem is
-usually much more than in the original degree-$k$ problem). Coming
-up with better quadratizations (for example with fewer auxiliary variables)
+usually much more than in the original degree-$k$ problem). Discovering
+better quadratizations (for example with fewer auxiliary variables)
 has been a very active area of research recently: The first quadratization
 method was published in 1975 \citep{Rosenberg1975}, and some subsequent
 quadratization methods were published in 2004 \citep{Kolmogorov2004},
-2005 \citep{Freedman2005}, and 2011 \citep{Ishikawa2011,Fix2011,Gallagher2011},
+2005 \citep{Freedman2005}, and 2011 \citep{Ishikawa2011,Fix2011,Gallagher2011,Ramalingam2011},
 but the rest of the methods were published in the last 5 years (from
-2014-2018) \citep{Anthony2014,Ishikawa2014,Boros2014,Tanburn2015d,Okada2015b,Anthony2015,Anthony2016,DelasCuevasGemmaandCubitt2016,Leib2016,Rocchetto2016,Anthony2017,Chancellor2017,Boros2018,Boros2018a,Dridi2017,Dattani2019}.\\
-\foreignlanguage{english}{\vspace{-2.5mm}
+2014-2019) \citep{Ishikawa2014,Anthony2014,Boros2014,Tanburn2015d,Okada2015b,Anthony2015,Anthony2016,DelasCuevasGemmaandCubitt2016,Leib2016,Rocchetto2016,Anthony2017,Dridi2017,Chancellor2017,Boros2018,Boros2018a,WaYip2019,Dattani2019}.\\
+\foreignlanguage{american}{\vspace{-2.5mm}
 }
 
-In the most recent of these papers \citep{Boros2018,Boros2018a},
-a remarkable discovery was made, that degree-$k$ monomials can be
-quadratized with only $\log_{2}k-1$ auxiliary variables. For many
-functions this can still be prohibitively costly though: If a 44-variable
-function has 1 million degree-5 terms and each term requires $\log_{2}k-1$
-auxiliary variables for quadratization, the quadratic function will
-have more than 2 million variables (the search space increases from
-$2^{44}\approx10^{13}$ to $2^{2,000,044}\approx10^{602,073}$).\\
-\foreignlanguage{english}{\vspace{-2.5mm}
+In 2018 a remarkable discovery was made \citep{Boros2018,Boros2018a},
+that degree-$k$ monomials can be quadratized with only $\log_{2}\left(\nicefrac{k}{2}\right)$
+auxiliary variables. For many functions this can still be prohibitively
+costly though: If a 44-variable function has 1 million degree-5 terms
+and each term requires $\log_{2}\left(\nicefrac{k}{2}\right)$ auxiliary
+variables for quadratization, the quadratic function will have more
+than 2 million variables (the search space increases from $2^{44}\approx10^{13}$
+to $2^{2,000,044}\approx10^{602,073}$).\\
+\foreignlanguage{american}{\vspace{-2.5mm}
 }
 
 It was also shown in \citep{Boros2018,Boros2018a} that sometimes
 a function of $n$ variables can entirely be quadratized with only
-log$_{2}k-1$ auxiliary variables no matter how many terms and how
-many variables it contains (so a 44-variable, degree-5 function with
-1 million degree-5 terms would only need 2 auxiliary variables rather
-than 2 million!). However, it is only known how to do this very `compact'
-quadratization for a very specific class of functions called ``at-least-$k$-of-$n$''
-(A$k$ON) functions, which includes functions consisting of only a
-single positive monomial term.
+$\log_{2}\left(\nicefrac{k}{2}\right)$ auxiliary variables no matter
+how many terms and how many variables it contains (so a 44-variable,
+degree-5 function with 1 million degree-5 terms would only need 2
+auxiliary variables rather than 2 million!). However, it is only known
+how to do this very `compact' quadratization for a very specific class
+of functions called ``at-least-$k$-of-$n$'' (AKON) functions,
+which includes functions consisting of only a single positive monomial
+term.
 
-%\foreignlanguage{english}{}\\
+%\foreignlanguage{american}{}\\
 
 Learning from \citep{Boros2018,Boros2018a} that it is possible to
-quadratize multi-term functions so compactly inspired us, and the
+quadratize multi-term functions so compactly inspired us; and the
 fact that such `compact' quadratizations are only known for a very
-specific category of functions (the A$k$ON functions), motivated
-us to look for quadratizations that are `compact', but also applicable
+specific category of functions (the AKON functions), motivated us
+to look for quadratizations that are `compact', but also applicable
 to a much wider class of functions. The result of this study is the
 theorem described in the title of this paper, and explained in more
 detail in the section below. It allows up to 5 terms of a function
 (1 of them can be of degree-4 and the other 4 can be of degree-3)
-to be quadratized with only 1 auxiliary variable rather than 5 auxiliaries
-(which is what would be required if quadratizing each term individually
-with log$_{2}$$k$-1 auxiliary variables for each term).
+to be quadratized with only 1 auxiliary variable rather than 2 auxiliaries,
+which used to be the best possible quadratization known for such a
+5-term function, and is a substantial improvement over the 5 auxiliaries
+that would be required if quadratizing each term individually with
+$\log_{2}\left(\nicefrac{k}{2}\right)$ auxiliary variables for each
+term.
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 \vspace{-2.5mm}
 \vspace{-2.5mm}
 
@@ -163,16 +184,18 @@ with log$_{2}$$k$-1 auxiliary variables for each term).
 \noindent \textbf{\textcolor{blue}{Theorem 1: }}\textbf{\textcolor{black}{All
 4-variable functions of binary variables with real-valued coefficients
 can be quadratized perfectly with only 1-auxiliary variable. }}\textbf{}\\
-\foreignlanguage{english}{\vspace{-2.5mm}
+\foreignlanguage{american}{\vspace{-2.5mm}
 }
 
 By `perfect' quadratization we mean all $2^{4}$ output values of
 the 4-variable function are exactly preserved when minimizing over
 the auxiliary variable in the 5-variable quadratic function. Therefore
 any 4-variable subset of an $n$-variable problem can be quadratized
-with only 1-auxiliary variable.
+with only 1-auxiliary variable, without affecting any properties of
+the much larger $n$-variable function after minimizing over the auxiliary
+variable.
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 We prove the theorem by providing an explicit quadratization for
 various different cases, of the following function of binary variables
 $b_{i}\in\{0,1\}$ with real-valued coefficients $\alpha$:
@@ -189,9 +212,10 @@ for the rest of this paper: $\alpha_{123}\le\alpha_{124}\le\alpha_{134}\le\alpha
 We will now provide 4 different quadratization formulas for Eq. \ref{eq:general4variable}
 (Lemmas 1-4), which each are only valid for their own specific conditions
 on the $\alpha$ coefficients; but we will then prove with Lemmas
-6-8 that these 4 cases for the coefficients, cover every possible
-case. The explicit quadratizations for Lemmas 1-4 are given below,
-but their proofs take up a lot of space so they are given in the Appendix.
+5-6 and Table \ref{tab:allCases}, that these 4 cases for the coefficients,
+cover every possible case. The explicit quadratizations for Lemmas
+1-4 are given below, but their proofs take up a lot of space so they
+are given in the Appendix.
 
 \hspace{-6mm}\rule{1.04\columnwidth}{1pt}
 
@@ -269,9 +293,9 @@ In the Appendix, Lemmas 1-4 are each proven for their own specific
 conditions on the coefficients $\alpha$. However with `bit-flipping'
 (a strategy described in \citep{Ishikawa2011} and on Pg. 27 of the
 current version of \citep{Dattani2019}) we can extend their applicability
-to more general conditions for which a laborious proof was not peformed
-explicitly. Lemma 6 will describe the effect of flipping one bit in
-Eq. \ref{eq:general4variable}, and Lemma 7 will describe the effect
+to more general conditions for which a laborious proof was not performed
+explicitly. Lemma 5 will describe the effect of flipping one bit in
+Eq. \ref{eq:general4variable}, and Lemma 6 will describe the effect
 of flipping two. Since the function is completely symmetric with respect
 to the four variables $b_{1},b_{2},b_{3}$ and $b_{4}$, these Lemmas
 depend only on the number of bits flipped and not at all on which
@@ -279,7 +303,7 @@ bits are flipped.\\
 \newpage{}
 
 \noindent \vspace{3mm}
-\textbf{Lemma 6: If one bit is flipped ($b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1}$)
+\textbf{Lemma 5: If one bit is flipped ($b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1}$)
 everywhere in Eq. \ref{eq:general4variable}, then the function remains
 exactly the same except with $\textcolor{blue}{\ensuremath{\bar{\alpha}_{1234}}}\equiv-\text{\ensuremath{\alpha_{1234},} }{\color{blue}\bar{\alpha}_{123}}=-\alpha_{123,}{\color{blue}\,\bar{\alpha}_{124}}=-\alpha_{124,}\,{\color{blue}\bar{\alpha}_{134}}=-\alpha_{134},\,{\color{blue}\bar{\alpha}_{234}}=\alpha_{234}+\alpha_{1234,}$and
 some extra quadratic terms: $\textcolor{blue}{\ensuremath{f_{{\rm quadratic,1}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}\equiv\alpha_{123}b_{2}b_{3}+\alpha_{124}b_{2}b_{4}+\alpha_{134}b_{3}b_{4}.$
@@ -322,7 +346,7 @@ except with new coefficients:
 
 \vspace{3mm}
 
-\noindent \textbf{Lemma 7: If two bits are flipped ($b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1},b_{2}\rightarrow\bar{b}_{2}\equiv1-b_{2}$)
+\noindent \textbf{Lemma 6: If two bits are flipped ($b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1},b_{2}\rightarrow\bar{b}_{2}\equiv1-b_{2}$)
 everywhere in Eq. \ref{eq:general4variable}, the function remains
 exactly the same except with $\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}\equiv-\left(\alpha_{134}+\alpha_{1234}\right),\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}\equiv-\left(\alpha_{234}+\alpha_{1234}\right)$,
 and some extra quadratic terms: $\textcolor{blue}{\ensuremath{f_{{\rm quadratic,2}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}\equiv\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}.$
@@ -381,30 +405,34 @@ quadratic terms:
 
 \textbf{Lemma 6 allows us to assume from now on that $\alpha_{1234}\ge0$},
 because every case with $\alpha_{1234}<0$ can be turned into a case
-with $\alpha_{1234}>0$ by fipping only one bit. With $\alpha_{1234}\ge0$,
+with $\alpha_{1234}>0$ by flipping only one bit. With $\alpha_{1234}\ge0$,
 we can categorize all cubic coefficients $\alpha_{ijk}$ according
 to whether they are $\le-\alpha_{1234}$, or $\le-\frac{\alpha_{1234}}{2}$,
-or whether they are simply just $\le0$ or $\ge0$. There's then 35
-different cases for how the four cubic coefficients $\alpha_{ijk}$
-can fit into the four different non-overlapping intervals that can
-be made on the number line with $-\alpha_{1234}$, $-\frac{\alpha_{1234}}{2}$
-and $0$ as partition points. For some of these cases, Lemma 1, 3,
-4 or 5 can be applied immediately. Due to the conditions used to prove
-Lemma 2, it cannot be applied directly to any of the 35 cases, but
-thanks to Lemmas 6 and 7, Lemma 2 can be applied to two of the 35
-cases after bit-flipping appropriately. Lemma 1, 3, 4 or 5 can be
-applied for the rest of the 35 cases if 2, 3, or 4 bits are flipped
-(meaning either one application of Lemma 7, one application of Lemma
-6 combined with one application of Lemma 7, or two applications of
-Lemma 7, is done). This means that one of Lemmas 1-5 can be applied
-for all of the 35 possible cases, as long as Lemmas 6 and/or 7 are
-applied appropriately. Table \ref{tab:allCases} summarizes which
-bits have to be flipped using Lemma 6 and/or Lemma 7, and which of
-Lemmas 1-5 can be applied, for each of the 35 possible cases.
+or whether they are simply just $\le0$ or $\ge0$. We then have 35
+different cases (see Table \ref{tab:allCases}) for how the four cubic
+coefficients $\alpha_{ijk}$ can fit into the four different non-overlapping
+intervals that can be made on the number line with $-\alpha_{1234}$,
+$-\frac{\alpha_{1234}}{2}$ and $0$ as partition points. For some
+of these cases, Lemma 1, 3, or 4 can be applied immediately. Due to
+the conditions used to prove Lemma 2, it cannot be applied directly
+to any of the 35 cases, but thanks to Lemmas 5 and 6, Lemma 2 can
+be applied to two of the 35 cases after bit-flipping appropriately.
+Lemma 1, 3, or 4 can be applied for the rest of the 35 cases if 2,
+3, or 4 bits are flipped (meaning either one application of Lemma
+6, one application of Lemma 5 combined with one application of Lemma
+6, or two applications of Lemma 6, is done). This means that one of
+Lemmas 1-4 can be applied for all of the 35 possible cases, as long
+as Lemmas 5 and/or 6 are applied appropriately. Table \ref{tab:allCases}
+summarizes which bits have to be flipped using Lemma 5 and/or Lemma
+6, and which of Lemmas 1-4 can be applied, for each of the 35 possible
+cases. Since so many neighboring cases are often covered by a single
+lemma, we were also able to make Table \ref{tab:SimplifiedTable},
+which is a more compact version of Table \ref{tab:allCases}.
 
 \begin{table}
-\caption{\label{tab:allCases}All possible cases of 4-variable functions with
-$\alpha_{1234}\ge0.$ }
+\caption{\label{tab:allCases}All 35 possible cases of 4-variable functions
+with $\alpha_{1234}\ge0$, and the corresponding lemma (or lemmas)
+of this paper that provide a quadratization for each case. }
 
 \vspace{2mm}
 
@@ -462,7 +490,7 @@ $\alpha_{123},\alpha_{124},\alpha_{134},\alpha_{234}$ &  &  &  & $\textcolor{blu
 \end{table}
 
 \begin{table}
-\caption{Simplified version of Table \ref{tab:allCases}.}
+\caption{\label{tab:SimplifiedTable}Simplified version of Table \ref{tab:allCases}.}
 
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline 
@@ -512,14 +540,14 @@ $\alpha_{123,}\alpha_{124},\alpha_{134}$ &  & $\alpha_{234}$ &  & - & $\textcolo
 
 \subsection*{}
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 \vspace{-35mm}
 
 \selectlanguage{british}%
 
 \section{Examples}
 
-\subsection{\textcolor{black}{\normalsize{}8-variable, degree-4, function}}
+\subsection{\textcolor{black}{\normalsize{}11-term, 8-variable, degree-4, function}}
 
 The following function can be quadratized using only \emph{two} auxiliary
 variables when using Theorem 1 of the present paper, but would require
@@ -570,7 +598,7 @@ each, which is what can be done with Rosenberg's substitution method
 \textcolor{blue}{b_{a_{1}}\textcolor{blue}{\equiv b_{1}b_{2},}\,\,\,\,\,\,\textcolor{blue}{b_{a_{2}}}\textcolor{blue}{\equiv b_{3}b_{4}},\,\,\,\,\,\,}\textcolor{red}{b_{a_{3}}\textcolor{red}{\equiv b_{5}b_{6}}},\,\,\,\,\,\,\textcolor{red}{b_{a_{4}}\textcolor{red}{\equiv b_{7}b_{8}}},
 \end{equation}
 
-\noindent which leads to the following quadratic terms (and coefficients
+\noindent leading to the following quadratic terms (and coefficients
 chosen based on the recommendation in Gruber's thesis):
 
 \begin{align}
@@ -589,7 +617,7 @@ Previous state-of-the-art (4), Present (2).
 \noindent \textbf{\textcolor{blue}{Number of quadratic terms in quadratization
 result:}} Previous state-of-the-art (19), Present (14).
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 \noindent \textbf{\textcolor{blue}{Range of coefficients:}} \foreignlanguage{british}{Previous
 state-of-the-art }(-20 to +30), Present (-13 to +31).
 \selectlanguage{british}%
@@ -606,7 +634,7 @@ Consider the function:
 
 \textcolor{black}{\small{}}\textcolor{black}{}
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 With Theorem 1, we can quadratize this function with only $N$ auxiliary
 variables (one for each set of 4 variables). A term-wise quadratization
 would need $2N$ variables (one for each of the $N$ degree-4 terms,
@@ -620,21 +648,19 @@ also need $2N$ variables because the degree-4 terms alone would require
 \subsection{\textcolor{black}{\normalsize{}12-term, 5-variable, degree-4, function
 with all terms at least cubic: }\textcolor{black}{\small{}}}
 
-To quadratize the following function:
+We can quadratize the following function:
 
 \vspace{-2mm}
 
 \textcolor{black}{\small{}}\textcolor{black}{
 \begin{equation}
-5b_{1}b_{2}b_{3}b_{4}+4b_{1}b_{2}b_{3}b_{5}+3b_{1}b_{2}b_{4}b_{5}-3b_{1}b_{2}b_{3}-b_{1}b_{2}b_{4}-5b_{1}b_{2}b_{5}-b_{1}b_{3}b_{4}-b_{1}b_{3}b_{5}-b_{1}b_{4}b_{5}-2b_{2}b_{3}b_{4}-b_{2}b_{3}b_{5}-4b_{2}b_{4}b_{5}
+5b_{1}b_{2}b_{3}b_{4}+4b_{1}b_{2}b_{3}b_{5}+3b_{1}b_{2}b_{4}b_{5}-3b_{1}b_{2}b_{3}-b_{1}b_{2}b_{4}-5b_{1}b_{2}b_{5}-b_{1}b_{3}b_{4}-b_{1}b_{3}b_{5}-b_{1}b_{4}b_{5}-2b_{2}b_{3}b_{4}-b_{2}b_{3}b_{5}-4b_{2}b_{4}b_{5},
 \end{equation}
 }\vspace{-1mm}
 
-\noindent normally we would need at least 12 auxiliary variables
-(at least one for each term). Instead we quadratize the whole function
-with only 3 auxiliary variables. To do this we will apply Theorem
-1 for 3 sub-functions (displayed below in five different colors) that
-contain only 4 variables:\vspace{-1mm}
+\noindent with only 3 auxiliary variables. To do this we will apply
+Theorem 1 for three sub-functions (displayed below in three different
+colors) that contain only 4 variables:\vspace{-1mm}
 
 \textcolor{black}{\small{}}{\small\par}
 
@@ -642,7 +668,7 @@ contain only 4 variables:\vspace{-1mm}
 \begin{equation}
 \textcolor{blue}{5b_{1}b_{2}b_{3}b_{4}}+\textcolor{teal}{4b_{1}b_{2}b_{3}b_{5}}+\textcolor{red}{3b_{1}b_{2}b_{4}b_{5}}-\textcolor{blue}{3b_{1}b_{2}b_{3}}-\textcolor{blue}{b_{1}b_{2}b_{4}}-\textcolor{blue}{\textcolor{teal}{5b_{1}b_{2}b_{5}}}-\textcolor{blue}{b_{1}b_{3}b_{4}}-\textcolor{teal}{b_{1}b_{3}b_{5}}-\textcolor{red}{b_{1}b_{4}b_{5}}-\textcolor{blue}{2b_{2}b_{3}b_{4}}-\textcolor{teal}{b_{2}b_{3}b_{5}}-\textcolor{red}{4b_{2}b_{4}b_{5}}.
 \end{equation}
-}We now quadrtize these 5 sub-functions with only 1 auxiliary variable
+}We now quadratize these 3 sub-functions with only 1 auxiliary variable
 for each sub-function, using Lemmas 5, 4, and 3 in that order:
 
 \textcolor{black}{
@@ -655,21 +681,18 @@ for each sub-function, using Lemmas 5, 4, and 3 in that order:
 }
 
 The final quadratic function contains only 8 variables (the 5 original
-ones and the 3 new auxiliary variables), whereas applying a termwise
-quadratization technique would in the best case result in a quadratic
-function with 17 variables (the 5 original ones and the 12 new auxiliary
-variables).
+ones and the 3 new auxiliary variables). 
 
 
 \subsubsection*{Previous state-of-the-art}
 
-Pairwise covers would require 4 auxiliary variables. It is not possible
-with only 3 auxiliary variables because we cannot cover all 9 cubic
-terms in (this sentence isn't complete?). One pairwise cover for the
-index combinations of this function is $\{12,34,35,45\}$ and since
-none of the elements contain more than two indices, the quadratization
-can be done by Rosenberg's substitution. We first define the auxiliary
-variables:
+Pairwise covers would require at least 4 auxiliary variables. It is
+not possible with only 3 auxiliary variables because we cannot cover
+all 9 cubic terms with only 3 auxiliary variables. One pairwise cover
+for the index combinations of this function is $\{12,34,35,45\}$
+and since none of the elements contain more than two indices, the
+quadratization can be done by Rosenberg's substitution. We first define
+the auxiliary variables:
 
 \begin{equation}
 b_{a_{1}}\equiv b_{1}b_{2},\,\,\,\,\,\,b_{a_{2}}\equiv b_{3}b_{4}\,\,\,\,\,\,b_{a_{3}}\equiv b_{3}b_{5}\,\,\,\,\,\,b_{a_{4}}\equiv b_{4}b_{5}.
@@ -696,7 +719,7 @@ Previous state-of-the-art (4), Present (3).
 \noindent \textbf{\textcolor{blue}{Number of quadratic terms in quadratization
 result:}} Previous state-of-the-art (24), Present (27).
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 \noindent \textbf{\textcolor{blue}{Range of coefficients:}} \foreignlanguage{british}{Previous
 state-of-the-art }(-42 to +63), Present (-7 to +10).
 
@@ -774,7 +797,7 @@ Previous state-of-the-art (5), Present (5).
 \noindent \textbf{\textcolor{blue}{Number of quadratic terms in quadratization
 result:}} Previous state-of-the-art (31), Present (37).
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 \noindent \textbf{\textcolor{blue}{Range of coefficients:}} \foreignlanguage{british}{Previous
 state-of-the-art }(-42 to +63), Present (-7 to +8).
 \selectlanguage{british}%
@@ -783,7 +806,7 @@ state-of-the-art }(-42 to +63), Present (-7 to +8).
 as a polynomial}}
 
 To emphasize that literally any real-valued 4-variable function of
-boolean variables can be quadratized with only one auxiliary variable,
+Boolean variables can be quadratized with only one auxiliary variable,
 we present here an example that is not written in the form of Eq.
 \ref{eq:general4variable}:
 
@@ -832,7 +855,7 @@ Previous state-of-the-art (2), Present (1).
 \noindent \textbf{\textcolor{blue}{Number of quadratic terms in quadratization
 result:}} Previous state-of-the-art (10), Present (10).
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 \noindent \textbf{\textcolor{blue}{Range of coefficients:}} \foreignlanguage{british}{Previous
 state-of-the-art }(-10.60 to +15.90), Present (-1.44 to +5.50).
 
@@ -840,30 +863,30 @@ state-of-the-art }(-10.60 to +15.90), Present (-1.44 to +5.50).
 \textcolor{black}{}
 
 \section{Discussion}
-\selectlanguage{english}%
+\selectlanguage{american}%
 
 \subsection{Non-uniqueness}
 
 We note that functions can have multiple different quadratizations,
-even when with the same number of auxiliary qubits. Therefore, while
-Lemmas 1-4 constitute the only quadratization formulas needed for
-proving Theorem 1, we considered the possibility that alternative
+even when they have the same number of auxiliary qubits. Therefore,
+while Lemmas 1-4 constitute the only quadratization formulas needed
+for proving Theorem 1, we considered the possibility that alternative
 quadratization formulas exist, but it turned out that all quadratization
 formulas that we found, could by bit-flipping be turned exactly into
 one of our presented formulas. Nevertheless, we do not rule out the
 possibility that other quadratization formulas involving only one
-auxiliary variable can exist: it may just be that we have not found
-them. 
+auxiliary variable can exist: it may just be that we have not yet
+found them. 
 
 \foreignlanguage{british}{}
-\selectlanguage{british}%
 
 \section{Acknowledgments}
 
+\selectlanguage{british}%
 We wish to thank Elisabeth Rodríguez-Heck for helpful comments on
 an early version of this paper. 
 
-\selectlanguage{english}%
+\selectlanguage{american}%
 
 \noindent 
 
@@ -871,6 +894,6 @@ an early version of this paper.
 \noindent \begin{flushleft}
 \bibliographystyle{IEEEtran}
 \bibliography{\string"../pCloud Sync/library\string",\string"/Users/leroy/Dropbox (Personal)/NSD/Papers/library\string",C:/Users/Nike/Desktop/Dropbox/NSD/Papers/library,C:/Users/Richard/Documents/Bibtex/library,apssamp}
-\par\end{flushleft}\selectlanguage{english}%
+\par\end{flushleft}\selectlanguage{american}%
 
 \end{document}
