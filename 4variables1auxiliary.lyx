@@ -22,8 +22,8 @@
 \options showpacs,preprintnumbers,amsmath,amssymb,aps,notitlepage,prl,superscriptaddress,Hyperref
 \use_default_options false
 \maintain_unincluded_children false
-\language english
-\language_package default
+\language american
+\language_package auto
 \inputencoding auto
 \fontencoding global
 \font_roman "default" "default"
@@ -127,14 +127,13 @@ Nike Dattani
 
 \lang british
 Harvard-Smithsonian 
-\lang english
+\lang american
 Center
 \lang british
  for Astrophysics, USA
 \end_layout
 
 \begin_layout Author Email
-
 nik.dattani@gmail.com
 \end_layout
 
@@ -151,7 +150,6 @@ Cambridge University, Department of Mathematics, UK
 \end_layout
 
 \begin_layout Author Email
-
 houtinchau@gmail.com
 \end_layout
 
@@ -180,8 +178,12 @@ minimized
  4-variable functions.
  There exists 4 different classes of 4-variable functions that each have
  their own 5-variable quadratization formula.
- Since we provide `perfect' quadratizations, we can apply these formulas
- to any 4-variable subset of an 
+ Since we provide `
+\lang american
+perfect'
+\lang british
+ quadratizations, we can apply these formulas to any 4-variable subset of
+ an 
 \begin_inset Formula $n$
 \end_inset
 
@@ -189,8 +191,11 @@ minimized
 \begin_inset Formula $n\gg4.$
 \end_inset
 
- We provide 5 examples of functions that can be quadratized using the result
- of this work.
+ We provide 5 examples of functions that can be 
+\lang american
+quadratized
+\lang british
+ using the result of this work.
  For each of the 5 examples we compare the best possible quadratization
  we could construct using previously known methods, to a quadratization
  that we construct using our new result.
@@ -209,7 +214,11 @@ n requires
 \end_inset
 
  (double as many) auxiliary variables and therefore we can reduce by the
- cost of optimizing such a function by a factor of 
+ cost of 
+\lang american
+optimizing
+\lang british
+ such a function by a factor of 
 \begin_inset Formula $2^{1000}$
 \end_inset
 
@@ -223,7 +232,7 @@ n requires
  coefficient range is a factor of 7 times smaller in our 15-term, 5-variable
  example of a degree-4 function.
  
-\lang english
+\lang american
 
 \begin_inset VSpace -2.5mm
 \end_inset
@@ -244,7 +253,11 @@ Introduction
 \begin_layout Standard
 
 \lang british
-Many problems can be solved by minimizing a real-valued degree-
+Many problems can be solved by 
+\lang american
+minimizing
+\lang british
+ a real-valued degree-
 \begin_inset Formula $k$
 \end_inset
 
@@ -323,7 +336,7 @@ literal "false"
 \end_inset
 
 
-\lang english
+\lang american
 
 \begin_inset VSpace -2.5mm
 \end_inset
@@ -398,7 +411,7 @@ literal "false"
 \end_inset
 
 
-\lang english
+\lang american
 
 \begin_inset VSpace -2.5mm
 \end_inset
@@ -485,7 +498,7 @@ literal "false"
 \end_inset
 
 
-\lang english
+\lang american
 
 \begin_inset VSpace -2.5mm
 \end_inset
@@ -533,7 +546,7 @@ literal "false"
 \end_inset
 
 
-\lang english
+\lang american
 
 \begin_inset VSpace -2.5mm
 \end_inset
@@ -608,7 +621,7 @@ Unfortunately those functions are either extremely obscure functions that
 \end_inset
 
 
-\lang english
+\lang american
 
 \begin_inset Newline newline
 \end_inset
@@ -730,7 +743,7 @@ with real-valued coefficient
 
 
 \series default
-\lang english
+\lang american
 
 \begin_inset VSpace -2.5mm
 \end_inset
@@ -1476,7 +1489,7 @@ literal "false"
 \end_inset
 
 ) we can extend their applicability to more general conditions for which
- a laborious proof was not peformed explicitly.
+ a laborious proof was not performed explicitly.
  Lemma 5 will describe the effect of flipping one bit in Eq.
  
 \begin_inset CommandInset ref
@@ -2067,7 +2080,7 @@ This could be written as a corollary to Lemma 6
 \begin_inset Formula $\alpha_{1234}>0$
 \end_inset
 
- by fipping only one bit.
+ by flipping only one bit.
  With 
 \begin_inset Formula $\alpha_{1234}\ge0$
 \end_inset
@@ -19618,7 +19631,7 @@ and also at least 2 to cover the cubic terms
 \end_inset
 
  is a pairwise cover for the index combinations in this function, and for
- this cover the quadratisation can also be given as an RBS:
+ this cover the quadratization can also be given as an RBS:
 \end_layout
 
 \end_inset
@@ -19667,7 +19680,7 @@ Range of coefficients:
  
 \lang british
 Previous state-of-the-art 
-\lang english
+\lang american
 (-20 to +30), Present (-13 to +31).
 \end_layout
 
@@ -19840,7 +19853,7 @@ This is the sum of
 \begin_inset Formula $N$
 \end_inset
 
- 4-variable functions, each of which we can quadratise using one auxiliary
+ 4-variable functions, each of which we can quadratize using one auxiliary
  variable by Theorem 1, so the total number of auxiliary variables required
  is 
 \begin_inset Formula $N$
@@ -19858,7 +19871,7 @@ For a 4-variable functions with general coefficients, RBS requires at least
 \begin_inset Formula $b_{1}b_{2}b_{3}b_{4}$
 \end_inset
 
- cannot be quadratised with 1 auxiliary variable), so if we quadratise each
+ cannot be quadratized with 1 auxiliary variable), so if we quadratise each
  of the 
 \begin_inset Formula $N$
 \end_inset
@@ -20106,7 +20119,7 @@ status collapsed
 
 
 \color inherit
-We now quadrtize these 3 sub-functions with only 1 auxiliary variable for
+We now quadratize these 3 sub-functions with only 1 auxiliary variable for
  each sub-function, using Lemmas 5, 4, and 3 in that order:
 \end_layout
 
@@ -20139,7 +20152,7 @@ status open
 \begin_layout Plain Layout
 
 \lang british
-whereas applying a termwise
+whereas applying a term-wise
 \begin_inset Note Note
 status open
 
@@ -20347,7 +20360,7 @@ Range of coefficients:
  
 \lang british
 Previous state-of-the-art 
-\lang english
+\lang american
 (-42 to +63)
 \begin_inset Note Note
 status open
@@ -20690,7 +20703,7 @@ Range of coefficients:
  
 \lang british
 Previous state-of-the-art 
-\lang english
+\lang american
 (-42 to +63), Present (-7 to +8).
 \end_layout
 
@@ -20705,7 +20718,7 @@ Previous state-of-the-art
 \begin_layout Standard
 
 \lang british
-To emphasize that literally any real-valued 4-variable function of boolean
+To emphasize that literally any real-valued 4-variable function of Boolean
  variables can be quadratized with only one auxiliary variable, we present
  here an example that is not written in the form of Eq.
  
@@ -20966,7 +20979,7 @@ Range of coefficients:
  
 \lang british
 Previous state-of-the-art 
-\lang english
+\lang american
 (-10.60 to +15.90), Present (-1.44 to +5.50).
 \end_layout
 
@@ -20993,7 +21006,7 @@ Consider the function
 \begin_inset Formula $\min(4-3b_{1}-3b_{2}-3b_{3}-2b_{4},0)=b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}-2b_{1}b_{2}-2b_{1}b_{3}-b_{1}b_{4}-2b_{2}b_{3}-b_{2}b_{4}-b_{3}b_{4}.$
 \end_inset
 
- This can be quadratised as 
+ This can be quadratized as 
 \begin_inset Formula $b_{a}(4-3b_{1}-3b_{2}-3b_{3}-2b_{4})$
 \end_inset
 
@@ -21270,8 +21283,6 @@ Coefficient ranges (ranges of coupling strengths)
 \end_layout
 
 \begin_layout Section
-
-\lang british
 Acknowledgments
 \end_layout
 
