@@ -237,9 +237,9 @@
   {E.}~\bibnamefont {Ladizinsky}}, \bibinfo {author} {\bibfnamefont {M.~W.}\
   \bibnamefont {Johnson}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
   {Hilton}}, \ and\ \bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
-  {Amin}},\ }\href {\doibase 10.1038/s41586-018-0410-x} {\enquote {\bibinfo
-  {title} {{Observation of topological phenomena in a programmable lattice of
-  1,800 qubits}},}\ } (\bibinfo {year} {2018})\BibitemShut {NoStop}%
+  {Amin}},\ }\href {\doibase 10.1038/s41586-018-0410-x} {\bibfield  {journal}
+  {\bibinfo  {journal} {Nature}\ }\textbf {\bibinfo {volume} {560}},\ \bibinfo
+  {pages} {456} (\bibinfo {year} {2018})}\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Dattani}\ \emph {et~al.}(2019)\citenamefont
   {Dattani}, \citenamefont {Szalay},\ and\ \citenamefont
   {Chancellor}}]{Dattani2019b}%
@@ -424,7 +424,7 @@
   {Boros}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Crama}}, \ and\
   \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Rodr{\'{i}}guez-Heck}},\
   }\href
-  {https://orbi.uliege.be/bitstream/2268/220766/1/ISAIM2018{\%}7B{\_}{\%}7DBoolean{\%}7B{\_}{\%}7DBoros{\%}7B{\_}{\%}7Detal{\%}7B{\_}{\%}7DWEBSITEVERSION.pdf}
+  {https://orbi.uliege.be/bitstream/2268/220766/1/ISAIM2018{\_}Boolean{\_}Boros{\_}etal{\_}WEBSITEVERSION.pdf}
   {\emph {\bibinfo {title} {{Quadratizations of symmetric pseudo-Boolean
   functions: sub-linear bounds on the number of auxiliary variables}}}},\
   \bibinfo {type} {Tech. Rep.}\ (\bibinfo {year} {2018})\BibitemShut {NoStop}%
@@ -448,7 +448,7 @@
   {\bibfnamefont {T.~K.}\ \bibnamefont {{Satish Kumar}}},\ }\href {\doibase
   10.1007/978-3-030-19212-9_43} {\bibfield  {journal} {\bibinfo  {journal}
   {CPAIOR}\ } (\bibinfo {year} {2019}),\
-  $10.1007/978-3-030-19212-9_43$}\BibitemShut {NoStop}%
+  }\BibitemShut {NoStop}%
 \bibitem [{\citenamefont {Boros}\ and\ \citenamefont
   {Hammer}(2002)}]{Boros2002}%
   \BibitemOpen

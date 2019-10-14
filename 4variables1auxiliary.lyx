@@ -21483,7 +21483,8 @@ status collapsed
 \lang british
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "../pCloud Sync/library,/Users/leroy/Dropbox (Personal)/NSD/Papers/library,C:/Users/Nike/Desktop/Dropbox/NSD/Papers/library,C:/Users/Richard/Documents/Bibtex/library,apssamp"
+btprint "btPrintCited"
+bibfiles "../pCloud Sync/library,apssamp"
 options "IEEEtran"
 
 \end_inset
