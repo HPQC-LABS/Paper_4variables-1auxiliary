@@ -104,7 +104,7 @@ status open
 
 
 \backslash
-newgeometry{top=1.3cm,bottom=1.3cm,right=2.3cm,left=2.3cm} 
+newgeometry{top=1.3cm,bottom=1.3cm,right=2.0cm,left=2.0cm} 
 \end_layout
 
 \end_inset
@@ -171,11 +171,15 @@ We prove that any function with real-valued coefficients, whose input is
 \emph on
 quadratic 
 \emph default
-function whose input is 5 binary variables and is minimized over the new
- variable.
- Our proof is constructive, so we provide quadratic functions that quadratize
- any 4-variable function, but there exists 5 different classes of 4-variable
- functions that each have their own 5-variable quadratization formula.
+function whose input is 5 binary variables and is 
+\lang american
+minimized
+\lang british
+ over the new variable.
+ Our proof is constructive: we provide quadratizations for all possible
+ 4-variable functions.
+ There exists 4 different classes of 4-variable functions that each have
+ their own 5-variable quadratization formula.
  Since we provide `perfect' quadratizations, we can apply these formulas
  to any 4-variable subset of an 
 \begin_inset Formula $n$
@@ -185,10 +189,40 @@ function whose input is 5 binary variables and is minimized over the new
 \begin_inset Formula $n\gg4.$
 \end_inset
 
- We provide a simple example function where a termwise quadratization method
- would require 15 auxiliary variables to perfectly quadratize, whereas with
- the results of this paper, we only need 5 auxiliary variables (so each
- application of our theorem saves 10 auxiliary variables).
+ We provide 5 examples of functions that can be quadratized using the result
+ of this work.
+ For each of the 5 examples we compare the best possible quadratization
+ we could construct using previously known methods, to a quadratization
+ that we construct using our new result.
+ In the most extreme example, the quadratization using our new result needs
+ only 
+\begin_inset Formula $N$
+\end_inset
+
+auxiliary variables for a 
+\begin_inset Formula $4N$
+\end_inset
+
+-variable degree-4 function, whereas the previous state-of-the-art quadratizatio
+n requires 
+\begin_inset Formula $2N$
+\end_inset
+
+ (double as many) auxiliary variables and therefore we can reduce by the
+ cost of optimizing such a function by a factor of 
+\begin_inset Formula $2^{1000}$
+\end_inset
+
+ if it were to have 
+\begin_inset Formula $4000$
+\end_inset
+
+ variables before quadratization.
+ In all 5 of our examples, the range of coefficient sizes in our quadratic
+ function is smaller than in the previous state-of-the-art one, and our
+ coefficient range is a factor of 7 times smaller in our 15-term, 5-variable
+ example of a degree-4 function.
+ 
 \lang english
 
 \begin_inset VSpace -2.5mm
@@ -304,8 +338,7 @@ Solving such discrete optimization problems with
 \begin_inset Formula $k>2$
 \end_inset
 
- can be very difficult, and more algorithms have been developed for the
- 
+ can be very difficult, and more methods have been developed for the 
 \begin_inset Formula $k=2$
 \end_inset
 
@@ -325,6 +358,22 @@ literal "false"
 
 \end_inset
 
+, and quantum annealing using thousands of superconducting qubits 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "King2018"
+literal "false"
+
+\end_inset
+
+ connected by graphs as complicated as Pegasus 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dattani2019b,Dattani2019c"
+literal "false"
+
+\end_inset
+
 ) than for the 
 \begin_inset Formula $k>2$
 \end_inset
@@ -335,15 +384,7 @@ literal "false"
 \end_inset
 
 -degree binary optimization problem into a 2-degree binary optimization
- problem, by a transformation called 
-\begin_inset Quotes eld
-\end_inset
-
-quadratization
-\begin_inset Quotes erd
-\end_inset
-
- 
+ problem, by a transformation called `quadratization' 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Dattani2019"
@@ -396,9 +437,9 @@ literal "false"
 \end_inset
 
  problem).
- Coming up with better quadratizations (for example with fewer auxiliary
- variables) has been a very active area of research recently: The first
- quadratization method was published in 1975 
+ Discovering better quadratizations (for example with fewer auxiliary variables)
+ has been a very active area of research recently: The first quadratization
+ method was published in 1975 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Rosenberg1975"
@@ -425,16 +466,16 @@ literal "false"
 , and 2011 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Ishikawa2011,Fix2011,Gallagher2011"
+key "Ishikawa2011,Fix2011,Gallagher2011,Ramalingam2011"
 literal "false"
 
 \end_inset
 
-, but the rest of the methods were published in the last 5 years (from 2014-2018
+, but the rest of the methods were published in the last 5 years (from 2014-2019
 ) 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Anthony2014,Ishikawa2014,Boros2014,Tanburn2015d,Okada2015b,Anthony2015,Anthony2016,DelasCuevasGemmaandCubitt2016,Leib2016,Rocchetto2016,Anthony2017,Chancellor2017,Boros2018,Boros2018a,Dridi2017,Dattani2019"
+key "Ishikawa2014,Anthony2014,Boros2014,Tanburn2015d,Okada2015b,Anthony2015,Anthony2016,DelasCuevasGemmaandCubitt2016,Leib2016,Rocchetto2016,Anthony2017,Dridi2017,Chancellor2017,Boros2018,Boros2018a,WaYip2019,Dattani2019"
 literal "false"
 
 \end_inset
@@ -455,7 +496,7 @@ literal "false"
 \begin_layout Standard
 
 \lang british
-In the most recent of these papers 
+In 2018 a remarkable discovery was made 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Boros2018,Boros2018a"
@@ -463,19 +504,19 @@ literal "false"
 
 \end_inset
 
-, a remarkable discovery was made, that degree-
+, that degree-
 \begin_inset Formula $k$
 \end_inset
 
  monomials can be quadratized with only 
-\begin_inset Formula $\log_{2}k-1$
+\begin_inset Formula $\log_{2}\left(\nicefrac{k}{2}\right)$
 \end_inset
 
  auxiliary variables.
  For many functions this can still be prohibitively costly though: If a
  44-variable function has 1 million degree-5 terms and each term requires
  
-\begin_inset Formula $\log_{2}k-1$
+\begin_inset Formula $\log_{2}\left(\nicefrac{k}{2}\right)$
 \end_inset
 
  auxiliary variables for quadratization, the quadratic function will have
@@ -515,8 +556,8 @@ literal "false"
 \begin_inset Formula $n$
 \end_inset
 
- variables can entirely be quadratized with only log
-\begin_inset Formula $_{2}k-1$
+ variables can entirely be quadratized with only 
+\begin_inset Formula $\log_{2}\left(\nicefrac{k}{2}\right)$
 \end_inset
 
  auxiliary variables no matter how many terms and how many variables it
@@ -539,12 +580,8 @@ at-least-
 \begin_inset Quotes erd
 \end_inset
 
- (A
-\begin_inset Formula $k$
-\end_inset
-
-ON) functions, which includes functions consisting of only a single positive
- monomial term.
+ (AKON) functions, which includes functions consisting of only a single
+ positive monomial term.
 \end_layout
 
 \begin_layout Standard
@@ -591,27 +628,22 @@ literal "false"
 \end_inset
 
  that it is possible to quadratize multi-term functions so compactly inspired
- us, and the fact that such `compact' quadratizations are only known for
- a very specific category of functions (the A
-\begin_inset Formula $k$
-\end_inset
-
-ON functions), motivated us to look for quadratizations that are `compact',
- but also applicable to a much wider class of functions.
+ us; and the fact that such `compact' quadratizations are only known for
+ a very specific category of functions (the AKON functions), motivated us
+ to look for quadratizations that are `compact', but also applicable to
+ a much wider class of functions.
  The result of this study is the theorem described in the title of this
  paper, and explained in more detail in the section below.
  It allows up to 5 terms of a function (1 of them can be of degree-4 and
  the other 4 can be of degree-3) to be quadratized with only 1 auxiliary
- variable rather than 5 auxiliaries (which is what would be required if
- quadratizing each term individually with log
-\begin_inset Formula $_{2}$
+ variable rather than 2 auxiliaries, which used to be the best possible
+ quadratization known for such a 5-term function, and is a substantial improveme
+nt over the 5 auxiliaries that would be required if quadratizing each term
+ individually with 
+\begin_inset Formula $\log_{2}\left(\nicefrac{k}{2}\right)$
 \end_inset
 
-
-\begin_inset Formula $k$
-\end_inset
-
--1 auxiliary variables for each term).
+ auxiliary variables for each term.
 \end_layout
 
 \begin_layout Standard
@@ -719,7 +751,12 @@ By `perfect' quadratization we mean all
 \begin_inset Formula $n$
 \end_inset
 
--variable problem can be quadratized with only 1-auxiliary variable.
+-variable problem can be quadratized with only 1-auxiliary variable, without
+ affecting any properties of the much larger 
+\begin_inset Formula $n$
+\end_inset
+
+-variable function after minimizing over the auxiliary variable.
 \end_layout
 
 \begin_layout Standard
@@ -878,8 +915,17 @@ noprefix "false"
 \begin_inset Formula $\alpha$
 \end_inset
 
- coefficients; but we will then prove with Lemmas 6-8 that these 4 cases
- for the coefficients, cover every possible case.
+ coefficients; but we will then prove with Lemmas 5-6 and Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:allCases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, that these 4 cases for the coefficients, cover every possible case.
  The explicit quadratizations for Lemmas 1-4 are given below, but their
  proofs take up a lot of space so they are given in the Appendix.
 \end_layout
@@ -1431,7 +1477,7 @@ literal "false"
 
 ) we can extend their applicability to more general conditions for which
  a laborious proof was not peformed explicitly.
- Lemma 6 will describe the effect of flipping one bit in Eq.
+ Lemma 5 will describe the effect of flipping one bit in Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1442,7 +1488,7 @@ noprefix "false"
 
 \end_inset
 
-, and Lemma 7 will describe the effect of flipping two.
+, and Lemma 6 will describe the effect of flipping two.
  Since the function is completely symmetric with respect to the four variables
  
 \begin_inset Formula $b_{1},b_{2},b_{3}$
@@ -1494,7 +1540,7 @@ height "1pt"
 
 
 \series bold
-Lemma 6: If one bit is flipped (
+Lemma 5: If one bit is flipped (
 \begin_inset Formula $b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1}$
 \end_inset
 
@@ -1692,7 +1738,7 @@ height "1pt"
 \noindent
 
 \series bold
-Lemma 7: If two bits are flipped (
+Lemma 6: If two bits are flipped (
 \begin_inset Formula $b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1},b_{2}\rightarrow\bar{b}_{2}\equiv1-b_{2}$
 \end_inset
 
@@ -2047,7 +2093,17 @@ This could be written as a corollary to Lemma 6
 \end_inset
 
 .
- There's then 35 different cases for how the four cubic coefficients 
+ We then have 35 different cases (see Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:allCases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) for how the four cubic coefficients 
 \begin_inset Formula $\alpha_{ijk}$
 \end_inset
 
@@ -2065,16 +2121,16 @@ This could be written as a corollary to Lemma 6
 \end_inset
 
  as partition points.
- For some of these cases, Lemma 1, 3, 4 or 5 can be applied immediately.
+ For some of these cases, Lemma 1, 3, or 4 can be applied immediately.
  Due to the conditions used to prove Lemma 2, it cannot be applied directly
- to any of the 35 cases, but thanks to Lemmas 6 and 7, Lemma 2 can be applied
+ to any of the 35 cases, but thanks to Lemmas 5 and 6, Lemma 2 can be applied
  to two of the 35 cases after bit-flipping appropriately.
- Lemma 1, 3, 4 or 5 can be applied for the rest of the 35 cases if 2, 3,
- or 4 bits are flipped (meaning either one application of Lemma 7, one applicati
-on of Lemma 6 combined with one application of Lemma 7, or two applications
- of Lemma 7, is done).
- This means that one of Lemmas 1-5 can be applied for all of the 35 possible
- cases, as long as Lemmas 6 and/or 7 are applied appropriately.
+ Lemma 1, 3, or 4 can be applied for the rest of the 35 cases if 2, 3, or
+ 4 bits are flipped (meaning either one application of Lemma 6, one application
+ of Lemma 5 combined with one application of Lemma 6, or two applications
+ of Lemma 6, is done).
+ This means that one of Lemmas 1-4 can be applied for all of the 35 possible
+ cases, as long as Lemmas 5 and/or 6 are applied appropriately.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2085,8 +2141,30 @@ noprefix "false"
 
 \end_inset
 
- summarizes which bits have to be flipped using Lemma 6 and/or Lemma 7,
- and which of Lemmas 1-5 can be applied, for each of the 35 possible cases.
+ summarizes which bits have to be flipped using Lemma 5 and/or Lemma 6,
+ and which of Lemmas 1-4 can be applied, for each of the 35 possible cases.
+ Since so many neighboring cases are often covered by a single lemma, we
+ were also able to make Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:SimplifiedTable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, which is a more compact version of Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:allCases"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2105,10 +2183,12 @@ name "tab:allCases"
 
 \end_inset
 
-All possible cases of 4-variable functions with 
-\begin_inset Formula $\alpha_{1234}\ge0.$
+All 35 possible cases of 4-variable functions with 
+\begin_inset Formula $\alpha_{1234}\ge0$
 \end_inset
 
+, and the corresponding lemma (or lemmas) of this paper that provide a quadratiz
+ation for each case.
  
 \end_layout
 
@@ -4663,6 +4743,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:SimplifiedTable"
+
+\end_inset
+
 Simplified version of Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -19260,7 +19346,7 @@ Examples
 \size normal
 \color black
 \lang british
-8-variable, degree-4, function
+11-term, 8-variable, degree-4, function
 \end_layout
 
 \begin_layout Standard
@@ -19464,7 +19550,7 @@ status collapsed
 \noindent
 
 \lang british
-which leads to the following quadratic terms (and coefficients chosen based
+leading to the following quadratic terms (and coefficients chosen based
  on the recommendation in Gruber's thesis):
 \end_layout
 
@@ -19881,7 +19967,7 @@ status open
 \begin_layout Standard
 
 \lang british
-To quadratize the following function:
+We can quadratize the following function:
 \end_layout
 
 \begin_layout Standard
@@ -19923,7 +20009,7 @@ status collapsed
 
 \begin_inset Formula 
 \begin{equation}
-5b_{1}b_{2}b_{3}b_{4}+4b_{1}b_{2}b_{3}b_{5}+3b_{1}b_{2}b_{4}b_{5}-3b_{1}b_{2}b_{3}-b_{1}b_{2}b_{4}-5b_{1}b_{2}b_{5}-b_{1}b_{3}b_{4}-b_{1}b_{3}b_{5}-b_{1}b_{4}b_{5}-2b_{2}b_{3}b_{4}-b_{2}b_{3}b_{5}-4b_{2}b_{4}b_{5}
+5b_{1}b_{2}b_{3}b_{4}+4b_{1}b_{2}b_{3}b_{5}+3b_{1}b_{2}b_{4}b_{5}-3b_{1}b_{2}b_{3}-b_{1}b_{2}b_{4}-5b_{1}b_{2}b_{5}-b_{1}b_{3}b_{4}-b_{1}b_{3}b_{5}-b_{1}b_{4}b_{5}-2b_{2}b_{3}b_{4}-b_{2}b_{3}b_{5}-4b_{2}b_{4}b_{5},
 \end{equation}
 
 \end_inset
@@ -19938,6 +20024,13 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
+\noindent
+
+\lang british
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 \noindent
 
 \lang british
@@ -19958,9 +20051,14 @@ status collapsed
 
 normally we would need at least 12 auxiliary variables (at least one for
  each term).
- Instead we quadratize the whole function with only 3 auxiliary variables.
- To do this we will apply Theorem 1 for 3 sub-functions (displayed below
- in five different colors) that contain only 4 variables:
+ Instead we quadratize the whole function 
+\end_layout
+
+\end_inset
+
+with only 3 auxiliary variables.
+ To do this we will apply Theorem 1 for three sub-functions (displayed below
+ in three different colors) that contain only 4 variables:
 \begin_inset VSpace -1mm
 \end_inset
 
@@ -20008,7 +20106,7 @@ status collapsed
 
 
 \color inherit
-We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
+We now quadrtize these 3 sub-functions with only 1 auxiliary variable for
  each sub-function, using Lemmas 5, 4, and 3 in that order:
 \end_layout
 
@@ -20033,7 +20131,15 @@ We now quadrtize these 5 sub-functions with only 1 auxiliary variable for
 
 \lang british
 The final quadratic function contains only 8 variables (the 5 original ones
- and the 3 new auxiliary variables), whereas applying a termwise
+ and the 3 new auxiliary variables).
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+whereas applying a termwise
 \begin_inset Note Note
 status open
 
@@ -20059,6 +20165,11 @@ s
 
  would in the best case result in a quadratic function with 17 variables
  (the 5 original ones and the 12 new auxiliary variables).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -20097,9 +20208,9 @@ Previous state-of-the-art
 \begin_layout Standard
 
 \lang british
-Pairwise covers would require 4 auxiliary variables.
+Pairwise covers would require at least 4 auxiliary variables.
  It is not possible with only 3 auxiliary variables because we cannot cover
- all 9 cubic terms in (this sentence isn't complete?).
+ all 9 cubic terms with only 3 auxiliary variables.
  One pairwise cover for the index combinations of this function is 
 \begin_inset Formula $\{12,34,35,45\}$
 \end_inset
@@ -20914,7 +21025,7 @@ Non-uniqueness
 
 \begin_layout Standard
 We note that functions can have multiple different quadratizations, even
- when with the same number of auxiliary qubits.
+ when they have the same number of auxiliary qubits.
  Therefore, while Lemmas 1-4 constitute the only quadratization formulas
  needed for proving Theorem 1, we considered the possibility that alternative
  quadratization formulas exist, but it turned out that all quadratization
@@ -20922,7 +21033,7 @@ We note that functions can have multiple different quadratizations, even
  of our presented formulas.
  Nevertheless, we do not rule out the possibility that other quadratization
  formulas involving only one auxiliary variable can exist: it may just be
- that we have not found them.
+ that we have not yet found them.
  
 \end_layout
 
