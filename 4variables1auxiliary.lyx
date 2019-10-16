@@ -134,6 +134,7 @@ Center
 \end_layout
 
 \begin_layout Author Email
+
 nik.dattani@gmail.com
 \end_layout
 
@@ -146,10 +147,11 @@ Hou Tin Chau
 \begin_layout Affiliation
 
 \lang british
-Cambridge University, Department of Mathematics, UK
+Cambridge University, Churchill College, UK
 \end_layout
 
 \begin_layout Author Email
+
 houtinchau@gmail.com
 \end_layout
 
@@ -829,7 +831,7 @@ noprefix "false"
 
 \end_inset
 
- are equivalent, as 
+ are equivalent, as
 \end_layout
 
 \end_inset
@@ -840,7 +842,7 @@ they can be switched with each other and have their subscripts relabeled
 \begin_inset Formula $\alpha_{123}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}$
 \end_inset
 
-.
+ unless otherwise stated.
  
 \end_layout
 
@@ -976,23 +978,19 @@ Lemma 1: Suppose
 \end_inset
 
  If 
-\begin_inset Formula $\alpha_{ijk}\ge-\frac{\alpha_{1234}}{2}$
+\begin_inset Formula $\alpha_{ijk}\ge-\alpha_{1234}$
 \end_inset
 
  for all 
 \begin_inset Formula $ijk,$
 \end_inset
 
- or 
-\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le0\le\alpha_{234}\le\alpha_{134}\le\alpha_{124},$
-\end_inset
-
- or both 
-\begin_inset Formula $-\alpha_{1234}\le\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
-\end_inset
-
  and 
-\begin_inset Formula $\alpha_{123}+\alpha_{124}\ge-\alpha_{1234}$
+\begin_inset Formula $\alpha_{ijk}+\alpha_{lmn}\ge-\alpha_{1234}$
+\end_inset
+
+ for all distinct pairs 
+\begin_inset Formula $ijk,\ lmn$
 \end_inset
 
 , then Eq.
@@ -1127,15 +1125,15 @@ height "1pt"
 
 \series bold
 Lemma 3: If 
-\begin_inset Formula $\alpha_{1234}\ge0,$
+\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le0$
 \end_inset
 
- 
-\begin_inset Formula $\alpha_{123}\le-\alpha_{1234},$
+, and 
+\begin_inset Formula $\alpha_{134}\le\alpha_{234}$
 \end_inset
 
- and 
-\begin_inset Formula $-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le0\le\alpha_{234}$
+, and 
+\begin_inset Formula $\alpha_{123}+\alpha_{124}\le-\frac{\alpha_{1234}}{2}$
 \end_inset
 
 , then Eq.
@@ -1295,9 +1293,6 @@ height "1pt"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset VSpace 2mm
 \end_inset
 
@@ -1305,167 +1300,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Standard
-\noindent
-
-\series bold
-Lemma 4: If 
-\begin_inset Formula $\alpha_{1234}\ge0,$
-\end_inset
-
- 
-\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le\alpha_{234}\le0,$
-\end_inset
-
- and 
-\begin_inset Formula $\alpha_{123}+\alpha_{124}\le-\alpha_{1234}$
-\end_inset
-
-, then Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:general4variable"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is perfectly quadratized by:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-Looks funny to write 
-\begin_inset Quotes eld
-\end_inset
-
-423
-\begin_inset Quotes erd
-\end_inset
-
- instead of 
-\begin_inset Quotes eld
-\end_inset
-
-234
-\begin_inset Quotes erd
-\end_inset
-
- but that's to get the sign right for 
-\begin_inset Formula $-b_{i}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\negthinspace\alpha_{1234}-\sum_{i}\negthinspace\left(\alpha_{12i}\negthinspace+\negthinspace\alpha_{1234}\right)\negthinspace b_{i}+\sum_{i}\negthinspace\alpha_{i34}b_{a}+\sum_{ijk}\negthinspace\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\sum_{\substack{i=p,q\\
-p,q=1,2\,\text{or}\,3,4
-}
-}\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\left(\sum\nolimits _{\substack{j=r,s\\
-r,s=3,4\,\text{or}\,1,2
-}
-}\alpha_{pqj}-\alpha_{irs}\right)b_{i}b_{a}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace -6mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
--\sum_{i}\alpha_{12i}\left(b_{1}+b_{2}\right)-\sum_{i}\alpha_{i34}\left(b_{3}+b_{4}-1-b_{i}\right)-\alpha_{1234}\left(b_{3}+b_{4}-1\right)b_{a}.
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align}
- & \alpha_{1234}-\sum_{i}\left(\alpha_{12i}+\alpha_{1234}\right)b_{i}+\sum_{i}\alpha_{i34}b_{a}+\sum_{ijk}\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\right)b_{i}b_{a}-\sum_{i=3,4}\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\right)b_{i}b_{a}.\\
- & -\sum_{i}\alpha_{12i}\left(b_{1}+b_{2}\right)-\sum_{i}\alpha_{i34}\left(b_{3}+b_{4}-1-b_{i}\right)-\alpha_{1234}\left(b_{3}+b_{4}-1\right)b_{a}.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align}
- & \sum_{i=3,4}\alpha_{12i}\left(-b_{1}-b_{2}+b_{1}b_{i}+b_{2}b_{i}\right)+\sum_{i=1,2}\alpha_{i34}\left(1+b_{i}-b_{3}-b_{4}+b_{3}b_{4}\right)+\alpha_{1234}\left(1-b_{3}-b_{4}+b_{3}b_{4}\right)\\
- & +b_{a}\left(\sum_{i=3,4}\alpha_{12i}\left(b_{1}+b_{2}-b_{i}\right)+\sum_{i=1,2}\alpha_{i34}\left(-b_{i}+b_{3}+b_{4}-1\right)+\alpha_{1234}\left(b_{3}+b_{4}-1\right)\right)
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hspace{}
-\length -6mm
-\end_inset
-
-
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "104col%"
-height "1pt"
-
-\end_inset
-
-
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In the Appendix, Lemmas 1-4 are each proven for their own specific conditions
+In the Appendix, Lemmas 1-3 are each proven for their own specific conditions
  on the coefficients 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -1490,7 +1325,7 @@ literal "false"
 
 ) we can extend their applicability to more general conditions for which
  a laborious proof was not performed explicitly.
- Lemma 5 will describe the effect of flipping one bit in Eq.
+ Lemma 4 will describe the effect of flipping one bit in Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1501,7 +1336,7 @@ noprefix "false"
 
 \end_inset
 
-, and Lemma 6 will describe the effect of flipping two.
+, and Lemma 5 will describe the effect of flipping two.
  Since the function is completely symmetric with respect to the four variables
  
 \begin_inset Formula $b_{1},b_{2},b_{3}$
@@ -1553,7 +1388,7 @@ height "1pt"
 
 
 \series bold
-Lemma 5: If one bit is flipped (
+Lemma 4: If one bit is flipped (
 \begin_inset Formula $b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1}$
 \end_inset
 
@@ -1751,7 +1586,7 @@ height "1pt"
 \noindent
 
 \series bold
-Lemma 6: If two bits are flipped (
+Lemma 5: If two bits are flipped (
 \begin_inset Formula $b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1},b_{2}\rightarrow\bar{b}_{2}\equiv1-b_{2}$
 \end_inset
 
@@ -2054,14 +1889,14 @@ height "1pt"
 \begin_layout Standard
 
 \series bold
-Lemma 6 allows us to assume from now on that
+Lemma 4 allows us to assume from now on that
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 
 \series bold
-This could be written as a corollary to Lemma 6
+This could be written as a corollary to Lemma 4
 \end_layout
 
 \end_inset
@@ -2134,16 +1969,16 @@ noprefix "false"
 \end_inset
 
  as partition points.
- For some of these cases, Lemma 1, 3, or 4 can be applied immediately.
+ For some of these cases, Lemma 1 or 3 can be applied immediately.
  Due to the conditions used to prove Lemma 2, it cannot be applied directly
- to any of the 35 cases, but thanks to Lemmas 5 and 6, Lemma 2 can be applied
+ to any of the 35 cases, but thanks to Lemmas 4 and 5, Lemma 2 can be applied
  to two of the 35 cases after bit-flipping appropriately.
- Lemma 1, 3, or 4 can be applied for the rest of the 35 cases if 2, 3, or
- 4 bits are flipped (meaning either one application of Lemma 6, one application
- of Lemma 5 combined with one application of Lemma 6, or two applications
- of Lemma 6, is done).
- This means that one of Lemmas 1-4 can be applied for all of the 35 possible
- cases, as long as Lemmas 5 and/or 6 are applied appropriately.
+ Lemma 1 or 3 can be applied for the rest of the 35 cases if 2, 3, or 4
+ bits are flipped (meaning either one application of Lemma 5, one application
+ of Lemma 4 combined with one application of Lemma 5, or two applications
+ of Lemma 5, is done).
+ This means that one of Lemmas 1–3 can be applied for all of the 35 possible
+ cases, as long as Lemmas 4 and/or 5 are applied appropriately.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2154,8 +1989,8 @@ noprefix "false"
 
 \end_inset
 
- summarizes which bits have to be flipped using Lemma 5 and/or Lemma 6,
- and which of Lemmas 1-4 can be applied, for each of the 35 possible cases.
+ summarizes which bits have to be flipped using Lemma 4 and/or Lemma 5,
+ and which of Lemmas 1–3 can be applied, for each of the 35 possible cases.
  Since so many neighboring cases are often covered by a single lemma, we
  were also able to make Table 
 \begin_inset CommandInset ref
@@ -3220,7 +3055,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -3557,7 +3392,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -3879,7 +3714,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1, 4
+Lemma 1, 3
 \end_layout
 
 \end_inset
@@ -3941,7 +3776,7 @@ Lemma 1, 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -4204,7 +4039,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1, 4
+Lemma 1, 3
 \end_layout
 
 \end_inset
@@ -4272,7 +4107,7 @@ Lemma 1, 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -5423,10 +5258,6 @@ Lemma 3
 \end_inset
 
 
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -5595,10 +5426,6 @@ Lemma 1
 \end_inset
 
 
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -5689,7 +5516,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -5840,7 +5667,7 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -6213,7 +6040,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -6358,7 +6185,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -6435,7 +6262,7 @@ Lemma 4
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 4
+Lemma 3
 \end_layout
 
 \end_inset
@@ -17691,7 +17518,7 @@ status collapsed
 
 \begin_layout Subsection*
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Subsection*
 Lemma: the following cases covers everything
@@ -19734,7 +19561,7 @@ Consider the function:
 \lang british
 \begin_inset Formula 
 \begin{equation}
-2b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{3}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}+2\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{7}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}+2\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{11}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}\cdots\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}4}\hspace{-0.05em}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}\hspace{-0.05em}+2\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}-\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}.
+-2b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{3}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{7}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{11}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}\cdots\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}4}\hspace{-0.05em}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}.
 \end{equation}
 
 \end_inset
@@ -20120,7 +19947,7 @@ status collapsed
 
 \color inherit
 We now quadratize these 3 sub-functions with only 1 auxiliary variable for
- each sub-function, using Lemmas 5, 4, and 3 in that order:
+ each sub-function, using Lemmas 1, 3, and 3 in that order:
 \end_layout
 
 \begin_layout Standard
@@ -20244,7 +20071,8 @@ b_{a_{1}}\equiv b_{1}b_{2},\,\,\,\,\,\,b_{a_{2}}\equiv b_{3}b_{4}\,\,\,\,\,\,b_{
 \end_inset
 
 Then we have the following quadratic function (and coefficients chosen based
- on the recommendation in Gruber's thesis):
+ on the recommendation in Eq.
+ (3.44) in Gruber's thesis):
 \end_layout
 
 \begin_layout Standard
@@ -20704,7 +20532,7 @@ Range of coefficients:
 \lang british
 Previous state-of-the-art 
 \lang american
-(-42 to +63), Present (-7 to +8).
+(-42 to +63), Present (-7 to +10).
 \end_layout
 
 \begin_layout Subsection
