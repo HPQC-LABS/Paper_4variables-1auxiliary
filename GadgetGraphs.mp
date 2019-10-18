@@ -130,6 +130,16 @@ for i = 0 upto 3:
 	gdaddedge(0,i+1);
 endfor;
 
+gdadd("41_K4+e");
+gdaddvert((0,+ut*0.3),1);
+for i = 0 upto 3:
+	gdaddvert(ut*dir(i*360/4+45),0);
+	gdaddedge(0,i+1);
+endfor;
+gdaddedge(1,3);
+gdaddedge(1, 4);
+gdaddedge(3, 4);
+
 % ** drawing the figures and output ********************************************
 
 gdN := gd;
