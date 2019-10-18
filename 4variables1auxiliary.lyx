@@ -443,9 +443,10 @@ literal "false"
 
 \end_inset
 
-, but not every function can be quadratized without adding some auxiliary
- variables (so the number of variables in the quadratic problem is usually
- much more than in the original degree-
+, but not every function can be turned into a single quadratic function
+ with the same global optimum without adding some auxiliary variables (so
+ the number of variables in the quadratic problem is usually much more than
+ in the original degree-
 \begin_inset Formula $k$
 \end_inset
 
