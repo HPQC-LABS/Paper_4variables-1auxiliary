@@ -271,11 +271,11 @@ minimizing
 \end_inset
 
  but in general we can have 
-\begin_inset Formula $k=m^{2}$
+\begin_inset Formula $k=d^{2}$
 \end_inset
 
  with 
-\begin_inset Formula $m\ge2$
+\begin_inset Formula $d\ge2$
 \end_inset
 
  being the length in pixels of the square-shaped mask
@@ -314,12 +314,8 @@ literal "false"
 \begin_inset Formula $N$
 \end_inset
 
- is an 
-\begin_inset Formula $m$
-\end_inset
-
--color Ramsey number (where 
-\begin_inset Formula $k=\frac{mN\left(N-1\right)}{2}$
+ is an d-color Ramsey number (where 
+\begin_inset Formula $k=\frac{dN\left(N-1\right)}{2}$
 \end_inset
 
 ) 
