@@ -134,6 +134,7 @@ Center
 \end_layout
 
 \begin_layout Author Email
+
 nik.dattani@gmail.com
 \end_layout
 
@@ -150,6 +151,7 @@ Cambridge University, Churchill College, UK
 \end_layout
 
 \begin_layout Author Email
+
 houtinchau@gmail.com
 \end_layout
 
@@ -271,11 +273,11 @@ minimizing
 \end_inset
 
  but in general we can have 
-\begin_inset Formula $k=d^{2}$
+\begin_inset Formula $k=m^{2}$
 \end_inset
 
  with 
-\begin_inset Formula $d\ge2$
+\begin_inset Formula $m\ge2$
 \end_inset
 
  being the length in pixels of the square-shaped mask
@@ -314,8 +316,12 @@ literal "false"
 \begin_inset Formula $N$
 \end_inset
 
- is an d-color Ramsey number (where 
-\begin_inset Formula $k=\frac{dN\left(N-1\right)}{2}$
+ is an 
+\begin_inset Formula $m$
+\end_inset
+
+-color Ramsey number (where 
+\begin_inset Formula $k=\frac{mN\left(N-1\right)}{2}$
 \end_inset
 
 ) 
@@ -802,7 +808,35 @@ We prove the theorem by providing an explicit quadratization for various
 
 \end_inset
 
-Since 
+
+\end_layout
+
+\begin_layout Standard
+Define 
+\begin_inset Formula $Q$
+\end_inset
+
+ to be the set of all 
+\begin_inset Formula $\boldsymbol{\alpha}=(\alpha_{1234},\alpha_{123},\alpha_{124},\alpha_{134},\alpha_{234})\in\mathbb{R}^{5}$
+\end_inset
+
+ such that Formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:general4variable"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+can be quadratized with 1 auxiliary.
+ We want to show that 
+\begin_inset Formula $Q=\mathbb{R}^{5},$
+\end_inset
+
+ which is a restatement of Theorem 1.
+ Since 
 \begin_inset Formula $\alpha_{123},\alpha_{124},\alpha_{134}$
 \end_inset
 
@@ -968,11 +1002,7 @@ height "1pt"
 \noindent
 
 \series bold
-Lemma 1: Suppose 
-\begin_inset Formula $\alpha_{1234}\ge0.$
-\end_inset
-
- If 
+Lemma 1: If 
 \begin_inset Formula $\alpha_{ijk}\ge-\alpha_{1234}$
 \end_inset
 
@@ -984,12 +1014,11 @@ Lemma 1: Suppose
 \begin_inset Formula $\alpha_{ijk}+\alpha_{lmn}\ge-\alpha_{1234}$
 \end_inset
 
- for all distinct pairs 
-\begin_inset Formula $ijk,\ lmn$
+ whenever 
+\begin_inset Formula $ijk\neq lmn$
 \end_inset
 
-, then Eq.
- 
+, then Formula 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:general4variable"
@@ -1031,61 +1060,12 @@ is exactly the same as the following function when minimized over the auxiliary
 \end_layout
 
 \begin_layout Standard
-\begin_inset space \hspace{}
-\length -6mm
+Define the region 
+\begin_inset Formula $S=\{(\alpha_{1234},\alpha_{123},\alpha_{124},\alpha_{134},\alpha_{234})\in\mathbb{R}^{5}:\alpha_{1234}\ge0,\ \alpha_{ijk}\ge-\alpha_{1234}\ \forall ijk,\ \alpha_{ijk}+\alpha_{lmn}\ge-\alpha_{1234}\text{ whenever }ijk\neq lmn\}.$
 \end_inset
 
-
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "104col%"
-height "1pt"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\series bold
-Lemma 2: If 
-\begin_inset Formula $\alpha_{1234}\le0$
-\end_inset
-
- and 
-\begin_inset Formula $\alpha_{ijk}\le0$
-\end_inset
-
-, then Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:general4variable"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is perfectly quadratized by:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\bigg(\negthinspace\alpha_{1234}\left(\sum\nolimits _{i}b_{i}-3\right)+\sum_{ijk}\alpha_{ijk}\left(\sum\nolimits _{l\in ijk}b_{l}-2\right)\negthinspace\negthinspace\negthinspace\bigg)b_{a}.
-\end{equation}
-
+ The Lemma then says 
+\begin_inset Formula $S\subseteq Q.$
 \end_inset
 
 
@@ -1109,198 +1089,7 @@ height "1pt"
 \end_layout
 
 \begin_layout Standard
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\series bold
-Lemma 3: If 
-\begin_inset Formula $\alpha_{123}\le-\frac{\alpha_{1234}}{2}\le\alpha_{124}\le\alpha_{134}\le0$
-\end_inset
-
-, and 
-\begin_inset Formula $\alpha_{134}\le\alpha_{234}$
-\end_inset
-
-, and 
-\begin_inset Formula $\alpha_{123}+\alpha_{124}\le-\frac{\alpha_{1234}}{2}$
-\end_inset
-
-, then Eq.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:general4variable"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- is perfectly quadratized by:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\alpha_{1234}-\sum_{i}\left(\alpha_{12i}+\alpha_{1234}\right)b_{i}+\sum_{i}\alpha_{i34}b_{a}+\sum_{\substack{ijk\\
-i,j\ne1,2
-}
-}\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\sum_{\substack{i=p,q\\
-p,q=1,2\,\text{or}\,3,4
-}
-}\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\negthinspace\left(\sum\nolimits _{\substack{j=r,s\\
-r,s=3,4\,\text{or}\,1,2
-}
-}\alpha_{pqj}-\alpha_{irs}\right)b_{i}b_{a}.
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-\negthinspace\alpha_{1234}-\sum_{i}\negthinspace\left(\alpha_{12i}\negthinspace+\negthinspace\alpha_{1234}\right)\negthinspace b_{i}+\sum_{i}\negthinspace\alpha_{i34}b_{a}+\sum_{ijk}\negthinspace\alpha_{ijk}b_{i}b_{j}+\alpha_{1234}b_{3}b_{4}-\sum_{i=1,2}\negthinspace\negthinspace\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}-\sum_{i=3,4}\negthinspace\negthinspace\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\negthinspace\negthinspace\right)\negthinspace\negthinspace b_{i}b_{a}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align*}
-\alpha_{1234}-\sum_{i}\left(\alpha_{12i}+\alpha_{1234}\right)b_{i}+\sum_{\substack{i\\
-j=1,2
-}
-}\alpha_{12i}b_{i}b_{j}+\left(\alpha_{134}+\alpha_{234}+\alpha_{1234}\right)b_{3}b_{4}+\alpha_{1234}b_{3}b_{4}+\sum_{i}\alpha_{12i}\left(b_{i}-b_{1}-b_{2}\right)b_{a}+\sum_{i}\alpha_{i34}\left(1-b_{3}+b_{i}-b_{4}\right)b_{a}.
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align*}
-\sum_{i}\alpha_{12i}\left(b_{i}-b_{1}-b_{2}\right)b_{a}+\sum_{i}\alpha_{i34}\left(1-b_{3}+b_{i}-b_{4}\right)b_{a} & =\sum_{i}\alpha_{i34}b_{a}+\alpha_{123}(b3-b1-b2)+\alpha_{124}(b4-b1-b2)+\alpha_{134}(b1-b3-b4)+\alpha_{234}(b2-b3-b4)\\
- & =\sum_{i}\alpha_{i34}b_{a}-\sum_{i=1,2}\left(\sum_{j=3,4}\alpha_{12j}-\alpha_{i34}\right)b_{i}b_{a}-\sum_{i=3,4}\left(\sum_{j=1,2}\alpha_{34j}-\alpha_{i12}\right)b_{i}b_{a}
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula $\sum_{\substack{i\\
-j=1,2
-}
-}\alpha_{12i}b_{i}b_{j}+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}=\alpha_{123}b_{1}b_{3}+\alpha_{123}b_{2}b_{3}+\alpha_{124}b_{1}b_{4}+\alpha_{124}b_{2}b_{4}+\alpha_{134}b_{3}b_{4}+\alpha_{234}b_{3}b_{4}=\sum_{ijk}\alpha_{ijk}b_{j}b_{k}$
-\end_inset
-
-because it's 
-\begin_inset Formula $\alpha_{123}b_{2}b_{3}+\alpha_{134}b_{3}b_{4}+\alpha_{124}b_{2}b_{4}+\alpha_{234}b_{3}b_{4}+\alpha_{214}b_{1}b_{4}+\alpha_{213}b_{1}b_{3}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{align}
- & \alpha_{123}\left(-b_{1}+b_{1}b_{2}+b_{1}b_{3}\right)+\alpha_{234}\left(-b_{4}+b_{2}b_{4}+b_{3}b_{4}\right)+\left(\alpha_{134}+\alpha_{124}+\alpha_{1234}\right)b_{1}b_{4}\\
-+ & b_{a}\left(\alpha_{123}\left(b_{1}-b_{2}-b_{3}\right)+\alpha_{234}\left(-b_{2}-b_{3}+b_{4}\right)+\alpha_{134}\left(1-b_{1}+b_{3}-b_{4}\right)+\alpha_{124}\left(1-b_{1}+b_{2}-b_{4}\right)+\alpha_{1234}\left(1-b_{1}-b_{4}\right)\right).
-\end{align}
-
-\end_inset
-
-with 1, 3 swapped.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \hspace{}
-\length -6mm
-\end_inset
-
-
-\begin_inset CommandInset line
-LatexCommand rule
-offset "0ex"
-width "104col%"
-height "1pt"
-
-\end_inset
-
-
-\begin_inset VSpace 2mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-In the Appendix, Lemmas 1-3 are each proven for their own specific conditions
- on the coefficients 
-\begin_inset Formula $\alpha$
-\end_inset
-
-.
+In the Appendix, Lemmas 1 is proven.
  However with `bit-flipping' (a strategy described in 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1320,7 +1109,7 @@ literal "false"
 
 ) we can extend their applicability to more general conditions for which
  a laborious proof was not performed explicitly.
- Lemma 4 will describe the effect of flipping one bit in Eq.
+ Lemma 2 will describe the effect of flipping one bit in Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1331,9 +1120,31 @@ noprefix "false"
 
 \end_inset
 
-, and Lemma 5 will describe the effect of flipping two.
- Since the function is completely symmetric with respect to the four variables
- 
+.
+ By Since the function is completely symmetric 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+completely symmetric wrt 
+\begin_inset Formula $b_{1},b_{2},b_{3},b_{4}$
+\end_inset
+
+means 
+\begin_inset Formula $f(b_{1,}b_{2,}b_{3,}b_{4})$
+\end_inset
+
+ only depend on the sum 
+\begin_inset Formula $b_{1}+b_{2}+b_{3}+b_{4}$
+\end_inset
+
+, which is not the case here.
+ We should use another word for this to avoid overloading a standard term.
+\end_layout
+
+\end_inset
+
+with respect to the four variables 
 \begin_inset Formula $b_{1},b_{2},b_{3}$
 \end_inset
 
@@ -1343,6 +1154,7 @@ noprefix "false"
 
 , these Lemmas depend only on the number of bits flipped and not at all
  on which bits are flipped.
+ 
 \begin_inset Newline newline
 \end_inset
 
@@ -1383,7 +1195,7 @@ height "1pt"
 
 
 \series bold
-Lemma 4: If one bit is flipped (
+Lemma 2: If one bit is flipped (
 \begin_inset Formula $b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1}$
 \end_inset
 
@@ -1404,10 +1216,6 @@ noprefix "false"
 
 and some extra quadratic terms: 
 \begin_inset Formula $\textcolor{blue}{\ensuremath{f_{{\rm quadratic,1}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}\equiv\alpha_{123}b_{2}b_{3}+\alpha_{124}b_{2}b_{4}+\alpha_{134}b_{3}b_{4}.$
-\end_inset
-
- 
-\begin_inset Newline newline
 \end_inset
 
 
@@ -1571,6 +1379,194 @@ height "1pt"
 \end_layout
 
 \begin_layout Standard
+\begin_inset VSpace 2mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+Corollary 3: Define the 'bit-flip' map 
+\begin_inset Formula $\varphi_{1}:\mathbb{R}^{5}\to\mathbb{R}^{5}$
+\end_inset
+
+ given by 
+\begin_inset Formula $\varphi_{1}(\boldsymbol{\alpha})=(-\alpha_{1234},-\alpha_{123},-\alpha_{124},-\alpha_{134},\ \alpha_{234}+\alpha_{1234})$
+\end_inset
+
+ which is the transformation acting on the tuple of coefficients when we
+ flip 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ in Lemma 4, and similarly 
+\begin_inset Formula $\varphi_{2},\varphi_{3},$
+\end_inset
+
+ and 
+\begin_inset Formula $\varphi_{4}$
+\end_inset
+
+ for the corresponding map when we flip 
+\begin_inset Formula $b_{2},b_{3},$
+\end_inset
+
+ and 
+\series default
+
+\begin_inset Formula $b_{4}$
+\end_inset
+
+
+\series bold
+ respectively.
+ Then for each 
+\begin_inset Formula $i,$
+\end_inset
+
+ we have 
+\begin_inset Formula $\boldsymbol{\alpha}\in Q\iff\varphi_{i}(\boldsymbol{\alpha})\in Q.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\emph on
+Proof:
+\emph default
+ If 
+\begin_inset Formula $\boldsymbol{\alpha}\in Q,$
+\end_inset
+
+ then for some quadratic 
+\begin_inset Formula $g$
+\end_inset
+
+ we have
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha_{1234}\bar{b}_{1}b_{2}b_{3}b_{4}+\alpha_{123}\bar{b}_{1}b_{2}b_{3}+\alpha_{124}\bar{b}_{1}b_{2}b_{4}+\alpha_{134}\bar{b}_{1}b_{3}b_{4}+\alpha_{234}b_{2}b_{3}b_{4}=\min_{b_{a}}g(\bar{b}_{1,}b_{2,}b_{3,}b_{4,}b_{a}),
+\]
+
+\end_inset
+
+so
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bar{\alpha}_{1234}b_{1}b_{2}b_{3}b_{4}+\bar{\alpha}_{123}b_{1}b_{2}b_{3}+\bar{\alpha}_{124}b_{1}b_{2}b_{4}+\ensuremath{\bar{\alpha}_{134}}b_{1}b_{3}b_{4}+\ensuremath{\bar{\alpha}_{234}}b_{2}b_{3}b_{4}=\min_{b_{a}}g(1-b_{1},b_{2,}b_{3,}b_{4,}b_{a})-f_{\text{quadratic,1}}(\bar{b}_{1},b_{2},b_{3},b_{4}),
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $\varphi_{1}(\boldsymbol{\alpha})\in Q$
+\end_inset
+
+.
+ The other direction comes from the fact that 
+\begin_inset Formula $\varphi_{1}(\varphi_{1}(\boldsymbol{\alpha}))=\boldsymbol{\alpha}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The same holds for other indices 
+\begin_inset Formula $i=2,3,4.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length -6mm
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "104col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 3mm
+\end_inset
+
+We can also flip more than one bit.
+ The corresponding transformations are given by:
+\begin_inset Formula 
+\[
+\varphi_{2}(\varphi_{1}(\boldsymbol{\alpha}))=(\alpha_{1234},\alpha_{123},\alpha_{124},-\alpha_{1234}-\alpha_{134},-\alpha_{1234}-\alpha_{234}),
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{3}(\varphi_{2}(\varphi_{1}(\boldsymbol{\alpha})))=(-\alpha_{1234},-\alpha_{123},\alpha_{1234}+\alpha_{124},\alpha_{1234}+\alpha_{134},\alpha_{1234}+\alpha_{234}),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi_{4}(\varphi_{3}(\varphi_{2}(\varphi_{1}(\boldsymbol{\alpha}))))=(\alpha_{1234},-\alpha_{1234}-\alpha_{123},-\alpha_{1234}-\alpha_{124},-\alpha_{1234}-\alpha_{134},-\alpha_{1234}-\alpha_{234}).
+\]
+
+\end_inset
+
+We can also verify that 
+\begin_inset Formula $\varphi_{1}\circ\varphi_{2}=\varphi_{2}\circ\varphi_{1}$
+\end_inset
+
+ so any 
+\begin_inset Formula $\varphi_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\varphi_{j}$
+\end_inset
+
+ commute and we do not have to consider the order of such transformations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0ex"
+width "104col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset VSpace 3mm
 \end_inset
 
@@ -1581,7 +1577,32 @@ height "1pt"
 \noindent
 
 \series bold
-Lemma 5: If two bits are flipped (
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+We no longer need this Lemma because we have already computed 
+\begin_inset Formula $\varphi_{2}\circ\varphi_{1}$
+\end_inset
+
+ in the easier way.
+\end_layout
+
+\end_inset
+
+
+\series default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\noindent
+
+\series bold
+Lemma 4: If two bits are flipped (
 \begin_inset Formula $b_{1}\rightarrow\bar{b}_{1}\equiv1-b_{1},b_{2}\rightarrow\bar{b}_{2}\equiv1-b_{2}$
 \end_inset
 
@@ -1611,7 +1632,7 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 
 \emph on
@@ -1639,7 +1660,7 @@ noprefix "false"
  replaced by their flipped versions:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \alpha_{1234}\bar{b}_{1}\bar{b}_{2}b_{3}b_{4}+\alpha_{123}\bar{b}_{1}\bar{b}_{2}b_{3}+\alpha_{124}\bar{b}_{1}\bar{b}_{2}b_{4}+\alpha_{134}\bar{b}_{1}b_{3}b_{4}+\alpha_{234}\bar{b}_{2}b_{3}b_{4}.\label{eq:2flips}
@@ -1650,7 +1671,7 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 Expanding 
 \begin_inset Formula $\bar{b}_{1}$
@@ -1683,14 +1704,14 @@ noprefix "false"
 , we get:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset VSpace -2.5mm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 
 \color black
 \begin_inset Formula 
@@ -1703,14 +1724,14 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset VSpace -11mm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 +\,\alpha_{134}\left(b_{3}b_{4}-b_{1}b_{3}b_{4}\right)+\alpha_{234}\left(b_{3}b_{4}-b_{2}b_{3}b_{4}\right).
@@ -1721,7 +1742,7 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \noindent
 We can now regroup everything in Eq.
  
@@ -1749,7 +1770,7 @@ noprefix "false"
  terms:
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 \alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}-\left(\alpha_{134}+\alpha_{1234}\right)b_{1}b_{3}b_{4}-\left(\alpha_{234}+\alpha_{1234}\right)b_{2}b_{3}b_{4}
@@ -1760,14 +1781,14 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset VSpace -7mm
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 +\,\alpha_{1234}b_{3}b_{4}+\alpha_{123}\left(b_{3}-b_{1}b_{3}-b_{2}b_{3}\right)+\alpha_{124}\left(b_{4}-b_{1}b_{4}-b_{2}b_{4}\right)+\left(\alpha_{134}+\alpha_{234}\right)b_{3}b_{4}.
@@ -1786,11 +1807,16 @@ noprefix "false"
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 =\alpha_{1234}b_{1}b_{2}b_{3}b_{4}+\alpha_{123}b_{1}b_{2}b_{3}+\alpha_{124}b_{1}b_{2}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{134}}}b_{1}b_{3}b_{4}+\textcolor{blue}{\ensuremath{\bar{\alpha}_{234}}}b_{2}b_{3}b_{4}+\textcolor{blue}{\ensuremath{f_{{\rm quadratic,2}}\left(b_{1},b_{2},b_{3},b_{4}\right)}}.
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -1884,14 +1910,14 @@ height "1pt"
 \begin_layout Standard
 
 \series bold
-Lemma 4 allows us to assume from now on that
+Corollary 3 allows us to assume from now on that
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
 
 \series bold
-This could be written as a corollary to Lemma 4
+This could be written as a corollary to Corollary 3
 \end_layout
 
 \end_inset
@@ -1902,15 +1928,23 @@ This could be written as a corollary to Lemma 4
 
 
 \series default
-, because every case with 
+, because if 
 \begin_inset Formula $\alpha_{1234}<0$
 \end_inset
 
- can be turned into a case with 
-\begin_inset Formula $\alpha_{1234}>0$
+ then 
+\begin_inset Formula $\boldsymbol{\alpha'}=\varphi_{1}(\boldsymbol{\alpha})$
 \end_inset
 
- by flipping only one bit.
+ has 
+\begin_inset Formula $\alpha'_{1234}\ge0$
+\end_inset
+
+, and by Corollary 3, 
+\begin_inset Formula $\boldsymbol{\alpha}\in Q\iff\boldsymbol{\alpha'}\in Q$
+\end_inset
+
+.
  With 
 \begin_inset Formula $\alpha_{1234}\ge0$
 \end_inset
@@ -1964,16 +1998,31 @@ noprefix "false"
 \end_inset
 
  as partition points.
- For some of these cases, Lemma 1 or 3 can be applied immediately.
- Due to the conditions used to prove Lemma 2, it cannot be applied directly
- to any of the 35 cases, but thanks to Lemmas 4 and 5, Lemma 2 can be applied
- to two of the 35 cases after bit-flipping appropriately.
- Lemma 1 or 3 can be applied for the rest of the 35 cases if 2, 3, or 4
- bits are flipped (meaning either one application of Lemma 5, one application
- of Lemma 4 combined with one application of Lemma 5, or two applications
- of Lemma 5, is done).
- This means that one of Lemmas 1–3 can be applied for all of the 35 possible
- cases, as long as Lemmas 4 and/or 5 are applied appropriately.
+ Some of these cases needs to be further broken down into two subcases depending
+ on some sum 
+\begin_inset Formula $\alpha_{ijk}+\alpha_{lmn}$
+\end_inset
+
+ Only for some of these cases, Lemma 1 can be applied immediately (i.e.
+ 
+\begin_inset Formula $\boldsymbol{\alpha}\in S$
+\end_inset
+
+), but thanks to Lemma 2 and Corollary 3, Lemma 1 can be applied to more
+ cases after bit-flipping appropriately (i.e.
+ there is some sequence 
+\begin_inset Formula $i_{1},\cdots,i_{k}$
+\end_inset
+
+ such that 
+\begin_inset Formula $\varphi_{i_{k}}\circ\cdots\circ\varphi_{i_{1}}(\boldsymbol{\alpha})\in S\subseteq Q,$
+\end_inset
+
+ which implies 
+\begin_inset Formula $\boldsymbol{\alpha}\in Q$
+\end_inset
+
+).
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1984,10 +2033,24 @@ noprefix "false"
 
 \end_inset
 
- summarizes which bits have to be flipped using Lemma 4 and/or Lemma 5,
- and which of Lemmas 1–3 can be applied, for each of the 35 possible cases.
- Since so many neighboring cases are often covered by a single lemma, we
- were also able to make Table 
+ summarizes which bits have to be flipped to reduce the problem to one that
+ is that is solved by Lemma 1
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Now Lemma 1 does not require 
+\begin_inset Formula $\alpha_{1234}\ge0$
+\end_inset
+
+, so we can flip an odd number of bits as well as an even number of bits.
+\end_layout
+
+\end_inset
+
+.
+ Since so many neighboring cases are often covered by a same transformation,
+ we were also able to make Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:SimplifiedTable"
@@ -2049,21 +2112,21 @@ ation for each case.
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="36" columns="6">
+<lyxtabular version="3" rows="42" columns="6">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top" width="0pt">
-<column alignment="center" valignment="bottom" width="0cm">
+<column alignment="center" valignment="top" width="0pt">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Formula $-\alpha_{1234}$
@@ -2223,7 +2286,7 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2235,7 +2298,7 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2247,7 +2310,7 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2259,20 +2322,20 @@ status open
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Bits flipped
+Other conditions
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Quadratization
+Bits requires flipping
 \end_layout
 
 \end_inset
@@ -2322,7 +2385,7 @@ Quadratization
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+
 \end_layout
 
 \end_inset
@@ -2331,7 +2394,7 @@ Quadratization
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+-
 \end_layout
 
 \end_inset
@@ -2384,7 +2447,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+
 \end_layout
 
 \end_inset
@@ -2393,7 +2456,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+-
 \end_layout
 
 \end_inset
@@ -2446,7 +2509,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+
 \end_layout
 
 \end_inset
@@ -2455,7 +2518,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+-
 \end_layout
 
 \end_inset
@@ -2508,9 +2571,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{\ensuremath{b_{4}}}$
-\end_inset
-
 
 \end_layout
 
@@ -2520,9 +2580,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{4}}$
+\end_inset
 
-\color black
-Lemma 2
+
 \end_layout
 
 \end_inset
@@ -2564,6 +2625,83 @@ Lemma 2
 
 \begin_layout Plain Layout
 \begin_inset Formula $\alpha_{134},\alpha_{234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{123}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{124}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{134},\alpha_{234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{123}+\alpha_{124}\ge-\alpha_{1234}$
 \end_inset
 
 
@@ -2580,18 +2718,36 @@ Lemma 2
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Lemma 1
-\end_layout
-
-\end_inset
-</cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2604,7 +2760,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\alpha_{123}$
+\begin_inset Formula $\alpha_{123}+\alpha_{124}\le-\alpha_{1234}$
 \end_inset
 
 
@@ -2616,43 +2772,20 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\alpha_{124}$
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
 \end_inset
 
+ 
+\begin_inset Note Note
+status collapsed
 
+\begin_layout Plain Layout
+reducing to the case just above
 \end_layout
 
 \end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\alpha_{134},\alpha_{234}$
-\end_inset
 
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{2},b_{4}}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Lemma 3
 \end_layout
 
 \end_inset
@@ -2708,9 +2841,6 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -2720,9 +2850,10 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
 
-\color black
-Lemma 1
+
 \end_layout
 
 \end_inset
@@ -2775,9 +2906,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -2787,7 +2915,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2843,9 +2974,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -2855,7 +2983,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2908,9 +3039,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -2920,7 +3048,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2973,7 +3104,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+
 \end_layout
 
 \end_inset
@@ -2982,14 +3113,14 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+-
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -2998,7 +3129,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3010,7 +3141,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3022,7 +3153,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3038,7 +3169,7 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{1},b_{4}}$
+\begin_inset Formula $\alpha_{123}+\alpha_{124}\ge-\alpha_{1234}$
 \end_inset
 
 
@@ -3050,7 +3181,88 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 3
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{123}+\alpha_{124}\le-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+\alpha_{1234}+(-\alpha_{1234}-\alpha_{123})+(-\alpha_{1234}-\alpha_{124}) & =-(\alpha_{1234}+\alpha_{123}+\alpha_{124})\ge0\\
+\alpha_{1234}+\alpha_{134}+(-\alpha_{1234}-\alpha_{124}) & =\alpha_{134}-\alpha_{124}\ge0\\
+\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3102,20 +3314,37 @@ Lemma 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 3
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+must have 
+\begin_inset Formula $(-\alpha_{1234}-\alpha_{124})+\alpha_{134}\ge-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3167,7 +3396,16 @@ Lemma 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3175,15 +3413,6 @@ Lemma 3
 \end_inset
 
 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Lemma 1
 \end_layout
 
 \end_inset
@@ -3242,9 +3471,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -3254,7 +3480,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3310,9 +3539,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -3322,7 +3548,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3375,9 +3604,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -3387,7 +3613,24 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 3
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+must have 
+\begin_inset Formula $(-\alpha_{1234}-\alpha_{124})+\alpha_{134}\ge-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3443,9 +3686,6 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{2},b_{3}}$
-\end_inset
-
 
 \end_layout
 
@@ -3455,7 +3695,24 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 3
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+must have 
+\begin_inset Formula $(-\alpha_{1234}-\alpha_{124})+\alpha_{134}\ge-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3511,9 +3768,6 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -3523,7 +3777,10 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3576,9 +3833,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{2},b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -3588,7 +3842,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 2
+\begin_inset Formula $\textcolor{blue}{b_{1}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3638,7 +3895,7 @@ Lemma 2
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+
 \end_layout
 
 \end_inset
@@ -3647,14 +3904,14 @@ Lemma 2
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+-
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3663,7 +3920,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3675,7 +3932,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3700,7 +3957,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+\begin_inset Formula $\alpha_{123}+\alpha_{124}\ge-\alpha_{1234}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3709,7 +3969,88 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1, 3
+-
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{123}+\alpha_{124}\le-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{align*}
+\alpha_{1234}+(-\alpha_{1234}-\alpha_{123})+(-\alpha_{1234}-\alpha_{124}) & =-(\alpha_{1234}+\alpha_{123}+\alpha_{124})\ge0\\
+\alpha_{1234}+\alpha_{134}+(-\alpha_{1234}-\alpha_{124}) & =\alpha_{134}-\alpha_{124}\ge0\\
+\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3762,7 +4103,7 @@ Lemma 1, 3
 \begin_inset Text
 
 \begin_layout Plain Layout
--
+
 \end_layout
 
 \end_inset
@@ -3771,7 +4112,24 @@ Lemma 1, 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 3
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+must have 
+\begin_inset Formula $(-\alpha_{1234}-\alpha_{124})+\alpha_{134}\ge-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3824,9 +4182,6 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -3836,7 +4191,10 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3892,9 +4250,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -3904,7 +4259,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3957,9 +4315,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -3969,14 +4324,17 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3985,7 +4343,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -3997,7 +4355,7 @@ Lemma 1
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4009,10 +4367,22 @@ Lemma 1
 
 \end_inset
 </cell>
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
 <cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset Formula $\alpha_{134}+\alpha_{234}\ge-\alpha_{1234}$
+\end_inset
+
 
 \end_layout
 
@@ -4026,6 +4396,58 @@ Lemma 1
 \end_inset
 
 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+must have 
+\begin_inset Formula $(-\alpha_{1234}-\alpha_{124})+\alpha_{134}\ge-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
@@ -4034,14 +4456,29 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1, 3
+\begin_inset Formula $\alpha_{134}+\alpha_{234}\le-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4053,7 +4490,7 @@ Lemma 1, 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4065,7 +4502,7 @@ Lemma 1, 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4077,7 +4514,7 @@ Lemma 1, 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4090,7 +4527,7 @@ Lemma 1, 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{2},b_{3}}$
+\begin_inset Formula $\alpha_{134}+\alpha_{234}\ge-\alpha_{1234}$
 \end_inset
 
 
@@ -4102,14 +4539,93 @@ Lemma 1, 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 3
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+must have 
+\begin_inset Formula $(-\alpha_{1234}-\alpha_{124})+\alpha_{134}\ge-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell multirow="4" alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{134}+\alpha_{234}\le-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4121,7 +4637,7 @@ Lemma 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4133,7 +4649,7 @@ Lemma 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4145,7 +4661,7 @@ Lemma 3
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
+<cell multirow="3" alignment="center" valignment="middle" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -4158,7 +4674,7 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{2},b_{3}}$
+\begin_inset Formula $\alpha_{134}+\alpha_{234}\ge-\alpha_{1234}$
 \end_inset
 
 
@@ -4170,7 +4686,100 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 3
+\begin_inset Formula $\textcolor{blue}{b_{3},b_{4}}$
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+must have 
+\begin_inset Formula $(-\alpha_{1234}-\alpha_{124})+\alpha_{134}\ge-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha_{134}+\alpha_{234}\le-\alpha_{1234}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+flip 
+\begin_inset Formula $b_{1},b_{2}$
+\end_inset
+
+ to reduce to the case just above
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4223,9 +4832,6 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -4235,7 +4841,10 @@ Lemma 3
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4285,9 +4894,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -4297,7 +4903,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4350,9 +4959,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -4362,7 +4968,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4415,9 +5024,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -4427,7 +5033,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4480,9 +5089,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -4492,7 +5098,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4542,9 +5151,6 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
-\end_inset
-
 
 \end_layout
 
@@ -4554,7 +5160,10 @@ Lemma 1
 \begin_inset Text
 
 \begin_layout Plain Layout
-Lemma 1
+\begin_inset Formula $\textcolor{blue}{b_{1},b_{2},b_{3},b_{4}}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4583,6 +5192,16 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This has not been updated
+\end_layout
+
+\end_inset
+
+
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -19556,7 +20175,7 @@ Consider the function:
 \lang british
 \begin_inset Formula 
 \begin{equation}
--2b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{3}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{7}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{11}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}\cdots\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}4}\hspace{-0.05em}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}.
+f=-2b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{3}\hspace{-0.05em}\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{1}\hspace{-0.05em}\hspace{-0.05em}b_{2}\hspace{-0.05em}\hspace{-0.05em}b_{3}\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{4}\hspace{-0.05em}\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{7}\hspace{-0.05em}\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{5}\hspace{-0.05em}\hspace{-0.05em}b_{6}\hspace{-0.05em}\hspace{-0.05em}b_{7}\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{8}\hspace{-0.05em}\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{11}\hspace{-0.05em}\hspace{-0.05em}b_{12}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{9}\hspace{-0.05em}\hspace{-0.05em}b_{10}\hspace{-0.05em}\hspace{-0.05em}b_{11}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}\cdots\hspace{-0.05em}\hspace{-0.05em}+5\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}4}\hspace{-0.05em}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}\hspace{-0.05em}-2\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}1}\hspace{-0.05em}\hspace{-0.05em}b_{4N}\hspace{-0.05em}\hspace{-0.05em}+\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}3}\hspace{-0.05em}b_{4N\hspace{-0.05em}-\hspace{-0.05em}2}\hspace{-0.05em}b_{4N-1}\hspace{-0.05em}\hspace{-0.05em}.
 \end{equation}
 
 \end_inset
@@ -19620,7 +20239,7 @@ status collapsed
 
 \end_inset
 
-
+-
 \end_layout
 
 \begin_layout Standard
@@ -19629,7 +20248,7 @@ With Theorem 1, we can quadratize this function with only
 \end_inset
 
  auxiliary variables (one for each set of 4 variables).
- A term-wise quadratization would need 
+ A term-wise quadratization would need at least 
 \begin_inset Formula $2N$
 \end_inset
 
@@ -19709,6 +20328,186 @@ For a 4-variable functions with general coefficients, RBS requires at least
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Using Theorem 1, we can quadratise 
+\begin_inset Formula $-2b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}$
+\end_inset
+
+ as 
+\begin_inset Formula $2b_{1}+2b_{2}+2b_{3}+b_{1}b_{2}+b_{1}b_{3}+b_{2}b_{3}-2b_{1}b_{4}-2b_{2}b_{4}-2b_{3}b_{4}+b_{a}(5-3b_{1}-3b_{2}-3b_{3}+4b_{4})$
+\end_inset
+
+, so 
+\begin_inset Formula $f$
+\end_inset
+
+ can be quadratised as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \phantom{{+\ }}2b_{1}+2b_{2}+2b_{3}+b_{1}b_{2}+b_{1}b_{3}+b_{2}b_{3}-2b_{1}b_{4}-2b_{2}b_{4}-2b_{3}b_{4}+b_{a}(5-3b_{1}-3b_{2}-3b_{3}+4b_{4})+5b_{4}b_{5}\\
+ & +2b_{5}+2b_{6}+2b_{7}+b_{5}b_{6}+b_{5}b_{7}+b_{6}b_{7}-2b_{5}b_{8}-2b_{6}b_{8}-2b_{7}b_{8}+b_{a}(5-3b_{5}-3b_{6}-3b_{7}+4b_{8})+5b_{8}b_{9}+\cdots\\
+ & +2b_{4N-3}+2b_{4N-2}+2b_{4N-1}+b_{4N-3}b_{4N-2}+b_{4N-3}b_{4N-1}+b_{4N-2}b_{4N-1}-2b_{4N-3}b_{4N}-2b_{4N-2}b_{4N}-2b_{4N-3}b_{4N}+b_{a}(5-3b_{4N-3}-3b_{4N-2}-3b_{4N-1}+4b_{4N}).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang british
+Previous state-of-the-art
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+There are exactly two non-isomorphic to quadratise 
+\begin_inset Formula $-2b_{1}b_{2}b_{3}b_{4}+b_{1}b_{2}b_{3}$
+\end_inset
+
+ using pairwise cover with two auxiliaries: 
+\begin_inset Formula $\{12,123\}$
+\end_inset
+
+ and 
+\begin_inset Formula $\{12,34\}$
+\end_inset
+
+ are both covers.
+ The first gives the quadratisation
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Formula 
+\[
+-2b_{a_{2}}b_{4}+b_{a_{1}}b_{3}+3\left(b_{a_{1}}(3-2b_{1}-2b_{2})+b_{1}b_{2}\right)+2\left(b_{a_{2}}(5-2b_{1}-2b_{2}-2b_{3})+b_{a_{1}}b_{3}\right),
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and the second gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-2b_{a_{1}}b_{a_{2}}+b_{a_{1}}b_{3}+3\left(b_{a_{1}}(3-2b_{1}-2b_{2})+b_{1}b_{2}\right)+2\left(b_{a_{2}}(3-2b_{3}-2b_{4})+b_{3}b_{4}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The second is better it has fewer quadratic terms.
+\end_layout
+
+\begin_layout Standard
+The original function can thus be quadratised as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\text{} & -2b_{a_{1}}b_{a_{2}}+b_{a_{1}}b_{3}+3\left(b_{a_{1}}(3-2b_{1}-2b_{2})+b_{1}b_{2}\right)+2\left(b_{a_{2}}(3-2b_{3}-2b_{4})+b_{3}b_{4}\right)+5b_{4}b_{5}\\
+ & -2b_{a_{3}}b_{a_{4}}+b_{a_{3}}b_{7}+3\left(b_{a_{3}}(3-2b_{5}-2b_{6})+b_{5}b_{6}\right)+2\left(b_{a_{2}}(3-2b_{7}-2b_{8})+b_{7}b_{8}\right)+5b_{8}b_{9}+\cdots\\
+ & -2b_{a_{2N-1}}b_{a_{2N}}+b_{a_{2N-1}}b_{4N-1}+3\left(b_{a_{2N-1}}(3-2b_{4N-3}-2b_{4N-2})+b_{4N-3}b_{4N-2}\right)+2\left(b_{a_{2N}}(3-2b_{4N-1}-2b_{4N})+b_{4N-1}b_{4N}\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\lang british
+Comparison
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\color blue
+\lang british
+Number of auxiliary variables:
+\series default
+\color inherit
+ Previous state-of-the-art (
+\begin_inset Formula $2N$
+\end_inset
+
+), Present (
+\begin_inset Formula $N$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\color blue
+\lang british
+Number of quadratic terms in quadratization result:
+\series default
+\color inherit
+ Previous state-of-the-art (
+\begin_inset Formula $9N-1$
+\end_inset
+
+), Present (
+\begin_inset Formula $11N-1$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\series bold
+\color blue
+Range of coefficients:
+\series default
+\color inherit
+ 
+\lang british
+Previous state-of-the-art 
+\lang american
+(
+\begin_inset Formula $-6$
+\end_inset
+
+ to 
+\begin_inset Formula $+9$
+\end_inset
+
+), Present (
+\begin_inset Formula $-3$
+\end_inset
+
+ to 
+\begin_inset Formula $+5$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Subsection
