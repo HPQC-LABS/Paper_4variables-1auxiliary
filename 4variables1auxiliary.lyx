@@ -1068,7 +1068,7 @@ is exactly the same as the following function when minimized over the auxiliary
 
 \begin_layout Standard
 Define the region 
-\begin_inset Formula $S=\{(\alpha_{1234},\alpha_{123},\alpha_{124},\alpha_{134},\alpha_{234})\in\mathbb{R}^{5}:\alpha_{1234}\ge0,\ \alpha_{ijk}\ge-\alpha_{1234}\ \forall ijk,\ \alpha_{ijk}+\alpha_{lmn}\ge-\alpha_{1234}\text{ whenever }ijk\neq lmn\}.$
+\begin_inset Formula $S=\{(\alpha_{1234},\alpha_{123},\alpha_{124},\alpha_{134},\alpha_{234})\in\mathbb{R}^{5}:\ \alpha_{ijk}\ge-\alpha_{1234}\ \forall ijk,\ \alpha_{ijk}+\alpha_{lmn}\ge-\alpha_{1234}\text{ whenever }ijk\neq lmn\}.$
 \end_inset
 
  The Lemma then says 
