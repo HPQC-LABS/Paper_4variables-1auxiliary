@@ -79,4 +79,4 @@ b1=b(:,1);b2=b(:,2);b3=b(:,3);b4=b(:,4);ba=b(:,5);
 
 LHS= min(reshape(sqrt(5)*(atan(2) - pi/2)*b1.*b2.*b4 + (sqrt(5)*pi/4)*(exp(1) - 1)*b2.*b3.*b4 + sqrt(5)*(exp(1) - 1)*(atan(2) - pi/4)*b1.*b2.*b3.*b4,2,[]));
 RHS= min(reshape(ba.*(5.6896 - 4.4534*b4 - 4.4534*b2 - 1.4357*b1 - 5.4901*b3) + 0.1995*b1.*b2 + 1.2362*b1.*b3 + 0.1995*b1.*b4 + 4.2539*b2.*b3 + 3.2172*b2.*b4  + 4.2539*b3.*b4,2,[])); % Note that some coefficients in the paper (eq. 46) are different that the values here. It is probably a typo in the paper.
-isequal(LHS,RHS) % Gives 0 because of rounding the coefficients, but values are the same for LHS and RHS
+max(LHS-RHS)<1e-30 % Gives 1
