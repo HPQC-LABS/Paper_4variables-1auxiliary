@@ -2,20 +2,14 @@
 b= dec2bin(2^10-1:-1:0)-'0';
 b1=b(:,1);b2=b(:,2);b3=b(:,3);b4=b(:,4);b5=b(:,5);b6=b(:,6);b7=b(:,7);b8=b(:,8);ba1=b(:,9);ba2=b(:,10);
 
-blue_LHS= reshape(b1.*b2.*b3.*b4 + b1.*b2.*b3 + b1.*b2.*b4 + 2*b1.*b3.*b4 + 3*b2.*b3.*b4,4,[]);
-blue_LHS= blue_LHS(1,:);
+blue_LHS= b1.*b2.*b3.*b4 + b1.*b2.*b3 + b1.*b2.*b4 + 2*b1.*b3.*b4 + 3*b2.*b3.*b4;
+blue_RHS= 3*b1.*b2 + 4*b1.*b3 + 4*b1.*b4 + 5*b2.*b3 + 5*b2.*b4 + 6*b3.*b4 + ba1.*(10 - 6*b1 - 7*b2 - 8*b3 - 8*b4);  
 
-blue_RHS= reshape(3*b1.*b2 + 4*b1.*b3 + 4*b1.*b4 + 5*b2.*b3 + 5*b2.*b4 + 6*b3.*b4 + ba1.*(10 - 6*b1 - 7*b2 - 8*b3 - 8*b4),4,[]);  
-blue_RHS= min([reshape(blue_RHS(1,:),1,[]);reshape(blue_RHS(3,:),1,[])]);
+red_LHS= -b5.*b6.*b7.*b8 - 2*b5.*b6.*b7 - 3*b5.*b6.*b8 - 4*b5.*b7.*b8 - 5*b6.*b7.*b8;
+red_RHS=  ba2.*(31 - 10*b5 - 11*b6 - 12*b7 - 13*b8); % Note that there's no negative sign in front of the whole expression, so there's a typo in the paper.
 
-red_LHS= reshape(-b5.*b6.*b7.*b8 - 2*b5.*b6.*b7 - 3*b5.*b6.*b8 - 4*b5.*b7.*b8 - 5*b6.*b7.*b8,4,[]);
-red_LHS= red_LHS(1,:);
-
-red_RHS= reshape(ba2.*(31 - 10*b5 - 11*b6 - 12*b7 - 13*b8),4,[]); % Note that there's no negative sign in front of the whole expression, so there's a typo in the paper.
-red_RHS= min([reshape(red_RHS(1,:),1,[]);reshape(red_RHS(2,:),1,[])]);
-
-LHS= blue_LHS + red_LHS;
-RHS= blue_RHS + red_RHS;
+LHS= min(reshape(blue_LHS + red_LHS,4,[]));
+RHS= min(reshape(blue_RHS + red_RHS,4,[]));
 isequal(LHS,RHS) % Gives 1
 
 %% Pg. 6, Eqs 23-28
