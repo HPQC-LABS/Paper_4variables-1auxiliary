@@ -19935,7 +19935,7 @@ We are inventing a new word here.
 \begin_inset Formula 
 \begin{align}
 \negthickspace\negthickspace\negthickspace\negthickspace\negthickspace\textcolor{blue}{\textcolor{blue}{b_{1}b_{2}b_{3}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{b_{1}b_{2}b_{3}}\negthinspace+\negthinspace\textcolor{blue}{b_{1}b_{2}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{2b_{1}b_{3}b_{4}}\negthinspace+\negthinspace\textcolor{blue}{3b_{2}b_{3}b_{4}}} & \textcolor{blue}{\rightarrow}\textcolor{blue}{3b_{1}b_{2}\negthinspace+\negthinspace4b_{1}b_{3}\negthinspace+\negthinspace4b_{1}b_{4}\negthinspace+\negthinspace5b_{2}b_{3}\negthinspace+\negthinspace5b_{2}b_{4}\negthinspace+\negthinspace6b_{3}b_{4}\negthinspace+\negthinspace b_{a_{1}}(10\negthinspace-\negthinspace6b_{1}\negthinspace-\negthinspace7b_{2}\negthinspace-\negthinspace8b_{3}\negthinspace-\negthinspace8b_{4})}\\
-\textcolor{red}{\negthickspace\negthickspace\textcolor{red}{\negthickspace\negthickspace\negthickspace-b_{5}b_{6}b_{7}b_{8}}\negthinspace-\negthinspace\textcolor{red}{2b_{5}b_{6}b_{7}}\negthinspace-\negthinspace\textcolor{red}{3b_{5}b_{6}b_{8}}\negthinspace-\negthinspace\textcolor{red}{4b_{5}b_{7}b_{8}}\negthinspace-\negthinspace\textcolor{red}{5b_{6}b_{7}b_{8}}} & \textcolor{red}{\rightarrow}\textcolor{red}{\textcolor{red}{-b_{a_{2}}(31\negthinspace-\negthinspace10b_{5}\negthinspace-\negthinspace11b_{6}\negthinspace-\negthinspace12b_{7}\negthinspace-\negthinspace13b_{8})}}.
+\textcolor{red}{\negthickspace\negthickspace\textcolor{red}{\negthickspace\negthickspace\negthickspace-b_{5}b_{6}b_{7}b_{8}}\negthinspace-\negthinspace\textcolor{red}{2b_{5}b_{6}b_{7}}\negthinspace-\negthinspace\textcolor{red}{3b_{5}b_{6}b_{8}}\negthinspace-\negthinspace\textcolor{red}{4b_{5}b_{7}b_{8}}\negthinspace-\negthinspace\textcolor{red}{5b_{6}b_{7}b_{8}}} & \textcolor{red}{\rightarrow}\textcolor{red}{\textcolor{red}{b_{a_{2}}(31\negthinspace-\negthinspace10b_{5}\negthinspace-\negthinspace11b_{6}\negthinspace-\negthinspace12b_{7}\negthinspace-\negthinspace13b_{8})}}.
 \end{align}
 
 \end_inset
@@ -21421,7 +21421,7 @@ literal "false"
 \lang british
 \begin_inset Formula 
 \begin{equation}
-=\frac{\sqrt{5}\pi}{4}b_{1}b_{4}+\frac{\sqrt{5}\pi}{4}b_{2}b_{4}+\sqrt{5}\left(\arctan\left(2\right)-\frac{\pi}{2}\right)b_{1}b_{2}b_{4}+\frac{\sqrt{5}\pi}{4}(e-1)b_{2}b_{3}b_{4}+(e-1)\left(\arctan\left(2\right)-\frac{\pi}{4}\right)b_{1}b_{2}b_{3}b_{4}.
+=\frac{\sqrt{5}\pi}{4}b_{1}b_{4}+\frac{\sqrt{5}\pi}{4}b_{2}b_{4}+\sqrt{5}\left(\arctan\left(2\right)-\frac{\pi}{2}\right)b_{1}b_{2}b_{4}+\frac{\sqrt{5}\pi}{4}(e-1)b_{2}b_{3}b_{4}+\sqrt{5}(e-1)\left(\arctan\left(2\right)-\frac{\pi}{4}\right)b_{1}b_{2}b_{3}b_{4}.
 \end{equation}
 
 \end_inset
@@ -21545,7 +21545,7 @@ The last three terms have degree larger than 2, but we can quadratize all
 \lang british
 \begin_inset Formula 
 \begin{equation}
--5.70+0.20b_{1}b_{2}+1.24b_{1}b_{3}+1.96b_{1}b_{4}+4.26b_{2}b_{3}+4.98b_{2}b_{4}+4.26b_{3}b_{4}-1.44b_{1}b_{a}+4.46b_{2}b_{a}+5.50b_{3}b_{a}+4.46b_{4}b_{a}.
+0.20b_{1}b_{2}+1.24b_{1}b_{3}+0.20b_{1}b_{4}+4.25b_{2}b_{3}+3.22b_{2}b_{4}+4.25b_{3}b_{4}+5.70b_{a}-1.44b_{1}b_{a}-4.45b_{2}b_{a}-5.49b_{3}b_{a}-4.45b_{4}b_{a}.
 \end{equation}
 
 \end_inset
